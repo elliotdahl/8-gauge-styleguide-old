@@ -1,0 +1,45 @@
+.svgicon {
+    // font-size:10px;
+    display: inline-flex;
+    line-height: inherit;
+    align-self:center;
+    // margin-bottom: -.15em;
+    // margin-top: -.15em;
+
+}
+
+.svgicon svg {
+    height: 1em;
+    width: 1em;
+}
+
+
+//Styleguide
+.sg-icon-tile {
+	width:140px;
+	height:140px;
+	margin:8px;
+	padding:8px;
+	border:solid 1px $neutral-9;
+	text-align: center;
+	@extend .vert-middle;
+	.svgicon {
+		border:solid 1px $neutral-9;
+		font-size:50px;
+		@extend .vert-middle;
+		svg {
+			@extend .margin-auto
+		}
+		
+	}
+	.sg-icon-label {
+		
+		margin-bottom:10px;
+		margin-top:10px;
+		@extend .vert-middle;
+	}
+	code {
+
+		font-size:10px;
+	}
+}

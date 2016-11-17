@@ -1,0 +1,22 @@
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a {
+    color: $link-color;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $link-hover-color;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+.underline {
+    text-decoration:underline;
+}
+
+.hover-underline:hover {
+	text-decoration:underline;
+}

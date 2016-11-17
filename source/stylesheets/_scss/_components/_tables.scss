@@ -1,0 +1,197 @@
+
+.table {
+    background-color: $table-bg;
+    margin-bottom: ($base-unit*2);
+    .grid {
+        margin:0;
+    }
+    //Table Row Header
+    .th {
+        font-size: $table-header-font-size;
+        font-weight: $table-header-font-weight;
+        text-transform: $table-header-text-transform;
+        color: $table-header-color;
+        .td {
+            border-bottom: solid 1px $table-border-color;
+        }
+        &:first-child .td {
+            &:first-child {
+                border-radius: 2px 0 0 0;
+            }
+            &:last-child {
+                border-radius: 0 2px 0 0;
+            }
+        }
+    }
+    //Table Row
+    .tr {
+        &:last-child .td {
+            border-bottom: solid 1px $table-border-color;
+            &:first-child {
+                border-radius: 0 0 0 2px;
+            }
+            &:last-child {
+                border-radius: 0 0 2px 0;
+            }
+        }
+        &:hover {
+            background-color: $table-bg-hover;
+        }
+        &.no-hover {
+            background-color: $table-bg;
+        }
+    }
+    //Table Cell
+    
+
+    .td {
+        border-left: solid 1px $table-border-color;
+        border-top: solid 1px $table-border-color;
+        padding: $base-unit;
+        //Vert-middle
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+        // flex-direction: row;
+        
+        // align-items: center;
+        &:last-child {
+            border-right: solid 1px $table-border-color;
+        }
+    }
+    .td.col {
+       padding: $base-unit; 
+    }
+    &.no-hover {
+        .tr:hover {
+            background-color: $table-bg;
+        }
+    }
+    &.td-hover {
+        .tr:hover {
+            background-color: $table-bg;
+        }
+        .tr .td:hover {
+            background-color: $table-bg-hover;
+        }
+    }
+    
+    //No cell borders in row
+    .tr.tr-no-h-borders {
+        .td {
+            border-left: none;
+            &:first-child {
+                border-left: solid 1px $table-border-color;
+            }
+        }
+    }
+    //Attached to .table
+    &.tr-no-h-borders {
+        .td {
+            border-left: none;
+            &:first-child {
+                border-left: solid 1px $table-border-color;
+            }
+        }
+    }
+    //No cell borders in row
+    .th.th-no-h-borders {
+        .td {
+            border-left: none;
+            &:first-child {
+                border-left: solid 1px $table-border-color;
+            }
+        }
+    }
+    //No External borders to a table
+    &.tr-no-ext-borders .tr, &.tr-no-ext-borders .th, .tr.tr-no-ext-borders, .th.tr-no-ext-borders {
+        .td {
+            &:first-child {
+                border-left:none;
+                border-radius:0;
+            }
+            &:last-child {
+                border-right:none;
+                border-radius:0;
+            }
+        }
+    }
+    //No borders on table
+    &.table-no-borders {
+        .th .td,
+        .tr .td {
+            border: none;
+        }
+    }
+    //Table Row Collapse
+    &.table-sm-row {
+        @media only screen and (max-width: 480px) {
+            .tr {
+                &:hover {
+                    background-color: $table-bg;
+                }
+                &:last-child .td {
+                    border-bottom: none;
+                    &:last-child {
+                        border-bottom: solid 1px $table-border-color;
+                    }
+                }
+            }
+            .tr .td:hover {
+                background-color: $table-bg-hover;
+            }
+            .td {
+                border-left: solid 1px $table-border-color;
+                border-right: solid 1px $table-border-color;
+            }
+        }
+    }
+    &.table-md-row {
+        @media only screen and (max-width: 620px) {
+            .tr {
+                &:hover {
+                    background-color: $table-bg;
+                }
+                &:last-child .td {
+                    border-bottom: none;
+                    &:last-child {
+                        border-bottom: solid 1px $table-border-color;
+                    }
+                }
+            }
+            .tr .td:hover {
+                background-color: $table-bg-hover;
+            }
+            .td {
+                border-left: solid 1px $table-border-color;
+                border-right: solid 1px $table-border-color;
+            }
+        }
+    }
+    &.table-lg-row {
+        @media only screen and (max-width: 750px) {
+            .tr {
+                &:hover {
+                    background-color: $table-bg;
+                }
+                &:last-child .td {
+                    border-bottom: none;
+                    &:last-child {
+                        border-bottom: solid 1px $table-border-color;
+                    }
+                }
+            }
+            .tr .td:hover {
+                background-color: $table-bg-hover;
+            }
+            .td {
+                border-left: solid 1px $table-border-color;
+                border-right: solid 1px $table-border-color;
+            }
+        }
+    }
+
+}
+

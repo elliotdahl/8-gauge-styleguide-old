@@ -1,0 +1,1160 @@
+---
+title: 8 Gauge Styleguide
+---
+//this
+
+.page
+
+  
+  .margin-auto.relative
+    %section.sg-sidenav.box-shadow-2
+      .section-content.margin-auto
+        .sg-sidenav-hero.txt-c.pvxl
+          %a.raleway.type-white{:href => "/"}
+            %h1.mbn.em-ultra 8 Gauge
+          
+        %ul.list-unstyled.paxl.type-md
+          %li 
+            %a.hover-underline{:href => "#get-started"} Get Started
+          %li 
+            %a.hover-underline{:href => "#buttons"} Buttons
+          %li
+            %a.hover-underline{:href => "#inputs"} Inputs
+          %li
+            %a.hover-underline{:href => "#grids"} Grid
+          %li
+            %a.hover-underline{:href => "#tables"} Tables
+          %li
+            %a.hover-underline{:href => "#icons"} Icons
+          %li
+            %a.hover-underline{:href => "#loading-spinners"} Spinners
+
+          
+    .row.sg-content.no-gutter
+      .col-md-24
+        %section#get-started
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h3 Get Started
+            %a.button.btn-highlight.btn-lg{:href => "https://github.com/pivotal-cf/pui-css-experimental", :target => "_blank"} View Repo
+            %p.mtm.mbn Version: 0.1
+        %section#buttons
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h2.section-header Buttons
+            %p 
+              Four different button colors and their alt variations. The base 
+              %code button
+              and
+              %code .button
+              is the default ghost. You can modify it's color with a class.
+            
+            .section-format.mbxl
+              .mbxl
+                %button.btn-default 
+                  %span Default
+                %button.btn-default-alt Default Alt
+                %button Flat
+                  
+              .mbxl
+                %button.btn-highlight Highlight 
+                %button.btn-highlight-alt Highlight Alt
+                %button.btn-highlight-flat Flat
+
+              .mbxl
+                %button.btn-positive Positive
+                %button.btn-positive-alt Positive Alt
+                %button.btn-positive-flat Flat
+              %div
+                %button.btn-negative Negative
+                %button.btn-negative-alt Negative Alt
+                %button.btn-negative-flat Flat
+            
+                
+            %h4 Disabled
+            
+            .section-format.mbxl
+              .mbxl
+                %button.btn-default.disabled{:disabled => ""} Default
+                %button.btn-default-alt.disabled{:disabled => ""} Default Alt
+                %button.disabled{:disabled => ""} Flat
+              .mbxl
+                %button.btn-highlight.disabled{:disabled => ""} Highlight 
+                %button.btn-highlight-alt.disabled{:disabled => ""} Highlight Alt
+                %button.btn-highlight-flat.disabled{:disabled => ""} Flat
+
+              .mbxl
+                %button.btn-positive.disabled{:disabled => ""} Positive
+                %button.btn-positive-alt.disabled{:disabled => ""} Positive Alt
+                %button.btn-positive-flat.disabled{:disabled => ""} Flat
+              %div
+                %button.btn-negative.disabled{:disabled => ""} Negative
+                %button.btn-negative-alt.disabled{:disabled => ""} Negative Alt
+                %button.btn-negative-flat.disabled{:disabled => ""} Flat
+            %h4 Icon Buttons
+            .section-format.mbxl
+              %div
+                %button.btn-default 
+
+                  .svgicon
+                    =partial 'images/svg-lib/add.svg'
+                  %span
+                    default
+                %button.btn-default.btn-icon
+                  .svgicon
+                    =partial 'images/svg-lib/autorenew.svg'
+                %button.btn-default-alt.btn-icon
+                  .svgicon
+                    =partial 'images/svg-lib/add.svg'
+                %button.btn-positive.btn-icon
+                  .svgicon
+                    =partial 'images/svg-lib/add.svg'
+                
+              
+                
+            %h4 Button Loaders
+            .section-format.mbxl
+              
+              .mbxl
+                %button.btn-default
+                  .svgicon
+                    =partial 'images/loading/spinner-sm.svg'
+                  %span
+                    Loading
+                  
+                %button.btn-default-alt
+                  .svgicon
+                    =partial 'images/loading/spinner-sm.svg'
+                  Loading
+                  
+              .mbxl
+                %button.btn-highlight
+                  .svgicon
+                    =partial 'images/loading/spinner-sm.svg'
+                  Loading
+                %button.btn-highlight-alt
+                  .svgicon
+                    =partial 'images/loading/spinner-sm.svg'
+                  Loading
+              .mbxl
+                %button.btn-positive
+                  .svgicon
+                    =partial 'images/loading/spinner-sm.svg'
+                  Loading
+                %button.btn-positive-alt
+                  .svgicon
+                    =partial 'images/loading/spinner-sm.svg'
+                  Loading
+              %div
+                %button.btn-negative
+                  .svgicon
+                    =partial 'images/loading/spinner-sm.svg'
+                  Loading
+                %button.btn-negative-alt
+                  .svgicon
+                    =partial 'images/loading/spinner-sm.svg'
+                  Loading
+            %h4 Sizes
+            .section-format.mbxl
+              .mbxl
+                %button.btn-default.btn-sm 
+                  %div small
+                %button.btn-default default
+                %button.btn-default.btn-lg 
+                  %div large
+              .mbxl
+                %button.btn-default.btn-sm
+                  .svgicon
+                    =partial 'images/loading/spinner-sm.svg'
+                  Small Load
+                %button.btn-default
+                  .svgicon
+                    =partial 'images/loading/spinner-sm.svg'
+                  Loading
+                %button.btn-default.btn-lg
+                  .svgicon
+                    =partial 'images/loading/spinner-sm.svg'
+                  Large Load
+              %div
+                %button.btn-default.btn-sm
+                  .svgicon
+                    =partial 'images/svg-lib/add.svg'
+                  %div small
+                %button.btn-default
+                  .svgicon
+                    =partial 'images/svg-lib/add.svg'
+                  %div default
+                %button.btn-default.btn-lg
+                  .svgicon
+                    =partial 'images/svg-lib/add.svg'
+                  %div large
+            %h4 Button Groups
+            .section-format.mbxl
+              .mbxl
+                
+                .btn-group
+                  %button.btn-default-alt yes
+                  %button.btn-default> maybe
+                  %button.btn-default-alt no
+              %div
+                .btn-group
+                  %button.btn-default-alt.btn-icon
+                    .svgicon
+                      =partial 'images/svg-lib/add.svg'
+                  %button.btn-default-alt.btn-icon>
+                    .svgicon
+                      =partial 'images/svg-lib/close.svg'
+                  %button.btn-default-alt.btn-icon
+                    .svgicon
+                      =partial 'images/svg-lib/search.svg'
+            %h4 Button Group Flat
+            %p Flat Button Group
+            .section-format
+              .mbxl
+                .btn-group-flat
+                  %button.btn-icon
+                    .svgicon
+                      =partial 'images/svg-lib/chevron_left.svg'
+                  %button>
+                    3
+                  %button>
+                    4
+                  %button.btn-default>
+                    5
+                  %button.btn-icon
+                    .svgicon
+                      =partial 'images/svg-lib/chevron_right.svg'
+              .mbxl
+                .btn-group-flat
+                  %button.btn-icon
+                    .svgicon
+                      =partial 'images/svg-lib/format_align_left.svg'
+                  %button.btn-icon
+                    .svgicon
+                      =partial 'images/svg-lib/format_align_justify.svg'
+                  %button.btn-icon.btn-default
+                    .svgicon
+                      =partial 'images/svg-lib/format_align_center.svg'
+                  %button.btn-icon
+                    .svgicon
+                      =partial 'images/svg-lib/format_align_right.svg'
+              %div
+                .btn-group-flat
+                  %button>
+                    Yes
+                  %button>
+                    Maybe
+                  %button.btn-default>
+                    Kinda
+                  %button>
+                    No
+
+                
+        %section#inputs
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h2.section-header Inputs
+            .section-format.mbxl.pbl
+              %form
+                .form-group
+                  %label Email
+                  %input.form-control{:type => "email", :placeholder => "Enter email"}
+                .form-group
+                  %button.btn-default Submit
+            %h4 Row Form (single column)
+            .section-format.mbxl.pbl
+              .form-group.left
+                %label Email
+                %input.form-control{:type => "email", :placeholder => "Email"}
+            
+              .form-group.left
+                %label Password
+                %input.form-control{:type => "password", :placeholder => "Password"}
+            
+              .form-group.left
+                
+                %button.btn-default.mtxxxl Submit
+              .clear
+            %h4 Inline Single Row
+            .section-format.mbxl.pbl
+              %form
+                .form-group.form-inline
+                  %label Email
+                .form-group.form-inline
+                  %input.form-control{:type => "email", :placeholder => "Enter email"}
+                .form-group.form-inline
+                  %button.btn-default Submit
+            %h4 Disabled
+            .section-format.mbxl.pbl
+              %form
+                .form-group
+                  %label Email
+                  %input.form-control.disabled{:type => "email", :placeholder => "Enter email", :disabled => ""}
+                .form-group
+                  %button.btn-default.disabled{:disabled => ""} Submit
+            %h4 Large
+            .section-format.mbxl.pbl
+              %form
+                .form-group.form-lg
+                  %label Large
+                  %input.form-control{:type => "text", :placeholder => "Larger"}
+                .form-group.form-lg
+                  %button.btn-default.btn-lg Large Btn
+            %h4 Select
+            .section-format.mbxl.pbl
+              %form
+                .form-group.form-group-select
+                  %select.form-control
+                    %option Pivotal
+                    %option Google
+                    %option Yahoo
+                    %option Microsoft-Linkedin
+                  .svgicon
+                    =partial 'images/svg-lib/select_chevrons.svg'
+            %h4 Dropdown
+            .section-format.mbxl.pbl
+              %form
+                .form-group.form-group-select
+                  .dropdown.form-control
+                    Drop to the down
+                  .svgicon
+                    =partial 'images/svg-lib/chevron_down.svg'
+            %h4 Search
+            .section-format.mbxl.pbl
+              %form
+                .form-group.form-group-search
+                  %input{:type => "search", :placeholder => "Search..."}
+                  .svgicon
+                    =partial 'images/svg-lib/search.svg'
+            %h4 Text Area
+            .section-format.mbxl.pbl
+              %form
+                .form-group
+                  %textarea{:placeholder => "Type body here..."}
+            %h4 Radio/Checkbox
+            .section-format.mbxl.pbl
+              %form
+                .form-group
+                  %input{:type => "checkbox"}
+                  Remember Me
+                .form-group
+                  %input{:type => "radio"}
+                  Don't Remember me
+            %h4 Error/Acceptance States
+            %p Click on the red "x" in the error state to clear the form field and rest the error.
+            .section-format.mbxl.pbl
+              %form
+                .form-group.form-inline
+                  %input.invalid{:type => "text", :placeholder => "Enter text", :value => "Wrong Answer"}
+                  .svgicon.invalid
+                    =partial 'images/svg-lib/close.svg'
+                  .invalid-text Error please try again
+                .form-group.form-inline
+                  %input.valid{:type => "text", :placeholder => "Enter text", :value => "Right Answer"}
+                  .svgicon.valid
+                    =partial 'images/svg-lib/check_circle.svg'
+                .form-group.form-inline
+                  %input.loader{:type => "text", :placeholder => "Enter text", :value => "Hold up..."}
+                  .svgicon.loading
+                    =partial 'images/loading/spinner-sm.svg'
+            %h4 Simple Forms
+            %p Iron out simple use case.
+            .section-format.mbxl.pbl
+              %form.simple-form
+                .form-group.form-inline
+                  %input.form-control{:type => "email", :placeholder => "Enter email"}
+                .form-group.form-inline
+                  %input.form-control.disabled{:type => "email", :value => "disabled"}
+                .form-group.form-inline
+                  %input.invalid{:type => "text", :placeholder => "Enter text", :value => "Wrong Answer"}
+                  .svgicon.invalid
+                    =partial 'images/svg-lib/close.svg'
+                  .invalid-text Error please try again
+        %section#grids
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h2.section-header Flexbox Grid 
+            .grid.mvxl
+              .col
+                .sg-box
+                  Column 
+              .col
+                .sg-box
+                  Column
+              .col
+                .sg-box
+                  Column  
+            %h4 No Gutters
+            %p 
+              Adding 
+              %code .grid-nogutters
+              onto the 
+              %code .grid
+              element will remove negative margins and remove internal padding to every
+              %code .col
+              inside of it.
+            .grid.grid-nogutter.mvxl
+              .col
+                .sg-box
+                  Column 
+              .col
+                .sg-box
+                  Column
+              .col
+                .sg-box
+                  Column   
+            %h4 Vertical Alignments
+            %p
+              Adding the following modifier classes to the 
+              %code .col
+              will allow you to change vertical alignment of the column itself
+            .grid.mvxl
+              .col.col-align-top
+                .sg-box
+                  %code .col-align-top
+              .col.col-align-middle
+                .sg-box
+                  %code .col-align-middle
+              .col
+                .sg-box
+                  Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet.
+              .col.col-align-bottom
+                .sg-box
+                  %code .col-align-bottom
+            %h4 Horizontal Alignments
+            %p
+              Adding the following modifiers to change influence where columns will collect inside of the grid.
+            .grid.grid-start
+              .col.col-12
+                .sg-box
+                  %code .grid-start .col
+            .grid.grid-center
+              .col.col-12
+                .sg-box
+                  %code .grid-center .col
+                  
+            .grid.grid-end
+              .col.col-12
+                .sg-box
+                  %code .grid-end .col
+              
+            %h4 Distribution
+            %p
+              Adding the following modifiers to the
+              %code .grid
+              will change the distribution of defined width columns.
+            .grid.grid-around
+              .col.col-5
+                .sg-box
+                  %code .grid-around .col.col-5
+              .col.col-5
+                .sg-box
+                  %code .grid-around .col.col-5
+              .col.col-5
+                .sg-box
+                  %code .grid-around .col.col-5
+            .grid.grid-between
+              .col.col-5
+                .sg-box
+                  %code .grid-between .col.col-5
+              .col.col-5
+                .sg-box
+                  %code .grid-between .col.col-5
+              .col.col-5
+                .sg-box
+                  %code .grid-between .col.col-5
+                  
+            %h4 Ordering
+            %p
+              Adding 
+              %code .col-first
+              or
+              %code .col-last
+              to a 
+              %code .col
+              will reorder the selected column.
+              Modifying 
+              %code .grid.grid-reverse
+              will reverse the order of the columns inside of the grid.
+            .grid
+              .col
+                .sg-box
+                  1
+              .col
+                .sg-box
+                  2
+              .col
+                .sg-box
+                  3
+              .col.col-first
+                .sg-box
+                  4
+                  %code .col-first
+            .grid
+              .col.col-last
+                .sg-box
+                  1
+                  %code .col-last
+              .col
+                .sg-box
+                  2
+              .col
+                .sg-box
+                  3
+              .col
+                .sg-box
+                  4
+            .grid.grid-reverse
+              .col
+                .sg-box
+                  1
+                  %code .grid-reverse .col
+              .col
+                .sg-box
+                  2
+                  %code .grid-reverse .col
+              .col
+                .sg-box
+                  3
+                  %code .grid-reverse .col
+              .col
+                .sg-box
+                  4
+                  %code .grid-reverse .col
+                  
+              
+            
+            %h4 Percent Based Column Widths
+            %p
+              Adding a column number modifier class to the column like
+              %code .col.col-4
+              to get the percentage of 4/24 columns. Additional columns without modifier classes will be auto scaled.
+            .grid.mvxl
+              .col.col-12
+                .sg-box
+                  50% with 
+                  %code .col-12
+
+              .col
+                .sg-box
+                  Auto
+              .col
+                .sg-box
+                  Auto
+              .col
+                .sg-box
+                  Auto
+            .grid.mvxl
+              .col.col-4
+                .sg-box 
+                  %code .col-4
+              .col.col-4
+                .sg-box 
+                  %code .col-4
+              .col.col-8
+                .sg-box 
+                  %code .col-8
+              
+              .col.col-4
+                .sg-box 
+                  %code .col-4
+              .col.col-4
+                .sg-box 
+                  %code .col-4
+            %h4 Fixed Width Columns
+            %p
+              Adding 
+              %code .col-fixed
+              to your 
+              %code .col
+              will allow you to style a fixed width. When used with % based width columns they will still derive their width from the total grid width. 
+            .grid.mvxl
+              .col.col-fixed{:style => "width:175px;"}
+                .sg-box
+                  Fixed 175px
+              .col
+                .sg-box
+                  Auto
+              .col.col-12
+                .sg-box
+                  %code .col-12
+              
+            %h4 Offset Columns
+            %p
+              Adding a column number offset modifier class to the column like
+              %code .col.col-offset-4
+              to get the percentage of 4/24 column offset.
+            .grid.mvxl
+              .col
+                .sg-box
+                  Auto
+
+              .col.col-offset-4
+                .sg-box
+                  Auto + Offset 4 columns to left
+              .col
+                .sg-box
+                  Auto
+              .col
+                .sg-box
+                  Auto
+            %h4 Nested Columns
+            %p
+              Nested columns shown below have objects inside of them that have their own paddings. If you need to adjust columns you can use 
+              %code .grid-nogutter
+              or whitespacing classes.
+            .grid.mvxl
+              .col
+                .sg-box
+                  Auto
+              .col
+                .sg-box
+                  .grid.mbn
+                    .col
+                      .sg-box.bg-dark-8
+                        Child Col
+                    .col
+                      .sg-box.bg-dark-8
+                        Child Col
+            
+            %h4 Multi Media Break Columns
+            %p Mix all the cols 
+            .grid.grid-lg.grid-md.mvxl
+              .col.col-md
+                .sg-box
+                  %code .col-md 
+              .col.col-md
+                .sg-box
+                  %code .col-md
+              .col.col-md.col-lg
+                .sg-box
+                  %code .col-md.col-lg
+              .col.col-md.col-lg
+                .sg-box
+                  %code .col-md.col-lg 
+            %h4 Small Media Break
+            %p 
+              Add the small grid break modifier class
+              %code .grid.grid-sm
+              and add the column modifier class to the desired columns
+              %code .col.col-sm
+            .grid.grid-sm.mvxl
+              .col
+                .sg-box
+                  Column 
+              .col
+                .sg-box
+                  Column
+              .col.col-sm
+                .sg-box
+                  %code .col-sm
+              .col.col-sm
+                .sg-box
+                  %code .col-sm 
+            %h4 Medium Media Break
+            %p 
+              Add the medium grid break modifier class
+              %code .grid.grid-md
+              and add the column modifier class to the desired columns
+              %code .col.col-md
+            .grid.grid-md.mvxl
+              .col
+                .sg-box
+                  Column 
+              .col
+                .sg-box
+                  Column
+              .col.col-md
+                .sg-box
+                  %code .col-md
+              .col.col-md
+                .sg-box
+                  %code .col-md
+            %h4 Large Media Break
+            %p 
+              Add the large grid break modifier class
+              %code .grid.grid-lg
+              and add the column modifier class to the desired columns
+              %code .col.col-lg
+            .grid.grid-lg.mvxl
+              .col
+                .sg-box
+                  Column 
+              .col
+                .sg-box
+                  Column
+              .col.col-lg
+                .sg-box
+                  %code .col-lg
+              .col.col-lg
+                .sg-box
+                  %code .col-lg 
+        %section#tables
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h2.section-header Tables
+            %p 
+              This table has 
+              %code .box-shadow-key-1
+              and
+              %code .grid-nogutter
+              on the grid rows. Examples of top and bottom cell alignment, row hovers, and colspans.
+            .table.box-shadow-key-1
+              .th.grid
+                .td.col.col-2
+                  Header 1
+                .td.col.col-2
+                  Header 2
+                .td.col.col-4
+                  Header 3
+                .td.col.col-8
+                  Header 4
+                .td.col.col-8
+                  Header 5
+              .tr.grid
+                .td.col.col-2
+                  %div Cell 1
+                  %div Cell 1.2
+                .td.col.col-2
+                  %div Cell 2
+                  %div Cell 2.1
+                  %div Cell 2.2
+                .td.col.col-4.col-top
+                  Cell 3 .col-top
+                .td.col.col-8.col-bottom
+                  Cell 4 .col-bottom
+                .td.col.col-8
+                  Cell 5
+              .tr.grid
+                .td.col.col-2
+                  Cell 1
+                .td.col.col-2
+                  %div Cell 2
+                  %div Cell 2.2
+                .td.col.col-4
+                  .type-ellipsis
+                    Ellipsis-example-HotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlinebling
+                .td.col
+                  Cell 4 + 5 (auto width)
+
+              
+            %h4 Table Borders and Hovers
+            %p 
+              This table has no box-shadow or hovers. The 
+              %code .no-hover 
+              class can be applied to the entire table or a specific row.
+            .table.no-hover
+              .th.grid
+                .td.col.col-4
+                  Header 1
+                .td.col.col-2
+                  Header 2
+                .td.col.col-4
+                  Header 3
+                .td.col.col-6
+                  Header 4
+                .td.col.col-8
+                  Header 5
+              .tr.grid
+                .td.col.col-4
+                  %code table.no-hover
+                .td.col.col-2
+                  Cell 2
+                .td.col.col-4
+                  Cell 3
+                .td.col.col-6
+                  Cell 4
+                .td.col.col-8
+                  Cell 5
+            .table
+              .th.grid
+                .td.col.col-4
+                  Header 1
+                .td.col.col-2
+                  Header 2
+                .td.col.col-4
+                  Header 3
+                .td.col.col-6
+                  Header 4
+                .td.col.col-8
+                  Header 5
+              .tr.grid.no-hover
+                .td.col.col-4
+                  %code .tr.no-hover
+                .td.col.col-2
+                  Cell 2
+                .td.col.col-4
+                  Cell 3
+                .td.col.col-6
+                  Cell 4
+                .td.col.col-8
+                  Cell 5
+              .tr.grid
+                .td.col.col-4
+                  %code .tr
+                .td.col.col-2
+                  Cell 2
+                .td.col.col-4
+                  Cell 3
+                .td.col.col-6
+                  Cell 4
+                .td.col.col-8
+                  Cell 5
+            %p 
+              No side borders to cells using class 
+              %code .tr-no-h-borders 
+              on the 
+              %code .tr 
+              or
+              %code .table
+              or
+              %code .th
+            .table.tr-no-h-borders
+              .th.grid
+                .td.col.col-2
+                  Header 1
+                .td.col.col-2
+                  Header 2
+                .td.col.col-4
+                  Header 3
+                .td.col.col-8
+                  Header 4
+                .td.col.col-8
+                  Header 5
+              .tr.grid
+                .td.col.col-2
+                  Cell 1
+                .td.col.col-2
+                  Cell 2
+                .td.col.col-4
+                  Cell 3 
+                .td.col.col-8
+                  Cell 4
+                .td.col.col-8
+                  Cell 5
+              .tr.grid
+                .td.col.col-2
+                  Cell 1
+                .td.col.col-2
+                  Cell 2
+                .td.col.col-4
+                  Cell 3 
+                .td.col.col-8
+                  Cell 4
+                .td.col.col-8
+                  Cell 5
+            %p 
+              No external borders to cells using class 
+              %code .tr-no-ext-borders 
+              on the 
+              %code .tr 
+              or
+              %code .table
+              or
+              %code .th
+            .table.tr-no-ext-borders
+              .th.grid
+                .td.col.col-2
+                  Header 1
+                .td.col.col-2
+                  Header 2
+                .td.col.col-4
+                  Header 3
+                .td.col.col-8
+                  Header 4
+                .td.col.col-8
+                  Header 5
+              .tr.grid.tr-no-h-borders
+                .td.col.col-2
+                  Cell 1
+                .td.col.col-2
+                  Cell 2
+                .td.col.col-4
+                  Cell 3 
+                .td.col.col-8
+                  Cell 4
+                .td.col.col-8
+                  Cell 5
+            %p 
+              No borders on anything. Individual cell highlights. Add
+              %code .td-hover
+              to
+              %code .table
+            .table.table-no-borders.td-hover
+              .th.grid
+                .td.col.col-2
+                  Header 1
+                .td.col.col-2
+                  Header 2
+                .td.col.col-4
+                  Header 3
+                .td.col.col-8
+                  Header 4
+                .td.col.col-8
+                  Header 5
+              .tr.grid
+                .td.col.col-2
+                  Cell 1
+                .td.col.col-2
+                  Cell 2
+                .td.col.col-4
+                  Cell 3 
+                .td.col.col-8
+                  Cell 4
+                .td.col.col-8
+                  Cell 5
+              .tr.grid
+                .td.col.col-2
+                  Cell 1
+                .td.col.col-2
+                  Cell 2
+                .td.col.col-4
+                  Cell 3 
+                .td.col.col-8
+                  Cell 4
+                .td.col.col-8
+                  Cell 5
+            %h4 Table Linking
+            %p Row A tags and cell A tags. Apply the proper classes directly to the A tag. 
+            .table
+              .th.grid
+                .td.col.col-2
+                  Header 1
+                .td.col.col-2
+                  Header 2
+                .td.col.col-4
+                  Header 3
+                .td.col.col-8
+                  Header 4
+                .td.col.col-8
+                  Header 5
+              .tr.grid
+                .td.col.col-2
+                  Cell 1
+                .td.col.col-2
+                  Cell 2
+                .td.col.col-4
+                  Cell 3 
+                .td.col.col-8
+                  Cell 4
+                %a.td.col.col-8{:href => "#tables", :title => "Everyone Can Read It"}
+                  Cell 5
+              %a.tr.grid{:href => "#tables", :title => "Everyone Can Read It"}
+                
+                .td.col.col-24
+                  Cell 24
+            
+            %h4 Table Breaks
+            %p 
+              Large Column breaks (750px) Collapse Rows add
+              %code .table-lg-row 
+              to the 
+              %code .table
+            .table.table-lg-row
+              .tr.grid
+                .td.col.col-lg.col-2
+                  Cell 1
+                .td.col.col-lg.col-2
+                  Cell 2
+                .td.col.col-lg.col-4
+                  Cell 3 
+                .td.col.col-lg.col-8
+                  Cell 4
+                .td.col.col-lg.col-8
+                  Cell 5
+              .tr.grid
+                .td.col.col-lg.col-2
+                  Cell 1
+                .td.col.col-lg.col-2
+                  Cell 2
+                .td.col.col-lg.col-4
+                  Cell 3 
+                .td.col.col-lg.col-8
+                  Cell 4
+                .td.col.col-lg.col-8
+                  Cell 5
+            %p 
+              Medium Column breaks (620px) Collapse Rows add 
+              %code .table-md-row 
+              to the 
+              %code .table
+            .table.table-md-row
+              .tr.grid
+                .td.col.col-md.col-2
+                  Cell 1
+                .td.col.col-md.col-2
+                  Cell 2
+                .td.col.col-md.col-4
+                  Cell 3 
+                .td.col.col-md.col-8
+                  Cell 4
+                .td.col.col-md.col-8
+                  Cell 5
+              .tr.grid
+                .td.col.col-md.col-2
+                  Cell 1
+                .td.col.col-md.col-2
+                  Cell 2
+                .td.col.col-md.col-4
+                  Cell 3 
+                .td.col.col-md.col-8
+                  Cell 4
+                .td.col.col-md.col-8
+                  Cell 5
+            %p
+              Small Column breaks (480px) Collapse Rows add 
+              %code .table-sm-row 
+              to the 
+              %code .table
+            .table.table-sm-row
+              .tr.grid
+                .td.col.col-sm.col-2
+                  Cell 1
+                .td.col.col-sm.col-2
+                  Cell 2
+                .td.col.col-sm.col-4
+                  Cell 3 
+                .td.col.col-sm.col-8
+                  Cell 4
+                .td.col.col-sm.col-8
+                  Cell 5
+              .tr.grid
+                .td.col.col-sm.col-2
+                  Cell 1
+                .td.col.col-sm.col-2
+                  Cell 2
+                .td.col.col-sm.col-4
+                  Cell 3 
+                .td.col.col-sm.col-8
+                  Cell 4
+                .td.col.col-sm.col-8
+                  Cell 5
+            %h4 Table Testing Ground
+            %p 
+              Testing stuff
+            .table
+              .th.grid
+                .td.col.col-6
+                  Header 1
+                .td.col.col-6
+                  Header 1
+                .td.col.col-6
+                  Header 1
+                .td.col.col-6
+                  Header 1
+              .tr.grid
+                .td.col.col-6
+                  Cell 1
+                .td.col.col-6
+                  Cell 1
+                .td.col.col-6
+                  Cell 1
+                .td.col.col-6
+                  Cell 1
+              .tr.grid
+                .td.col.col-6
+                  %div
+                    .svgicon
+                      =partial 'images/svg-lib/select_chevrons.svg'
+                    Up or Down
+                    %div Stuff
+                .td.col.col-6
+                  %div
+                    Cell 1
+                    %img{:src => "images/placeholder.png"}
+                    %img{:src => "images/placeholder.png"}
+                  %div
+                    %img{:src => "images/placeholder.png"}
+                  
+                .td.col.col-6.col-middle
+                  Cell 1
+                .td.col.col-6
+                  Cell 1
+
+            
+
+            
+
+        %section#icons
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h2.section-header Icons
+            %p 
+              View 
+              %a{:href => "http://pivotalicons.cfapps.io/", :target => "_blank"} 
+                Pivotal SVG Icon Library
+            .row.mvxl
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/select_chevrons.svg'
+                .sg-icon-label
+                  select_chevrons
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/chevron_up.svg'
+                .sg-icon-label
+                  chevron_up
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/chevron_down.svg'
+                .sg-icon-label
+                  chevron_down
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/open_in_new.svg'
+                .sg-icon-label
+                  open_in_new
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/add.svg'
+                .sg-icon-label
+                  add
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/copy.svg'
+                .sg-icon-label
+                  copy
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/close.svg'
+                .sg-icon-label
+                  close
+            %div{:style => "font-size:18px;"}
+              My favorite icon is 
+              .svgicon
+                =partial 'images/svg-lib/copy.svg'
+            %div{:style => "font-size:18px;"}
+              My favorite icon is 
+              .svgicon
+                =partial 'images/svg-lib/chevron_left.svg'
+            %div{:style => "font-size:18px;"}
+              My favorite icon is 
+              .svgicon
+                =partial 'images/svg-lib/add.svg'
+              because it is
+            %div{:style => "font-size:18px;"}
+              My favorite icon is 
+              .svgicon
+                =partial 'images/svg-lib/open_in_new.svg'
+              because it is
+            %div{:style => "font-size:18px;"}
+              My favorite icon is 
+              %i.fa.fa-plus
+              because it is
+            %div{:style => "font-size:18px;"}
+              My favorite icon is 
+              %div{:style => "display:inline-block;width:1em;height:1em;background-color:blue;"}
+              because it is
+                
+        %section#loading-spinners
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h2.section-header Spinners
+            .section-format.mbxl
+              .row.no-gutter.mvxl
+                .col-sm-8.txt-c
+                  .svgicon{:style => "font-size:100px;"}
+                    =partial 'images/loading/spinner.svg'
+                  
+                  
+                .col-sm-8.txt-c
+                  .svgicon{:style => "font-size:50px;"}
+                    =partial 'images/loading/spinner-md.svg'
+                .col-sm-8.txt-c
+                  .svgicon{:style => "font-size:16px;"}
+                    =partial 'images/loading/spinner-sm.svg'
+             
+        
