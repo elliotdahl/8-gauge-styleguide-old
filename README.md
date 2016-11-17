@@ -1,26 +1,20 @@
 #8 Gauge Styleguide
 The 8pt CSS Framework
 
-Middleman Site
+Start middleman local server
+```$ Middleman Server```
 
-```Middleman Server```
-
-```Middleman Build```
+Build source files
+```$ Middleman Build```
 
 Components:
-- Dropdown
-- SVG icon system
-- CSS Tables (flexbox)
-
-Elements:
 - Buttons
 - Inputs
 - SVG icon system
 - SVG Spinner
 - Flexbox grid
 - Typography
-
-
-Modifier Classes:
+- SVG icon system
+- CSS Tables (flexbox)
 - Whitespace
 - Box Shadow
