@@ -79,21 +79,18 @@ p {
 
 /* Sizes
 -------------------------------------------*/
+// ex: type-sm = font-size: 14px;
+$font-sizes: (
+  (xs, 12px),
+  (sm, 14px),
+  (md, 16px),
+  (lg, 18px)
+);
 
-.type-xs {
-    font-size: 12px;
-}
-
-.type-sm {
-    font-size: 14px;
-}
-
-.type-md {
-    font-size: 16px;
-}
-
-.type-lg {
-    font-size: 18px;
+@each $f, $font-size in $font-sizes {
+  .type-#{$f}{
+    font-size: $font-size
+  }
 }
 
 //Ellipsis
@@ -109,17 +106,17 @@ p {
 
 /* Alignment
 -------------------------------------------*/
+// ex: txt-r = text-align: right;
+$txt-directions: (
+  (l, left),
+  (r, right),
+  (c, center)
+);
 
-.txt-c {
-    text-align: center;
-}
-
-.txt-r {
-    text-align: right;
-}
-
-.txt-l {
-    text-align: left;
+@each $d, $txt-direction in $txt-directions {
+  .txt-#{$d}{
+    text-align: $txt-direction
+  }
 }
 
 
