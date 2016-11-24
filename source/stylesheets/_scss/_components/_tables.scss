@@ -127,7 +127,7 @@
     }
     //Table Row Collapse
     &.table-sm-row {
-        @media only screen and (max-width: 480px) {
+        @media only screen and (max-width: $screen-sm) {
             .tr {
                 &:hover {
                     background-color: $table-bg;
@@ -149,7 +149,7 @@
         }
     }
     &.table-md-row {
-        @media only screen and (max-width: 620px) {
+        @media only screen and (max-width: $screen-md) {
             .tr {
                 &:hover {
                     background-color: $table-bg;
@@ -171,7 +171,7 @@
         }
     }
     &.table-lg-row {
-        @media only screen and (max-width: 750px) {
+        @media only screen and (max-width: $screen-lg) {
             .tr {
                 &:hover {
                     background-color: $table-bg;

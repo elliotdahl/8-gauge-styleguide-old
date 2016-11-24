@@ -421,7 +421,7 @@
 //////////////////
 //Media Queries
 //////////////////
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: $screen-sm) {
     // .grid-sm {
         .col-sm {
             flex: 100%;
@@ -430,7 +430,7 @@
     // }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: $screen-md) {
     // .grid-md {
         .col-md {
             flex: 100%;
@@ -439,7 +439,7 @@
     // }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: $screen-lg) {
     // .grid-lg {
         .col-lg {
             flex: 100%;
