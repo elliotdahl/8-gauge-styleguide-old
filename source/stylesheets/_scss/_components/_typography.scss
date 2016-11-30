@@ -44,25 +44,23 @@ h1 {
     font-size: 32px;
     //line-height: 32px;
     line-height: 1;
-    letter-spacing: -.1rem;
+    letter-spacing: -.5px;
 }
 
 h2 {
     font-size: 24px;
     line-height: 32px;
-    letter-spacing: -.1rem;
+    letter-spacing: -.5px;
 }
 
 h3 {
     font-size: 20px;
     line-height: 32px;
-    letter-spacing: -.1rem;
 }
 
 h4 {
     font-size: 18px;
     line-height: 24px;
-    letter-spacing: -.08rem;
 }
 
 h5 {
@@ -74,7 +72,7 @@ h5 {
 h6 {
     font-size: 13px;
     line-height: 20px;
-    letter-spacing: 0;
+    letter-spacing: .25px;
 }
 
 p {
@@ -91,18 +89,23 @@ p {
 
 .type-xs {
     font-size: 12px;
+    line-height: 20px;
+    letter-spacing: .25px;
 }
 
 .type-sm {
     font-size: 14px;
+    line-height: 20px;
 }
 
 .type-md {
     font-size: 16px;
+    line-height: 24px;
 }
 
 .type-lg {
     font-size: 18px;
+    line-height: 24px;
 }
 
 //Ellipsis
@@ -136,26 +139,24 @@ p {
 -------------------------------------------*/
 
 .em-low {
-    font-weight: 300
+    font-weight: 300;
 }
 
-.em-normal {
-    font-weight: 400
-}
-
-.em-semi {
-    font-weight: 600
+.em-default {
+    font-weight: 400;
 }
 
 .em-high {
-    font-weight: 700
+    font-weight: 600;
 }
-.em-super {
-    font-weight: 900
+
+.em-max {
+    font-weight: 700;
 }
-.em-ultra {
-    font-weight: 900
-}
+
+// .em-ultra {
+//     font-weight: 900
+// }
 
 .em-alt {
     text-transform: uppercase;
