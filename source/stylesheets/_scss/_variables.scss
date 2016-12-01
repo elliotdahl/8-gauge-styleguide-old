@@ -215,14 +215,11 @@ $duration: 2s;
 // Tables
 // -------------------------
 // table fonts and colors
-$table-header-color: $dark-6;
-$table-header-font-size: 13px;
-$table-header-font-weight: 700;
-$table-header-text-transform: uppercase;
-
-// table spacing and bgs
-$table-cell-padding:                 8px;
-// $table-condensed-cell-padding:       5px !default;
+$table-header-color: inherit;
+// $table-header-color: $dark-6;
+$table-header-font-size: 14px;
+$table-header-font-weight: 600;
+//$table-header-text-transform: uppercase;
 
 $table-bg:                           transparent !default; // overall background-color
 $table-bg-accent:                    $dark-10; // for striping
@@ -230,9 +227,7 @@ $table-bg-hover:                     $dark-11;
 $table-bg-active:                    $table-bg-hover !default;
 
 $table-border-color:                 $dark-9; // table and cell border
-
-// $table-standard-header-bg:           $neutral-3;
-// $table-standard-border-color:        $neutral-9;
+$table-border-header-color:			 $dark-7;
 
 //Screen Sizes
 $screen-sm: 480px;

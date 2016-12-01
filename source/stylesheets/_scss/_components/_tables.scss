@@ -9,10 +9,14 @@
     .th {
         font-size: $table-header-font-size;
         font-weight: $table-header-font-weight;
-        text-transform: $table-header-text-transform;
+        //text-transform: $table-header-text-transform;
         color: $table-header-color;
         .td {
             border-bottom: solid 1px $table-border-color;
+            &:after {
+                content:"";
+
+            }
         }
         &:first-child .td {
             &:first-child {
@@ -22,6 +26,10 @@
                 border-radius: 0 2px 0 0;
             }
         }
+        //Following TR should have no border on top
+        // ~ .tr .td {
+        //     border-top:none;
+        // }
     }
     //Table Row
     .tr {
@@ -40,6 +48,7 @@
         &.no-hover {
             background-color: $table-bg;
         }
+        
     }
     //Table Cell
     
