@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-family: $font-family-sans-serif;
     font-size:16px;
     /* currently ems cause chrome bug misinterpreting rems on body element */
     line-height: 24px;
