@@ -33,7 +33,7 @@ input[type="button"] {
     transition-property: background-color, color, opacity, border;
     .svgicon {
         font-size: 18px;
-        padding: 0 5px 0 0;
+        margin: 0 5px 0 0;
         fill: $btn-default-color;
     }
 
@@ -50,7 +50,7 @@ input[type="button"] {
 button.btn-icon {
     padding: 0;
     .svgicon {
-        padding:5px;
+        margin:5px;
     }
 }
 

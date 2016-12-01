@@ -1080,71 +1080,78 @@ title: 8 Gauge Styleguide
               View 
               %a{:href => "http://pivotalicons.cfapps.io/", :target => "_blank"} 
                 Pivotal SVG Icon Library
-            .row.mvxl
-              .sg-icon-tile
+            .grid.mvxl
+              .col.sg-icon-tile
                 .svgicon
                   =partial 'images/svg-lib/select_chevrons.svg'
                 .sg-icon-label
                   select_chevrons
-              .sg-icon-tile
+              .col.sg-icon-tile
                 .svgicon
                   =partial 'images/svg-lib/chevron_up.svg'
                 .sg-icon-label
                   chevron_up
-              .sg-icon-tile
+              .col.sg-icon-tile
                 .svgicon
                   =partial 'images/svg-lib/chevron_down.svg'
                 .sg-icon-label
                   chevron_down
-              .sg-icon-tile
+              .col.sg-icon-tile
                 .svgicon
                   =partial 'images/svg-lib/open_in_new.svg'
                 .sg-icon-label
                   open_in_new
-              .sg-icon-tile
+              .col.sg-icon-tile
                 .svgicon
                   =partial 'images/svg-lib/add.svg'
                 .sg-icon-label
                   add
-              .sg-icon-tile
+              .col.sg-icon-tile
                 .svgicon
                   =partial 'images/svg-lib/copy.svg'
                 .sg-icon-label
                   copy
-              .sg-icon-tile
+              .col.sg-icon-tile
                 .svgicon
                   =partial 'images/svg-lib/close.svg'
                 .sg-icon-label
                   close
-            %div{:style => "font-size:18px;"}
-              My favorite icon is 
-              .svgicon
-                =partial 'images/svg-lib/copy.svg'
-            %div{:style => "font-size:18px;"}
-              My favorite icon is 
-              .svgicon
-                =partial 'images/svg-lib/chevron_left.svg'
-            %div{:style => "font-size:18px;"}
-              My favorite icon is 
-              .svgicon
-                =partial 'images/svg-lib/add.svg'
-              because it is
-            %div{:style => "font-size:18px;"}
-              My favorite icon is 
-              .svgicon
-                =partial 'images/svg-lib/open_in_new.svg'
-              because it is
-            %div{:style => "font-size:18px;"}
-              My favorite icon is 
-              %i.fa.fa-plus
-              because it is
-            %div{:style => "font-size:18px;"}
-              My favorite icon is 
-              %div{:style => "display:inline-block;width:1em;height:1em;background-color:blue;"}
-              because it is
+            %h4 SVGs align to text
+            %p 
+              Adding 
+              %code .svg-baseline
+              to to the 
+              %code .svgicon
+              class absolute positions the icon -0.2ems from the bottom allowing it to align to text properly
+            .section-format.mbxl
+              %h2
+                My favorite icon is 
+                .svgicon.svg-baseline
+                  =partial 'images/svg-lib/open_in_new.svg'
+                because it aligns to H2
+              %div{:style => "font-size:18px;"}
+                My favorite icon is 
+                .svgicon.svg-baseline
+                  =partial 'images/svg-lib/open_in_new.svg'
+                because it aligns to 18px
+              %div{:style => "font-size:16px;"}
+                My favorite icon is 
+                .svgicon.svg-baseline
+                  =partial 'images/svg-lib/open_in_new.svg'
+                because it aligns to 16px
+              %div{:style => "font-size:14px;"}
+                My favorite icon is 
+                .svgicon.svg-baseline
+                  =partial 'images/svg-lib/open_in_new.svg'
+                because it aligns to 14px
+              %div{:style => "font-size:12px;"}
+                My favorite icon is 
+                .svgicon.svg-baseline
+                  =partial 'images/svg-lib/open_in_new.svg'
+                because it aligns to 12px
                 
         %section#loading-spinners
-          .section-content.margin-auto.paxl.mdl-color--white
+          .section-content.margin-auto.paxl
             %h2.section-header Spinners
             .section-format.mbxl
               .row.no-gutter.mvxl
