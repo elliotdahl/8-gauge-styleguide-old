@@ -1158,17 +1158,22 @@ title: 8 Gauge Styleguide
         %section#loading-spinners
           .section-content.margin-auto.paxl
             %h2.section-header Spinners
+            %p The spinner levels are determined by their size. The base spinner is 100px+ and therfore moves slower. The small spinner is under 16px and so it moves faster and more dramatic. These sizes are defined here to help you in the creation of custom components. Spinner size and speed are already written into buttons and inputs. 
             .section-format.mbxl
-              .row.no-gutter.mvxl
-                .col-sm-8.txt-c
+              .grid.mvxl
+                .col.txt-c
+                  .mbxl
+                    %code .spinner
                   .svgicon{:style => "font-size:100px;"}
                     =partial 'images/loading/spinner.svg'
-                  
-                  
-                .col-sm-8.txt-c
+                .col.txt-c
+                  .mbxl
+                    %code .spinner-md
                   .svgicon{:style => "font-size:50px;"}
                     =partial 'images/loading/spinner-md.svg'
-                .col-sm-8.txt-c
+                .col.txt-c
+                  .mbxl
+                    %code .spinner-sm
                   .svgicon{:style => "font-size:16px;"}
                     =partial 'images/loading/spinner-sm.svg'
              
