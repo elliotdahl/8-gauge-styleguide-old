@@ -33,18 +33,13 @@ input[type="button"] {
     transition-property: background-color, color, opacity, border;
     .svgicon {
         font-size: 18px;
-        padding: 2px;
+        padding: 0 5px 0 0;
         fill: $btn-default-color;
     }
-    .spinner,
-    .spinner-md,
-    .spinner-sm {
-        margin-right: 2px;
-    }
+
     &:hover,
     &:focus,
     &:hover:focus {
-        //color: $btn-default-color-focus;
         outline: none;
         .svgicon {
             fill: $btn-default-color-focus;
@@ -53,7 +48,10 @@ input[type="button"] {
 }
 
 button.btn-icon {
-    padding: 0 3px;
+    padding: 0;
+    .svgicon {
+        padding:5px;
+    }
 }
 
 .btn-lg {
