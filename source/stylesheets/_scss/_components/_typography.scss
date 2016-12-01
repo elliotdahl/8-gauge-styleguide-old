@@ -11,6 +11,11 @@ body {
     color: $dark-2;
 }
 
+//Font bug fix
+input, textarea, keygen, select, button {
+    font-family: $font-family-sans-serif;
+}
+
 .page {
     font-size: 14px;
 }
