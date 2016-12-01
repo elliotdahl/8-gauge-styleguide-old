@@ -1,3 +1,5 @@
+//Need to validate if this should go in Styleguide.scss
+
 .page {
     position: relative;
 }
@@ -15,6 +17,7 @@ section {
     width: 100%;
     padding-bottom: $base-unit;
     //border-bottom: solid 1px $table-border-color;
+    font-weight: 600;
 }
 
 .section-format {
