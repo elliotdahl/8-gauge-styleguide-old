@@ -4,18 +4,18 @@ title: 8 Gauge Styleguide
 
 .page
 
-  
+
   .margin-auto.relative
     %section.sg-sidenav.box-shadow-2
       .section-content.margin-auto
         .sg-sidenav-hero.txt-c.pvxl
           %a.raleway.type-white{:href => "/"}
             %h1.mbn.em-ultra 8 Gauge
-          
+
         %ul.list-unstyled.paxl.type-md
-          %li 
+          %li
             %a.hover-underline{:href => "#get-started"} Get Started
-          %li 
+          %li
             %a.hover-underline{:href => "#buttons"} Buttons
           %li
             %a.hover-underline{:href => "#inputs"} Inputs
@@ -28,7 +28,7 @@ title: 8 Gauge Styleguide
           %li
             %a.hover-underline{:href => "#loading-spinners"} Spinners
 
-          
+
     .row.sg-content.no-gutter
       .col-md-24
         %section#get-started
@@ -39,22 +39,22 @@ title: 8 Gauge Styleguide
         %section#buttons
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Buttons
-            %p 
-              Four different button colors and their alt variations. The base 
+            %p
+              Four different button colors and their alt variations. The base
               %code button
               and
               %code .button
               is the default ghost. You can modify it's color with a class.
-            
+
             .section-format.mbxl
               .mbxl
-                %button.btn-default 
+                %button.btn-default
                   %span Default
                 %button.btn-default-alt Default Alt
                 %button Flat
-                  
+
               .mbxl
-                %button.btn-highlight Highlight 
+                %button.btn-highlight Highlight
                 %button.btn-highlight-alt Highlight Alt
                 %button.btn-highlight-flat Flat
 
@@ -66,17 +66,17 @@ title: 8 Gauge Styleguide
                 %button.btn-negative Negative
                 %button.btn-negative-alt Negative Alt
                 %button.btn-negative-flat Flat
-            
-                
+
+
             %h4 Disabled
-            
+
             .section-format.mbxl
               .mbxl
                 %button.btn-default.disabled{:disabled => ""} Default
                 %button.btn-default-alt.disabled{:disabled => ""} Default Alt
                 %button.disabled{:disabled => ""} Flat
               .mbxl
-                %button.btn-highlight.disabled{:disabled => ""} Highlight 
+                %button.btn-highlight.disabled{:disabled => ""} Highlight
                 %button.btn-highlight-alt.disabled{:disabled => ""} Highlight Alt
                 %button.btn-highlight-flat.disabled{:disabled => ""} Flat
 
@@ -91,7 +91,7 @@ title: 8 Gauge Styleguide
             %h4 Icon Buttons
             .section-format.mbxl
               %div
-                %button.btn-default 
+                %button.btn-default
 
                   .svgicon
                     =partial 'images/svg-lib/add.svg'
@@ -106,24 +106,24 @@ title: 8 Gauge Styleguide
                 %button.btn-positive.btn-icon
                   .svgicon
                     =partial 'images/svg-lib/add.svg'
-                
-              
-                
+
+
+
             %h4 Button Loaders
             .section-format.mbxl
-              
+
               .mbxl
                 %button.btn-default
                   .svgicon
                     =partial 'images/loading/spinner-sm.svg'
                   %span
                     Loading
-                  
+
                 %button.btn-default-alt
                   .svgicon
                     =partial 'images/loading/spinner-sm.svg'
                   Loading
-                  
+
               .mbxl
                 %button.btn-highlight
                   .svgicon
@@ -154,10 +154,10 @@ title: 8 Gauge Styleguide
             %h4 Sizes
             .section-format.mbxl
               .mbxl
-                %button.btn-default.btn-sm 
+                %button.btn-default.btn-sm
                   %div small
                 %button.btn-default default
-                %button.btn-default.btn-lg 
+                %button.btn-default.btn-lg
                   %div large
               .mbxl
                 %button.btn-default.btn-sm
@@ -188,7 +188,7 @@ title: 8 Gauge Styleguide
             %h4 Button Groups
             .section-format.mbxl
               .mbxl
-                
+
                 .btn-group
                   %button.btn-default-alt yes
                   %button.btn-default> maybe
@@ -246,7 +246,7 @@ title: 8 Gauge Styleguide
                   %button>
                     No
 
-                
+
         %section#inputs
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Inputs
@@ -265,13 +265,13 @@ title: 8 Gauge Styleguide
               .form-group.left
                 %label Email
                 %input.form-control{:type => "email", :placeholder => "Email"}
-            
+
               .form-group.left
                 %label Password
                 %input.form-control{:type => "password", :placeholder => "Password"}
-            
+
               .form-group.left
-                
+
                 %button.btn-default.mtxxxl Submit
               .clear
             %h4 Inline Single Row
@@ -371,22 +371,22 @@ title: 8 Gauge Styleguide
                   .invalid-text Error please try again
         %section#grids
           .section-content.margin-auto.paxl.mdl-color--white
-            %h2.section-header Flexbox Grid 
+            %h2.section-header Flexbox Grid
             .grid.mvxl
-              .col
-                .sg-box
-                  Column 
               .col
                 .sg-box
                   Column
               .col
                 .sg-box
-                  Column  
+                  Column
+              .col
+                .sg-box
+                  Column
             %h4 No Gutters
-            %p 
-              Adding 
+            %p
+              Adding
               %code .grid-nogutters
-              onto the 
+              onto the
               %code .grid
               element will remove negative margins and remove internal padding to every
               %code .col
@@ -394,16 +394,16 @@ title: 8 Gauge Styleguide
             .grid.grid-nogutter.mvxl
               .col
                 .sg-box
-                  Column 
+                  Column
               .col
                 .sg-box
                   Column
               .col
                 .sg-box
-                  Column   
+                  Column
             %h4 Vertical Alignments
             %p
-              Adding the following modifier classes to the 
+              Adding the following modifier classes to the
               %code .col
               will allow you to change vertical alignment of the column itself
             .grid.mvxl
@@ -430,12 +430,12 @@ title: 8 Gauge Styleguide
               .col.col-12
                 .sg-box
                   %code .grid-center .col
-                  
+
             .grid.grid-end
               .col.col-12
                 .sg-box
                   %code .grid-end .col
-              
+
             %h4 Distribution
             %p
               Adding the following modifiers to the
@@ -461,17 +461,17 @@ title: 8 Gauge Styleguide
               .col.col-5
                 .sg-box
                   %code .grid-between .col.col-5
-                  
+
             %h4 Ordering
             %p
-              Adding 
+              Adding
               %code .col-first
               or
               %code .col-last
-              to a 
+              to a
               %code .col
               will reorder the selected column.
-              Modifying 
+              Modifying
               %code .grid.grid-reverse
               will reverse the order of the columns inside of the grid.
             .grid
@@ -519,9 +519,9 @@ title: 8 Gauge Styleguide
                 .sg-box
                   4
                   %code .grid-reverse .col
-                  
-              
-            
+
+
+
             %h4 Percent Based Column Widths
             %p
               Adding a column number modifier class to the column like
@@ -530,7 +530,7 @@ title: 8 Gauge Styleguide
             .grid.mvxl
               .col.col-12
                 .sg-box
-                  50% with 
+                  50% with
                   %code .col-12
 
               .col
@@ -544,28 +544,28 @@ title: 8 Gauge Styleguide
                   Auto
             .grid.mvxl
               .col.col-4
-                .sg-box 
+                .sg-box
                   %code .col-4
               .col.col-4
-                .sg-box 
+                .sg-box
                   %code .col-4
               .col.col-8
-                .sg-box 
+                .sg-box
                   %code .col-8
-              
+
               .col.col-4
-                .sg-box 
+                .sg-box
                   %code .col-4
               .col.col-4
-                .sg-box 
+                .sg-box
                   %code .col-4
             %h4 Fixed Width Columns
             %p
-              Adding 
+              Adding
               %code .col-fixed
-              to your 
+              to your
               %code .col
-              will allow you to style a fixed width. When used with % based width columns they will still derive their width from the total grid width. 
+              will allow you to style a fixed width. When used with % based width columns they will still derive their width from the total grid width.
             .grid.mvxl
               .col.col-fixed{:style => "width:175px;"}
                 .sg-box
@@ -576,7 +576,7 @@ title: 8 Gauge Styleguide
               .col.col-12
                 .sg-box
                   %code .col-12
-              
+
             %h4 Offset Columns
             %p
               Adding a column number offset modifier class to the column like
@@ -598,7 +598,7 @@ title: 8 Gauge Styleguide
                   Auto
             %h4 Nested Columns
             %p
-              Nested columns shown below have objects inside of them that have their own paddings. If you need to adjust columns you can use 
+              Nested columns shown below have objects inside of them that have their own paddings. If you need to adjust columns you can use
               %code .grid-nogutter
               or whitespacing classes.
             .grid.mvxl
@@ -614,13 +614,13 @@ title: 8 Gauge Styleguide
                     .col
                       .sg-box.bg-dark-8
                         Child Col
-            
+
             %h4 Multi Media Break Columns
-            %p Mix all the cols 
+            %p Mix all the cols
             .grid.grid-lg.grid-md.mvxl
               .col.col-md
                 .sg-box
-                  %code .col-md 
+                  %code .col-md
               .col.col-md
                 .sg-box
                   %code .col-md
@@ -629,9 +629,9 @@ title: 8 Gauge Styleguide
                   %code .col-md.col-lg
               .col.col-md.col-lg
                 .sg-box
-                  %code .col-md.col-lg 
+                  %code .col-md.col-lg
             %h4 Small Media Break
-            %p 
+            %p
               Add the small grid break modifier class
               %code .grid.grid-sm
               and add the column modifier class to the desired columns
@@ -639,7 +639,7 @@ title: 8 Gauge Styleguide
             .grid.grid-sm.mvxl
               .col
                 .sg-box
-                  Column 
+                  Column
               .col
                 .sg-box
                   Column
@@ -648,9 +648,9 @@ title: 8 Gauge Styleguide
                   %code .col-sm
               .col.col-sm
                 .sg-box
-                  %code .col-sm 
+                  %code .col-sm
             %h4 Medium Media Break
-            %p 
+            %p
               Add the medium grid break modifier class
               %code .grid.grid-md
               and add the column modifier class to the desired columns
@@ -658,7 +658,7 @@ title: 8 Gauge Styleguide
             .grid.grid-md.mvxl
               .col
                 .sg-box
-                  Column 
+                  Column
               .col
                 .sg-box
                   Column
@@ -669,7 +669,7 @@ title: 8 Gauge Styleguide
                 .sg-box
                   %code .col-md
             %h4 Large Media Break
-            %p 
+            %p
               Add the large grid break modifier class
               %code .grid.grid-lg
               and add the column modifier class to the desired columns
@@ -677,7 +677,7 @@ title: 8 Gauge Styleguide
             .grid.grid-lg.mvxl
               .col
                 .sg-box
-                  Column 
+                  Column
               .col
                 .sg-box
                   Column
@@ -686,12 +686,12 @@ title: 8 Gauge Styleguide
                   %code .col-lg
               .col.col-lg
                 .sg-box
-                  %code .col-lg 
+                  %code .col-lg
         %section#tables
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Tables
-            %p 
-              This table has 
+            %p
+              This table has
               %code .box-shadow-key-1
               and
               %code .grid-nogutter
@@ -734,11 +734,11 @@ title: 8 Gauge Styleguide
                 .td.col
                   Cell 4 + 5 (auto width)
 
-              
+
             %h4 Table Borders and Hovers
-            %p 
-              This table has no box-shadow or hovers. The 
-              %code .no-hover 
+            %p
+              This table has no box-shadow or hovers. The
+              %code .no-hover
               class can be applied to the entire table or a specific row.
             .table.no-hover
               .th.grid
@@ -797,11 +797,11 @@ title: 8 Gauge Styleguide
                   Cell 4
                 .td.col.col-8
                   Cell 5
-            %p 
-              No side borders to cells using class 
-              %code .tr-no-h-borders 
-              on the 
-              %code .tr 
+            %p
+              No side borders to cells using class
+              %code .tr-no-h-borders
+              on the
+              %code .tr
               or
               %code .table
               or
@@ -824,7 +824,7 @@ title: 8 Gauge Styleguide
                 .td.col.col-2
                   Cell 2
                 .td.col.col-4
-                  Cell 3 
+                  Cell 3
                 .td.col.col-8
                   Cell 4
                 .td.col.col-8
@@ -835,16 +835,16 @@ title: 8 Gauge Styleguide
                 .td.col.col-2
                   Cell 2
                 .td.col.col-4
-                  Cell 3 
+                  Cell 3
                 .td.col.col-8
                   Cell 4
                 .td.col.col-8
                   Cell 5
-            %p 
-              No external borders to cells using class 
-              %code .tr-no-ext-borders 
-              on the 
-              %code .tr 
+            %p
+              No external borders to cells using class
+              %code .tr-no-ext-borders
+              on the
+              %code .tr
               or
               %code .table
               or
@@ -867,12 +867,12 @@ title: 8 Gauge Styleguide
                 .td.col.col-2
                   Cell 2
                 .td.col.col-4
-                  Cell 3 
+                  Cell 3
                 .td.col.col-8
                   Cell 4
                 .td.col.col-8
                   Cell 5
-            %p 
+            %p
               No borders on anything. Individual cell highlights. Add
               %code .td-hover
               to
@@ -895,7 +895,7 @@ title: 8 Gauge Styleguide
                 .td.col.col-2
                   Cell 2
                 .td.col.col-4
-                  Cell 3 
+                  Cell 3
                 .td.col.col-8
                   Cell 4
                 .td.col.col-8
@@ -906,13 +906,13 @@ title: 8 Gauge Styleguide
                 .td.col.col-2
                   Cell 2
                 .td.col.col-4
-                  Cell 3 
+                  Cell 3
                 .td.col.col-8
                   Cell 4
                 .td.col.col-8
                   Cell 5
             %h4 Table Linking
-            %p Row A tags and cell A tags. Apply the proper classes directly to the A tag. 
+            %p Row A tags and cell A tags. Apply the proper classes directly to the A tag.
             .table
               .th.grid
                 .td.col.col-2
@@ -931,21 +931,21 @@ title: 8 Gauge Styleguide
                 .td.col.col-2
                   Cell 2
                 .td.col.col-4
-                  Cell 3 
+                  Cell 3
                 .td.col.col-8
                   Cell 4
                 %a.td.col.col-8{:href => "#tables", :title => "Everyone Can Read It"}
                   Cell 5
               %a.tr.grid{:href => "#tables", :title => "Everyone Can Read It"}
-                
+
                 .td.col.col-24
                   Cell 24
-            
+
             %h4 Table Breaks
-            %p 
+            %p
               Large Column breaks (750px) Collapse Rows add
-              %code .table-lg-row 
-              to the 
+              %code .table-lg-row
+              to the
               %code .table
             .table.table-lg-row
               .tr.grid
@@ -954,7 +954,7 @@ title: 8 Gauge Styleguide
                 .td.col.col-lg.col-2
                   Cell 2
                 .td.col.col-lg.col-4
-                  Cell 3 
+                  Cell 3
                 .td.col.col-lg.col-8
                   Cell 4
                 .td.col.col-lg.col-8
@@ -965,15 +965,15 @@ title: 8 Gauge Styleguide
                 .td.col.col-lg.col-2
                   Cell 2
                 .td.col.col-lg.col-4
-                  Cell 3 
+                  Cell 3
                 .td.col.col-lg.col-8
                   Cell 4
                 .td.col.col-lg.col-8
                   Cell 5
-            %p 
-              Medium Column breaks (620px) Collapse Rows add 
-              %code .table-md-row 
-              to the 
+            %p
+              Medium Column breaks (620px) Collapse Rows add
+              %code .table-md-row
+              to the
               %code .table
             .table.table-md-row
               .tr.grid
@@ -982,7 +982,7 @@ title: 8 Gauge Styleguide
                 .td.col.col-md.col-2
                   Cell 2
                 .td.col.col-md.col-4
-                  Cell 3 
+                  Cell 3
                 .td.col.col-md.col-8
                   Cell 4
                 .td.col.col-md.col-8
@@ -993,15 +993,15 @@ title: 8 Gauge Styleguide
                 .td.col.col-md.col-2
                   Cell 2
                 .td.col.col-md.col-4
-                  Cell 3 
+                  Cell 3
                 .td.col.col-md.col-8
                   Cell 4
                 .td.col.col-md.col-8
                   Cell 5
             %p
-              Small Column breaks (480px) Collapse Rows add 
-              %code .table-sm-row 
-              to the 
+              Small Column breaks (480px) Collapse Rows add
+              %code .table-sm-row
+              to the
               %code .table
             .table.table-sm-row
               .tr.grid
@@ -1010,7 +1010,7 @@ title: 8 Gauge Styleguide
                 .td.col.col-sm.col-2
                   Cell 2
                 .td.col.col-sm.col-4
-                  Cell 3 
+                  Cell 3
                 .td.col.col-sm.col-8
                   Cell 4
                 .td.col.col-sm.col-8
@@ -1021,13 +1021,13 @@ title: 8 Gauge Styleguide
                 .td.col.col-sm.col-2
                   Cell 2
                 .td.col.col-sm.col-4
-                  Cell 3 
+                  Cell 3
                 .td.col.col-sm.col-8
                   Cell 4
                 .td.col.col-sm.col-8
                   Cell 5
             %h4 Table Testing Ground
-            %p 
+            %p
               Testing stuff
             .table
               .th.grid
@@ -1076,18 +1076,18 @@ title: 8 Gauge Styleguide
                   Cell 1
                 .td.col.col-6
                   Cell 1
-              
 
-            
 
-            
+
+
+
 
         %section#icons
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Icons
-            %p 
-              View 
-              %a{:href => "http://pivotalicons.cfapps.io/", :target => "_blank"} 
+            %p
+              View
+              %a{:href => "http://pivotalicons.cfapps.io/", :target => "_blank"}
                 Pivotal SVG Icon Library
             .grid.mvxl
               .col.sg-icon-tile
@@ -1131,15 +1131,15 @@ title: 8 Gauge Styleguide
                 .sg-icon-label
                   close
             %h4 SVGs align to text
-            %p 
-              Adding 
+            %p
+              Adding
               %code .svg-baseline
-              to to the 
+              to to the
               %code .svgicon
               class absolute positions the icon -0.2ems from the bottom allowing it to align to text properly
             .section-format.mbxl
               %h2
-                My favorite icon is 
+                My favorite icon is
                 .svgicon.svg-baseline
                   =partial 'images/svg-lib/open_in_new.svg'
                 and also
@@ -1147,7 +1147,7 @@ title: 8 Gauge Styleguide
                   =partial 'images/svg-lib/info_outline.svg'
                 because it aligns to H2
               %h2.em-alt
-                My favorite icon is 
+                My favorite icon is
                 .svgicon.svg-baseline
                   =partial 'images/svg-lib/open_in_new.svg'
                 and also
@@ -1155,12 +1155,12 @@ title: 8 Gauge Styleguide
                   =partial 'images/svg-lib/info_outline.svg'
                 because it aligns to H2
               %div{:style => "font-size:18px;"}
-                My favorite icon is 
+                My favorite icon is
                 .svgicon.svg-baseline
                   =partial 'images/svg-lib/open_in_new.svg'
                 because it aligns to 18px
               %div{:style => "font-size:16px;"}
-                My favorite icon is 
+                My favorite icon is
                 .svgicon.svg-baseline
                   =partial 'images/svg-lib/open_in_new.svg'
                 because it aligns to 16px
@@ -1172,7 +1172,7 @@ title: 8 Gauge Styleguide
                 .svgicon.svg-baseline
                   =partial 'images/svg-lib/database.svg'
               %div{:style => "font-size:12px;"}
-                My favorite icon is 
+                My favorite icon is
                 .svgicon.svg-baseline
                   =partial 'images/svg-lib/open_in_new.svg'
                 and also
@@ -1183,7 +1183,7 @@ title: 8 Gauge Styleguide
                   =partial 'images/svg-lib/cancel.svg'
                 because it aligns to 12px
               %div.em-alt{:style => "font-size:12px;"}
-                My favorite icon is 
+                My favorite icon is
                 .svgicon.svg-baseline
                   =partial 'images/svg-lib/open_in_new.svg'
                 and also
@@ -1193,11 +1193,11 @@ title: 8 Gauge Styleguide
                 .svgicon.svg-baseline
                   =partial 'images/svg-lib/cancel.svg'
                 because it aligns to 12px
-                
+
         %section#loading-spinners
           .section-content.margin-auto.paxl
             %h2.section-header Spinners
-            %p The spinner levels are determined by their size. The base spinner is 100px+ and therfore moves slower. The small spinner is under 16px and so it moves faster and more dramatic. These sizes are defined here to help you in the creation of custom components. Spinner size and speed are already written into buttons and inputs. 
+            %p The spinner levels are determined by their size. The base spinner is 100px+ and therfore moves slower. The small spinner is under 16px and so it moves faster and more dramatic. These sizes are defined here to help you in the creation of custom components. Spinner size and speed are already written into buttons and inputs.
             .section-format.mbxl
               .grid.mvxl
                 .col.txt-c
@@ -1215,5 +1215,3 @@ title: 8 Gauge Styleguide
                     %code .spinner-sm
                   .svgicon{:style => "font-size:16px;"}
                     =partial 'images/loading/spinner-sm.svg'
-             
-        
