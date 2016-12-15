@@ -7,12 +7,12 @@
     width: 1em;
 }
 
-.svgicon svg {
+.svgicon svg, .svgicon img {
     height: 1em;
     width: 1em;
 }
 
-.svgicon.svg-baseline svg {
+.svgicon.svg-baseline svg, .svgicon.svg-baseline img {
     bottom: -0.15em;
     position: absolute;
 }

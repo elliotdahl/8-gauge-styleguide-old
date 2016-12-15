@@ -1130,6 +1130,16 @@ title: 8 Gauge Styleguide
                   =partial 'images/svg-lib/close.svg'
                 .sg-icon-label
                   close
+              .col.sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/check_circle.svg'
+                .sg-icon-label
+                  close
+              .col.sg-icon-tile
+                .svgicon
+                  %img{:src => "/images/check_circle.png"}
+                .sg-icon-label
+                  check_circle.png
             %h4 SVGs align to text
             %p
               Adding
@@ -1158,7 +1168,10 @@ title: 8 Gauge Styleguide
                 My favorite icon is
                 .svgicon.svg-baseline
                   =partial 'images/svg-lib/open_in_new.svg'
-                because it aligns to 18px
+                because it aligns to 18px and supports
+                .svgicon.svg-baseline
+                  %img{:src => "/images/check_circle.png"}
+                as a png
               %div{:style => "font-size:16px;"}
                 My favorite icon is
                 .svgicon.svg-baseline
