@@ -18,13 +18,23 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: 0 (-1*$base-unit) ($base-unit*2) (-1*$base-unit);
+    //margin: 0 (-1*$base-unit) ($base-unit*2) (-1*$base-unit);
+
+    margin: 0 0 ($base-unit*2) 0;
     //Use this to remove spacing
     &.grid-nogutter {
         margin: 0;
         & > .col {
             padding: 0;
         }
+    }
+    & > .col {
+      &:first-child {
+        padding-left:0;
+      }
+      &:last-child {
+        padding-right:0;
+      }
     }
 }
 
@@ -152,7 +162,24 @@
 .col-fixed {
     flex: initial;
 }
-
+/////////////////////////
+//Grow Based Columns
+/////////////////////////
+.col-grow-2 {
+  flex-grow: 2;
+}
+.col-grow-3 {
+  flex-grow: 3;
+}
+.col-grow-4 {
+  flex-grow: 4;
+}
+.col-grow-5 {
+  flex-grow: 5;
+}
+.col-grow-6 {
+  flex-grow: 6;
+}
 /////////////////////////
 //Percent Based Columns
 /////////////////////////

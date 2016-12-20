@@ -606,7 +606,7 @@ title: 8 Gauge Styleguide
                 .sg-box
                   Auto
               .col
-                .sg-box
+                .sg-box.pan
                   .grid.mbn
                     .col
                       .sg-box.bg-dark-8
@@ -630,6 +630,21 @@ title: 8 Gauge Styleguide
               .col.col-md.col-lg
                 .sg-box
                   %code .col-md.col-lg
+            %p Nest columns to get different break points
+            .grid.mvxl
+              .col.col-lg
+                .sg-box
+                  %code .col-lg
+              .col
+                .sg-box.phn
+                  %code .col-lg
+                  .grid.mbn
+                    .col
+                      .sg-box.bg-dark-8
+                        Child Col
+                    .col
+                      .sg-box.bg-dark-8
+                        Child Col
             %h4 Small Media Break
             %p
               Add the small grid break modifier class
@@ -687,6 +702,29 @@ title: 8 Gauge Styleguide
               .col.col-lg
                 .sg-box
                   %code .col-lg
+            %h4 Sandbox
+            .grid.mvxl
+              .col
+                .sg-box
+                  C
+              .col.col-22
+                .sg-box
+                  22
+              .col
+                .sg-box
+                  C
+            .grid.mvxl
+              .col
+                .sg-box
+                  Column
+              .col.col-24
+                .sg-box
+                  Column
+              .col
+                .sg-box
+                  Column
+
+
         %section#tables
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Tables
