@@ -6,7 +6,6 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-    z-index: 0;
     display: inline-flex;
     position: relative;
     height: ($base-unit*4);
@@ -40,9 +39,10 @@ input[type="button"] {
     &:hover,
     &:focus,
     &:hover:focus {
+
         outline: none;
         .svgicon {
-            fill: $btn-default-color-focus;
+
         }
     }
 }
@@ -59,7 +59,10 @@ button.btn-icon, .button.btn-icon {
     line-height: 36px; //40px - 4px borders
     font-size: 16px;
     &.btn-icon {
-        padding: 0 6px;
+        padding: 0;
+        .svgicon {
+          margin:8px;
+        }
     }
     .svgicon {
         font-size: 20px;
@@ -72,6 +75,9 @@ button.btn-icon, .button.btn-icon {
     font-size: 12px;
     &.btn-icon {
         padding: 0;
+        .svgicon {
+          margin: 3px;
+        }
     }
     .svgicon {
         font-size: 14px;
@@ -79,7 +85,7 @@ button.btn-icon, .button.btn-icon {
 }
 
 button.disabled,
-.button.disabled {
+.button.disabled, button[disabled], .button[disabled] {
     opacity: .5;
     cursor: default;
     pointer-events: none;
