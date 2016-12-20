@@ -1,38 +1,59 @@
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-ul {
-    list-style: disc inside;
-}
-ul ul {
-    list-style: circle inside;
-}
-
-ol {
-    list-style: decimal inside;
-}
-
-ol,
-ul {
-    // padding-left: 0;
-    // margin-top: 0;
-}
-
-ul ul,
-ul ol,
-ol ol,
-ol ul,
 ul,
 ol {
-    margin: $base-unit 0 ($base-unit*2) ($base-unit*2);
-    padding: 0;
+    margin: $base-unit 0 ($base-unit*2) 0;
+    padding: 0 0 0 ($base-unit*2);
+}
+li {
+  position: relative;
+  padding-left: ($base-unit*2);
+  margin-bottom: $base-unit;
+}
+ul {
+    list-style:none;
+    li {
+      &:after {
+        content:"";
+        position: absolute;
+        left:0;
+        top: (24px / 2) - 3px; //half of the line height minus half of circle height
+        height:6px;
+        width:6px;
+        border-radius: 100%;
+        //This should be an SVG so it could change color with text
+        background-color: $text-color;
+
+      }
+    }
+    ul li:after {
+      border:solid 1px $text-color;
+      background-color: transparent;
+    }
+}
+ol {
+  list-style: none;
+  li {
+    counter-increment: list-steps;
+    &:after {
+      content: counter(list-steps) ".";
+      position: absolute;
+      left:0;
+      line-height: ($base-unit*3);
+    }
+  }
 }
 
-li {
-    margin-bottom: $base-unit;
-}
-.list-unstyled {
-	padding-left:0;
-	margin:0;
-	list-style:none;
+ul.list-unstyled {
+  margin: 0;
+  padding: 0;
+  li {
+    padding-left: 0;
+    &:after {
+      position: inherit;
+      width:0;
+      height: 0;
+      display: none;
+    }
+  }
 }
