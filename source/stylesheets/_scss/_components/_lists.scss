@@ -4,10 +4,11 @@ ul,
 ol {
     margin: $base-unit 0 ($base-unit*2) 0;
     padding: 0 0 0 ($base-unit*2);
+    width:250px;
 }
 li {
   position: relative;
-  padding-left: ($base-unit*2);
+  padding-left: ($base-unit*3);
   margin-bottom: $base-unit;
 }
 ul {
@@ -17,6 +18,7 @@ ul {
         content:"";
         position: absolute;
         left:0;
+        //This could be calculated with ems to scale with text size
         top: (24px / 2) - 3px; //half of the line height minus half of circle height
         height:6px;
         width:6px;
@@ -33,10 +35,12 @@ ul {
 }
 ol {
   list-style: none;
+  //reset list count on ever ol element
+  counter-reset: list;
   li {
-    counter-increment: list-steps;
+    counter-increment: list;
     &:after {
-      content: counter(list-steps) ".";
+      content: counter(list) ".";
       position: absolute;
       left:0;
       line-height: ($base-unit*3);

@@ -729,20 +729,20 @@ title: 8 Gauge Styleguide
         %section#lists
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Lists
-            %p Lists are an antiquated and broken HTML component. These are an exploration of a scalable and fully customizable list format.
+            %p
+              Lists are an antiquated and broken HTML component. These are an exploration of a scalable and fully customizable list format. The dot and the number are both handled by an
+              %code :after
+              psuedo selector. As long as the lists have text with a line-height of 24px it will look good.
 
             %h4 UL
             .section-format.mbxl.pbl
               %ul
                 %li List Item 1
                 %li List Item 2
-                %li List Item 3 List Item  List Item List Item List Item List Item List Item List Item List Item List Item List Item
-
+                %li List Item 3
                 %ul
-                  %li
-                    %div Secondary List Item 1
-                    %div aldkfjad
-                    %div aldkfasdf
+                  %li Secondary List Item 1
+
                   %li Secondary List Item 2
                   %li Secondary List Item 3
 
@@ -757,6 +757,7 @@ title: 8 Gauge Styleguide
                   %li Secondary List Item 1
                   %li Secondary List Item 2
                   %li Secondary List Item 3
+
             %h4 Unstyled List
             .section-format.mbxl.pbl
               %ul.list-unstyled
