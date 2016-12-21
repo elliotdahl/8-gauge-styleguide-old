@@ -18,7 +18,7 @@ title: 8 Gauge Styleguide
           %li
             %a.hover-underline{:href => "#buttons"} Buttons
           %li
-            %a.hover-underline{:href => "#inputs"} Inputs
+            %a.hover-underline{:href => "#forms"} Forms
           %li
             %a.hover-underline{:href => "#grids"} Grid
           %li
@@ -252,7 +252,7 @@ title: 8 Gauge Styleguide
                     No
 
 
-        %section#inputs
+        %section#forms
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Inputs
             .section-format.mbxl.pbl
@@ -344,6 +344,18 @@ title: 8 Gauge Styleguide
                 .form-group
                   %input{:type => "radio"}
                   Don't Remember me
+            %h4 Label Tooltips and Icons
+            .section-format.mbxl.pbl
+              %form
+                .form-group.form-inline
+                  %label Snorglebits
+                  %input.form-control{:type => "text", :placeholder => "Snorglebits"}
+                .form-group.form-inline
+                  %label
+                    Plogglebits
+                    .svgicon
+                      =partial 'images/svg-lib/close.svg'
+                  %input.form-control{:type => "text", :placeholder => "Plogglebits"}
             %h4 Error/Acceptance States
             %p Click on the red "x" in the error state to clear the form field and rest the error.
             .section-format.mbxl.pbl
