@@ -26,6 +26,8 @@ title: 8 Gauge Styleguide
           %li
             %a.hover-underline{:href => "#tables"} Tables
           %li
+            %a.hover-underline{:href => "#tooltips"} Tooltips
+          %li
             %a.hover-underline{:href => "#icons"} Icons
           %li
             %a.hover-underline{:href => "#loading-spinners"} Spinners
@@ -254,7 +256,7 @@ title: 8 Gauge Styleguide
 
         %section#forms
           .section-content.margin-auto.paxl.mdl-color--white
-            %h2.section-header Inputs
+            %h2.section-header Forms
             .section-format.mbxl.pbl
               %form
                 .form-group
@@ -345,16 +347,27 @@ title: 8 Gauge Styleguide
                   %input{:type => "radio"}
                   Don't Remember me
             %h4 Label Tooltips and Icons
+            %p
+              Place the
+              %code .svgicon
+              into the
+              %code label
+              element next to the text and add
+              %code .svg-basline
+              to adjust the alignment.
             .section-format.mbxl.pbl
               %form
                 .form-group.form-inline
-                  %label Snorglebits
+                  %label
+                    Snorglebits
+                    .svgicon.svg-baseline
+                      =partial 'images/svg-lib/info_outline.svg'
                   %input.form-control{:type => "text", :placeholder => "Snorglebits"}
                 .form-group.form-inline
                   %label
                     Plogglebits
-                    .svgicon
-                      =partial 'images/svg-lib/close.svg'
+                    .svgicon.svg-baseline
+                      =partial 'images/svg-lib/info_outline.svg'
                   %input.form-control{:type => "text", :placeholder => "Plogglebits"}
             %h4 Error/Acceptance States
             %p Click on the red "x" in the error state to clear the form field and rest the error.
@@ -1174,7 +1187,38 @@ title: 8 Gauge Styleguide
 
 
 
-
+        %section#tooltips
+          .section-content.margin-auto.paxl
+            %h2 Tooltips
+            %p Tooltips
+            .section-format.mbxl.pbl
+              %a.tooltip
+                Tooltip Top
+                .tooltip-content
+                  Lorem
+            %h4 Form Icon Tooltips
+            %p
+              Place the
+              %code .svgicon
+              into the
+              %code label
+              element next to the text and add
+              %code .svg-basline
+              to adjust the alignment.
+            .section-format.mbxl.pbl
+              %form
+                .form-group.form-inline
+                  %label
+                    Snorglebits
+                    .svgicon.svg-baseline
+                      =partial 'images/svg-lib/info_outline.svg'
+                  %input.form-control{:type => "text", :placeholder => "Snorglebits"}
+                .form-group.form-inline
+                  %label
+                    Plogglebits
+                    .svgicon.svg-baseline
+                      =partial 'images/svg-lib/info_outline.svg'
+                  %input.form-control{:type => "text", :placeholder => "Plogglebits"}
 
 
         %section#icons

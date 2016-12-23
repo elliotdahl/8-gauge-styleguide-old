@@ -1,0 +1,13 @@
+.tooltip {
+  position: relative;
+}
+
+.tooltip-content {
+  position: absolute;
+  padding:($base-unit / 2);
+  font-size: 12px;
+  line-height: 1;
+  background-color: $dark-2;
+  color:#fff;
+
+}

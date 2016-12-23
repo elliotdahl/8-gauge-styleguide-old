@@ -85,12 +85,21 @@ legend {
     margin-right: ($base-unit*2);
     position: relative;
     label {
+        position: relative;
         display: block;
         font-size: 14px;
         font-weight: 600;
         line-height: ($base-unit*3);
         margin-bottom: 0;
         margin-right: $base-unit;
+        .svgicon {
+          pointer-events: initial;
+          position: relative;
+          font-size: 16px;
+          bottom: 0;
+          right: 0;
+          fill:$dark-6;
+        }
     }
     input,
     textarea,
@@ -108,7 +117,7 @@ legend {
         pointer-events: none;
         position: absolute;
         right: $base-unit;
-        top: $base-unit;
+        bottom: $base-unit;
         font-size: 16px;
         &.valid svg {
             fill: $input-border-valid;
