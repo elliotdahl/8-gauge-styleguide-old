@@ -229,6 +229,24 @@ $table-bg-active:                    $table-bg-hover !default;
 $table-border-color:                 $dark-9; // table and cell border
 $table-border-header-color:			 $dark-7;
 
+// Tooltips
+//--------------------------
+$tooltip-border-radius:2px;
+
+
+$tooltip-font-size:12px;
+$tooltip-padding:($base-unit / 2);
+$tooltip-margin:8px;
+$tooltip-content-z:10;
+
+//Dark Default Tooltip
+$tooltip-bg:$dark-2;
+$tooltip-color:#fff;
+//Light Modified Tooltip
+$tooltip-light-bg:#fff;
+$tooltip-light-color:$dark-2;
+
+
 //Screen Sizes
 $screen-sm: 480px;
 $screen-md: 620px;
@@ -245,6 +263,3 @@ $box-shadow-key-3: 0px 8px 8px 0px rgba(36, 54, 65, 0.1);
 $box-shadow-amb-1: 0px 0px 2px 0px rgba(36, 54, 65, 0.1);
 $box-shadow-amb-2: 0px 0px 4px 1px rgba(36, 54, 65, 0.1);
 $box-shadow-amb-3: 0px 0px 8px 1px rgba(36, 54, 65, 0.1);
-
-
-
