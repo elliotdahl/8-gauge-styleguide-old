@@ -8,7 +8,7 @@
       bottom:auto;
       transform: translatey(-50%);
       margin:0 $tooltip-margin 0 0;
-      &:after {
+      &:before {
         right:$tooltip-arrow-pull;
         top:50%;
         bottom:auto;
@@ -25,7 +25,7 @@
       bottom:auto;
       transform: translatey(-50%);
       margin:0 0 0 $tooltip-margin;
-      &:after {
+      &:before {
         right:auto;
         top:50%;
         bottom:auto;
@@ -42,7 +42,7 @@
       bottom:auto;
       transform: translatex(-50%);
       margin:$tooltip-margin 0 0 0;
-      &:after {
+      &:before {
         top: $tooltip-arrow-pull;
         left:50%;
         right:auto;
@@ -56,8 +56,8 @@
       background-color:$tooltip-light-bg;
       color:$tooltip-light-color;
       @extend .box-shadow-1;
-      &:after {
-        border-top: 6px solid white;
+      &:before {
+        background-color:$tooltip-light-bg;
         @extend .box-shadow-1;
       }
     }
@@ -79,14 +79,32 @@
   background-color: $tooltip-bg;
   color:$tooltip-color;
   border-radius:$tooltip-border-radius;
+  @extend .box-shadow-1;
+  &:before {
+    content: "";
+    z-index: $tooltip-arrow-z-top;
+    position: absolute;
+    bottom: $tooltip-arrow-pull;
+    left:50%;
+    transform: translateX(-50%) rotateZ(45deg);
+    //background-color:$tooltip-bg;
+    background-color:red;
+    width: 8px;
+    height: 8px;
+  }
   &:after {
     content: "";
+
+  }
+  .tooltip-arrow {
     z-index: $tooltip-arrow-z-bottom;
     position: absolute;
     bottom: $tooltip-arrow-pull;
     left:50%;
     transform: translateX(-50%) rotateZ(45deg);
     background-color:$tooltip-bg;
+    border:1px solid red;
+    @extend .box-shadow-1;
     width: 8px;
     height: 8px;
   }
