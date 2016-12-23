@@ -238,6 +238,9 @@ $tooltip-font-size:12px;
 $tooltip-padding:($base-unit / 2);
 $tooltip-margin:8px;
 $tooltip-content-z:10;
+$tooltip-arrow-pull:-4px;
+$tooltip-arrow-z-bottom:-1;
+$tooltop-arrow-z-top:1;
 
 //Dark Default Tooltip
 $tooltip-bg:$dark-2;
