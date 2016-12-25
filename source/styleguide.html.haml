@@ -1299,18 +1299,22 @@ title: 8 Gauge Styleguide
                 .form-group.form-inline
                   %label
                     Snorglebits
+                    %a.tooltip.tooltip-light.tooltip-md
+                      .svgicon.svg-baseline
+                        =partial 'images/svg-lib/info_outline.svg'
+                      .tooltip-content
+                        .tooltip-container
+                          Snorglebits are the most important part to the creation of every plumbus made.
+                  %input.form-control{:type => "text", :placeholder => "Snorglebits"}
+                .form-group.form-inline
+                  %label
+                    Plogglebits
                     %a.tooltip.tooltip-light
                       .svgicon.svg-baseline
                         =partial 'images/svg-lib/info_outline.svg'
                       .tooltip-content
                         .tooltip-container
-                          Snorglebits are important to the creation of every plumbus
-                  %input.form-control{:type => "text", :placeholder => "Snorglebits"}
-                .form-group.form-inline
-                  %label
-                    Plogglebits
-                    .svgicon.svg-baseline
-                      =partial 'images/svg-lib/info_outline.svg'
+                          Careful
                   %input.form-control{:type => "text", :placeholder => "Plogglebits"}
 
 

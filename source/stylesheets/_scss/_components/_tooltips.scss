@@ -127,8 +127,8 @@
 }
 
 .tooltip-content {
-  visibility: hidden;
-  opacity:0;
+  // visibility: hidden;
+  // opacity:0;
   transition: opacity $tooltip-opacity-transition;
   z-index: $tooltip-content-z;
   position: absolute;
@@ -136,10 +136,11 @@
   left:50%;
   transform: translateX(-50%);
   margin:0 0 $tooltip-margin 0; //space for the triangle indicator
+  @extend .txt-l;
   .tooltip-container {
     padding:$tooltip-padding;
     font-size: $tooltip-font-size;
-    line-height: 1;
+    line-height: 16px;
     font-weight: 400;
     letter-spacing: 0;
     text-transform: none;
