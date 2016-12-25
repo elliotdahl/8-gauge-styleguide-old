@@ -1190,28 +1190,36 @@ title: 8 Gauge Styleguide
         %section#tooltips
           .section-content.margin-auto.paxl
             %h2 Tooltips
-            %p Tooltips
-            .section-format.mbxl.pbl
-              %a.tooltip.tooltip-right
-                Tooltip Right
-                .tooltip-content
-                  .tooltip-container
-                    Lorem
-              %a.button.btn-default.tooltip
-                Tooltip Top
-                .tooltip-content
-                  .tooltip-container
-                    Lorem
-              %a.tooltip.tooltip-bottom
-                Tooltip Bottom
-                .tooltip-content
-                  .tooltip-container
-                    Lorem
-              %a.tooltip.tooltip-left
-                Tooltip Left
-                .tooltip-content
-                  .tooltip-container
-                    Lorem
+            %p
+              Default tooltip is dark and on top. Adding modifier classes will change the direction of the tooltip. For example
+              %code .tooltip-right
+              will change the direction of the tooltip.
+            .section-format.mbxl.pbxl
+              .grid.grid-around.txt-c.mbn
+                .col
+                  %a.tooltip.tooltip-right
+                    Tooltip Right
+                    .tooltip-content
+                      .tooltip-container
+                        Lorem
+                .col
+                  %a.tooltip
+                    Tooltip Top
+                    .tooltip-content
+                      .tooltip-container
+                        Lorem
+                .col
+                  %a.tooltip.tooltip-bottom
+                    Tooltip Bottom
+                    .tooltip-content
+                      .tooltip-container
+                        Lorem
+                .col
+                  %a.tooltip.tooltip-left
+                    Tooltip Left
+                    .tooltip-content
+                      .tooltip-container
+                        Lorem
 
             %h4 Light Tooltips
             %p
@@ -1220,29 +1228,62 @@ title: 8 Gauge Styleguide
               to
               %code .tooltip
               to change the color scheme. This should be utilized for sentences that need to be read for more than a quick glance.
-            .section-format.mbxl.pbl
+            .section-format.mbxl.pbxl
+              .grid.grid-around.txt-c.mbn
+                .col
+                  %a.tooltip.tooltip-right.tooltip-light
+                    Tooltip Right
+                    .tooltip-content
+                      .tooltip-container
+                        Lorem
+                .col
+                  %a.tooltip.tooltip-light
+                    Tooltip Top
+                    .tooltip-content
+                      .tooltip-container
+                        Lorem
+                .col
+                  %a.tooltip.tooltip-bottom.tooltip-light
+                    Tooltip Bottom
+                    .tooltip-content
+                      .tooltip-container
+                        Lorem
+                .col
+                  %a.tooltip.tooltip-left.tooltip-light
+                    Tooltip Left
+                    .tooltip-content
+                      .tooltip-container
+                        Lorem
 
-              %a.tooltip.tooltip-right.tooltip-light
-                Tooltip Right
-                .tooltip-content
-                  .tooltip-container
-                    Lorem
-              %a.button.btn-default-alt.tooltip.tooltip-light
-                Tooltip Top
-                .tooltip-content
-                  .tooltip-container
-                    Lorem
-              %a.tooltip.tooltip-bottom.tooltip-light
-                Tooltip Bottom
-                .tooltip-content
-                  .tooltip-container
-                    Lorem
-              %a.tooltip.tooltip-left.tooltip-light
-                Tooltip Left
-                .tooltip-content
-                  .tooltip-container
-                    Lorem
-
+            %h4 Tooltip Widths
+            %p
+              The default width of the tooltip is determined by the width of the original element and the text width. Utillize modifier classes to change the fixed width of the tooltip. For example
+              %code .tooltip-sm
+              sets the width to 104px,
+              %code .tooltip-md
+              sets the width to 136px,
+              %code .tooltip-lg
+              sets the width to 200px.
+            .section-format.mbxl.pbxl
+              .grid.grid-around.txt-c.mbn
+                .col
+                  %a.tooltip.tooltip-light.tooltip-sm
+                    Tooltip Small
+                    .tooltip-content
+                      .tooltip-container
+                        Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                .col
+                  %a.tooltip.tooltip-light.tooltip-md
+                    Tooltip Medium
+                    .tooltip-content
+                      .tooltip-container
+                        Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                .col
+                  %a.tooltip.tooltip-light.tooltip-lg
+                    Tooltip Large
+                    .tooltip-content
+                      .tooltip-container
+                        Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 
             %h4 Form Icon Tooltips
             %p
@@ -1258,8 +1299,12 @@ title: 8 Gauge Styleguide
                 .form-group.form-inline
                   %label
                     Snorglebits
-                    .svgicon.svg-baseline
-                      =partial 'images/svg-lib/info_outline.svg'
+                    %a.tooltip.tooltip-light
+                      .svgicon.svg-baseline
+                        =partial 'images/svg-lib/info_outline.svg'
+                      .tooltip-content
+                        .tooltip-container
+                          Snorglebits are important to the creation of every plumbus
                   %input.form-control{:type => "text", :placeholder => "Snorglebits"}
                 .form-group.form-inline
                   %label

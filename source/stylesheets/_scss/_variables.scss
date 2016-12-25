@@ -232,8 +232,6 @@ $table-border-header-color:			 $dark-7;
 // Tooltips
 //--------------------------
 $tooltip-border-radius:2px;
-
-
 $tooltip-font-size:12px;
 $tooltip-padding:($base-unit / 2);
 $tooltip-margin:8px;
@@ -250,8 +248,11 @@ $tooltip-border-color:$dark-2;
 //Light Modified Tooltip
 $tooltip-light-bg:#fff;
 $tooltip-light-color:$dark-2;
-//$tooltip-light-border-color:$dark-9;
-$tooltip-light-border-color:#fff;
+$tooltip-light-border-color:#fff; //$dark-9
+//Tooltip Sizes
+$tooltip-sm-width:104px;
+$tooltip-md-width:136px;
+$tooltip-lg-width:200px;
 
 
 //Screen Sizes

@@ -177,5 +177,21 @@
 
     }
   }
+}
 
+//Tooltip Sizes
+.tooltip-sm {
+  .tooltip-content {
+    width:$tooltip-sm-width;
+  }
+}
+.tooltip-md {
+  .tooltip-content {
+    width:$tooltip-md-width;
+  }
+}
+.tooltip-lg {
+  .tooltip-content {
+    width:$tooltip-lg-width;
+  }
 }
