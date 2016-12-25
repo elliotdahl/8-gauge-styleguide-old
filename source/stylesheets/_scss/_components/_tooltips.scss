@@ -127,8 +127,8 @@
 }
 
 .tooltip-content {
-  // visibility: hidden;
-  // opacity:0;
+  visibility: hidden;
+  opacity:0;
   transition: opacity $tooltip-opacity-transition;
   z-index: $tooltip-content-z;
   position: absolute;

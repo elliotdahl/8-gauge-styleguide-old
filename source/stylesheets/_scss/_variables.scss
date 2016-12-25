@@ -233,7 +233,7 @@ $table-border-header-color:			 $dark-7;
 //--------------------------
 $tooltip-border-radius:2px;
 $tooltip-font-size:12px;
-$tooltip-padding:($base-unit / 2);
+$tooltip-padding:($base-unit / 2) $base-unit;
 $tooltip-margin:8px;
 $tooltip-content-z:10;
 $tooltip-arrow-pull:-4px;
@@ -244,11 +244,11 @@ $tooltip-opacity-transition:ease-out .2s;
 //Dark Default Tooltip
 $tooltip-bg:$dark-2;
 $tooltip-color:#fff;
-$tooltip-border-color:$dark-2;
+$tooltip-border-color: $dark-2;
 //Light Modified Tooltip
-$tooltip-light-bg:#fff;
-$tooltip-light-color:$dark-2;
-$tooltip-light-border-color:#fff; //$dark-9
+$tooltip-light-bg: #fff;
+$tooltip-light-color: $dark-2;
+$tooltip-light-border-color: $dark-9;
 //Tooltip Sizes
 $tooltip-sm-width:104px;
 $tooltip-md-width:136px;
