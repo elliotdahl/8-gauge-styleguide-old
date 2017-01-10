@@ -1,6 +1,5 @@
 .svgicon {
     display: inline-flex;
-    line-height: inherit;
     align-self: center;
     position: relative;
     height: 1em;
@@ -13,6 +12,6 @@
 }
 
 .svgicon.svg-baseline svg, .svgicon.svg-baseline img {
-    bottom: -0.15em;
+    bottom: -0.125em;
     position: absolute;
 }
