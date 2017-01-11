@@ -787,8 +787,29 @@ title: 8 Gauge Styleguide
                   %li Secondary List Item 3
 
             %h4 Unstyled List
+            %p
+              Adding class
+              %code list-unstyled
+              to the
+              %code ul
+              will remove list styles but keep expected vertical paddings.
             .section-format.mbxl.pbl
               %ul.list-unstyled
+                %li List Item 1
+                %li List Item 2
+                %li List Item 3
+
+            %h4 Inline Lists
+            %p
+              Adding class
+              %code list-inline
+              to the
+              %code ul
+              will remove list styles, irrelevant spacings and make all
+              %code li
+              elements inline-block.
+            .section-format.mbxl
+              %ul.list-inline
                 %li List Item 1
                 %li List Item 2
                 %li List Item 3
