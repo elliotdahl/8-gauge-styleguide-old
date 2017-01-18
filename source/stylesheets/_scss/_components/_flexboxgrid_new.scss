@@ -18,9 +18,8 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    //margin: 0 (-1*$base-unit) ($base-unit*2) (-1*$base-unit);
+    //margin: 0 0 ($base-unit*2) 0;
 
-    margin: 0 0 ($base-unit*2) 0;
     //Use this to remove spacing
     &.grid-nogutter {
         margin: 0;
