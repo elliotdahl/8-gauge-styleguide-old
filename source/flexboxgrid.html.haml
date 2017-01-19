@@ -11,7 +11,7 @@ title: 8 Gauge Styleguide
     .section-content.margin-auto.txt-c
       %h2.mbxl The Foundation
       %p.type-lg The reason why... Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit.
-    %section
+    %section#auto-layout
       .section-content.margin-auto.txt-c
         %h2.mbxl The Basic Auto Layout
         %p.type-lg Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
@@ -55,7 +55,7 @@ title: 8 Gauge Styleguide
           .col
             .sg-box
               %code .col
-    %section
+    %section#no-gutter
       .section-content.margin-auto.txt-c
         %h2.mbxl No Gutter
         %p.type-lg
@@ -76,7 +76,7 @@ title: 8 Gauge Styleguide
             .sg-box
               %code .col
 
-    %section
+    %section#percent-layout
       .section-content.margin-auto.txt-c
         %h2.mbxl Percent Based Layout
         %p.type-lg The familiar n/24 column based system
@@ -113,7 +113,7 @@ title: 8 Gauge Styleguide
           .col.col-4
             .sg-box
               %code .col.col-4
-    %section
+    %section#flex-grow-layout
       .section-content.margin-auto.txt-c
         %h2.mbxl Flex Grow Layout
         %p.type-lg Based on flex-grow this layout style allows for dynamic content distribution. The flex-grow will attempt to respect it's given ratio until the content of the column exceeds it's parameters. This is the only reason a flex-grow based column will ever drop onto another row.
@@ -147,7 +147,7 @@ title: 8 Gauge Styleguide
           .col.col-grow-2
             .sg-box
               %code .col.col-grow-2
-    %section
+    %section#fixed-column-layout
       .section-content.margin-auto.txt-c
         %h2.mbxl Fixed Column Layout
         %p.type-lg Add in the fixed column class and pass the column a defined width or allow content like an image to dictate the desired width. It's recommended to fill the space with dynamic flex columns however you can mix in percent based columns too. Utilizing a fixed column with only percent based columns will make it difficult to reach 100%.
@@ -208,7 +208,7 @@ title: 8 Gauge Styleguide
           .col.col-6
             .sg-box-tip
               25% of Total
-    %section
+    %section#content-alignment
       .section-content.margin-auto.txt-c
         %h2.mbxl Content Alignments
         %p.type-lg Donec id elit non mi porta gravida at eget metus.
@@ -222,7 +222,7 @@ title: 8 Gauge Styleguide
           .col.col-bottom
             .sg-box.col-bottom{:style => "height:80px;"}
               %code .col.col-bottom
-    %section
+    %section#column-vertical-alignment
       .section-content.margin-auto.txt-c
         %h2.mbxl Column Vertical Alignments
         %p.type-lg Donec id elit non mi porta gravida at eget metus.
@@ -239,7 +239,7 @@ title: 8 Gauge Styleguide
           .col.col-align-bottom
             .sg-box
               %code .col.col-align-bottom
-    %section
+    %section#column-horizontal-alignment
       .section-content.margin-auto.txt-c
         %h2.mbxl Column Horizontal Alignments
         %p.type-lg Donec id elit non mi porta gravida at eget metus.
