@@ -13,6 +13,9 @@ $sg-rim-high:#fff;
     .styleguide-header {
         color: $accent-3;
     }
+    .section-content {
+      max-width: 1400px;
+    }
 }
 .sg-index-title {
     font-size:120px;
@@ -67,12 +70,45 @@ $sg-rim-high:#fff;
     }
 }
 //Styleguide Grid Box
+.flexboxgrid {
+  .section-content {
+    max-width:960px;
+  }
+  h1 {
+    font-size:64px;
+  }
+  h2 {
+    font-size:40px;
+  }
+  p {
+    max-width: 800px;
+    margin:auto;
+  }
+  section {
+    margin:56px 0 56px 0;
+  }
+  code {
+    font-size:14px;
+  }
+}
+.sg-box-tip {
+
+  width: 100%;
+  border-bottom:1px solid $accent-3;
+  border-left:1px solid $accent-3;
+  border-right:1px solid $accent-3;
+  border-top:none;
+}
+
+
 .sg-box {
     background-color: $dark-9;
     width: 100%;
     border-radius: 2px;
     padding: $base-unit;
+    min-height: ($base-unit * 5);
 }
+
 
 .index .sg {
     animation: sg-bg-gradients 8s infinite linear;

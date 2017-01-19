@@ -18,6 +18,7 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin: 0 ($base-unit * -1) 0 ($base-unit * -1);
     //margin: 0 0 ($base-unit*2) 0;
 
     //Use this to remove spacing
@@ -27,14 +28,14 @@
             padding: 0;
         }
     }
-    & > .col {
-      &:first-child {
-        padding-left:0;
-      }
-      &:last-child {
-        padding-right:0;
-      }
-    }
+    // & > .col {
+    //   &:first-child {
+    //     padding-left:0;
+    //   }
+    //   &:last-child {
+    //     padding-right:0;
+    //   }
+    // }
 }
 
 .col {
@@ -178,6 +179,21 @@
 }
 .col-grow-6 {
   flex-grow: 6;
+}
+.col-grow-7 {
+  flex-grow: 7;
+}
+.col-grow-8 {
+  flex-grow: 8;
+}
+.col-grow-9 {
+  flex-grow: 9;
+}
+.col-grow-10 {
+  flex-grow: 10;
+}
+.col-grow-11 {
+  flex-grow: 11;
 }
 /////////////////////////
 //Percent Based Columns

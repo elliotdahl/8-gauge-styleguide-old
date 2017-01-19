@@ -1,3 +1,20 @@
+// .svgicon {
+//     display: inline-flex;
+//     align-self: center;
+//     position: relative;
+//     height: 1em;
+//     width: 1em;
+// }
+//
+// .svgicon svg, .svgicon img {
+//     height: 1em;
+//     width: 1em;
+// }
+//
+// .svgicon.svg-baseline svg, .svgicon.svg-baseline img {
+//     bottom: -0.125em;
+//     position: absolute;
+// }
 .svgicon {
     display: inline-flex;
     align-self: center;
@@ -11,7 +28,6 @@
     width: 1em;
 }
 
-.svgicon.svg-baseline svg, .svgicon.svg-baseline img {
-    bottom: -0.125em;
-    position: absolute;
+.svgicon.svg-baseline {
+    top: 0.125em;
 }
