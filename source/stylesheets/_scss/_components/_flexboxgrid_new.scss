@@ -85,6 +85,8 @@
     // -webkit-box-align: start;
     // align-items: flex-start;
     justify-content: flex-start !important;
+    flex-direction: column;
+    display: flex;
 }
 
 .col-bottom {
@@ -93,6 +95,8 @@
     // -webkit-box-align: end;
     // align-items: flex-end;
     justify-content: flex-end !important;
+    flex-direction: column;
+    display: flex;
 }
 
 .col-middle {
@@ -102,8 +106,6 @@
     // justify-content: center;
     // text-align: center;
     justify-content: center;
-
-//UPDATED CHANGE
     flex-direction: column;
     display: flex;
 }
