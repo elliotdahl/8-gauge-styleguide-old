@@ -17,7 +17,12 @@ ul {
         content:"";
         position: absolute;
         left:0;
-        //This could be calculated with ems to scale with text size
+        //Calculated with ems -- Touchy, Line-height breaks it
+        // top: 0.4375em;
+        // height: 0.3125em;
+        // width: 0.3125em;
+
+        //Calculated with hard pixels
         top: (24px / 2) - 3px; //half of the line height minus half of circle height
         height:6px;
         width:6px;
