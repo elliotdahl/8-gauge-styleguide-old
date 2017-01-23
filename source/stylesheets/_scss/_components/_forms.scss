@@ -72,6 +72,12 @@ input[type="radio"] {
     display: inline;
     margin-right: 2px;
 }
+.form-group-checkbox {
+  label {
+    display: inline-block;
+    font-weight: 400;
+  }
+}
 
 label,
 legend {

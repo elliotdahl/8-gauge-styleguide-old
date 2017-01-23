@@ -340,9 +340,10 @@ title: 8 Gauge Styleguide
             %h4 Radio/Checkbox
             .section-format.mbxl.pbl
               %form
-                .form-group
-                  %input{:type => "checkbox"}
-                  Remember Me
+                .form-group-checkbox
+                  %input#check-me{:type => "checkbox"}
+                  %label{:for => "check-me"}
+                    Remember Me
                 .form-group
                   %input{:type => "radio"}
                   Don't Remember me
