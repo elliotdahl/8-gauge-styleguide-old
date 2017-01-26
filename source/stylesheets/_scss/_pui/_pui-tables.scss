@@ -1,0 +1,306 @@
+// Tables
+// -------------------------
+
+$table-cell-padding:                 8px 14px !default;
+$table-condensed-cell-padding:       5px !default;
+
+$table-bg:                           transparent !default; // overall background-color
+$table-bg-accent:                    $neutral-10; // for striping
+$table-bg-hover:                     transparent; //TODO: this was null, but causes darken() to throw in table-row.scss, could we fix darken?
+$table-bg-active:                    $table-bg-hover !default;
+
+$table-border-color:                 #ddd !default; // table and cell border
+
+$table-standard-header-bg:           $neutral-3;
+$table-standard-border-color:        $neutral-9;
+
+
+// Table Scrollable
+
+$table-scrollable-lg:            900px;
+$table-scrollable-md:            600px;
+$table-scrollable-sm:            300px;
+$table-scrollable-default-height:183px;
+
+$table-scrollable-border:        1px solid $neutral-8;
+$table-scrollable-header-border: 2px solid $neutral-8;
+$table-scrollable-body-border:   3px solid $neutral-9;
+
+// Whitespace
+// -------------------------
+$whitespace-s:        5px;
+$whitespace-m:        7px;
+$whitespace-l:        10px;
+$whitespace-xl:       20px;
+$whitespace-xxl:      40px;
+$whitespace-xxxl:     120px;
+$whitespace-xxxxl:    140px;
+
+// mobile screen whitespace
+$whitespace-screen-sm-s:     5px;
+$whitespace-screen-sm-m:     7px;
+$whitespace-screen-sm-l:     10px;
+$whitespace-screen-sm-xl:    15px;
+$whitespace-screen-sm-xxl:   20px;
+$whitespace-screen-sm-xxxl:  30px;
+$whitespace-screen-sm-xxxxl: 30px;
+
+// Terrible terrible code
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.table-data {
+  border: none;
+  tbody, thead, .tbody, .thead {
+    tr, .tr {
+      border-bottom: 1px solid $gray-7;
+      th, .th {
+        border-bottom: none;
+        border-color: $gray-7;
+        border-right: 1px solid $gray-7;
+        padding: $whitespace-l;
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: 0.3px;
+        &:first-child {
+          border-bottom: none;
+        }
+        &:last-child {
+          border: none;
+        }
+        background-color: $gray-9;
+      }
+      td, .td {
+        padding: 10px 10px;
+        border: none; // overwriting bootstrap default values which are too specific
+      }
+    }
+  }
+
+  tbody, .tbody {
+    tr, .tr {
+      background-color: $gray-9;
+      &:hover {
+        -webkit-transition: background-color 300ms ease-out;
+        -moz-transition: background-color 300ms ease-out;
+        transition: background-color 300ms ease-out;
+        background-color: $gray-10;
+      }
+      &:last-child {
+        border-bottom: 2px solid $shadow-3;
+      }
+    }
+  }
+  // end optical illusion bug code
+
+  > thead > tr, > .thead > .tr {
+    text-transform: uppercase;
+    &:last-child {
+    }
+    > th, > .th {
+      color: $gray-3;
+    }
+  }
+}
+
+.table-light {
+  tbody, thead, .tbody, .thead {
+    tr, .tr {
+      background-color: $gray-10;
+      th, .th, td, .td {
+        background-color: $gray-10;
+      }
+      td, .td {
+        border: none; // overwriting bootstrap default values which are too specific
+      }
+    }
+  }
+}
+
+.table-key-value {
+  table-layout: fixed;
+  tbody, thead, .tbody, .thead {
+    tr, .tr {
+      th, .th {
+        border: none; // overwriting bootstrap default values which are too specific
+      }
+    }
+  }
+  tbody {
+    tr {
+      &:last-child {
+        border: none;
+      }
+      th, td {
+        padding: 0;
+        margin: 0;
+      }
+      th {
+        text-transform: uppercase;
+        font-weight: 800;
+        text-align: left;
+        color: $gray-5;
+      }
+      td {
+        text-align: left;
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.table-hover {
+  td {
+    cursor: pointer;
+  }
+}
+
+.table-sortable {
+  .sortable {
+    //@include no-select;
+    cursor: pointer;
+    &:hover {
+      background-color: white;
+      -webkit-transition: background-color 300ms ease-out;
+      -moz-transition: background-color 300ms ease-out;
+      transition: background-color 300ms ease-out;
+    }
+  }
+
+  .svgicon {
+    position: absolute;
+    margin-top: -5px;
+  }
+
+  .icon-arrow_drop_up, .icon-arrow_drop_down {
+    width: 1.5em;
+    height: 1.5em;
+    position: relative;
+    top: 3px;
+  }
+}
+
+.editing {
+  .state-adding-trigger {
+    visibility: hidden;
+  }
+  .table-addable {
+    .thead-state-viewing,
+    .td-state-viewing {
+      display: none;
+    }
+
+    td {
+      display: none;
+    }
+    td:first-child {
+      display: table-cell;
+    }
+    thead.state-editing-show {
+      display: table-header-group;
+    }
+    tr.state-editing-show {
+      display: table-row;
+    }
+  }
+}
+
+.table-addable {
+  table-layout: fixed;
+
+  .state-editing-show {
+    display: none;
+  }
+
+  .state-adding-item-show {
+    display: none;
+  }
+
+  .inline-table-item.ng-enter.ng-enter-active {
+    opacity: 1;
+    .addedConfirmation {
+      display: table-cell;
+    }
+  }
+
+  .inline-table-item {
+    .addedConfirmation {
+      color: forestgreen;
+    }
+  }
+
+  .saveRequested {
+    opacity: 0.3;
+  }
+
+  .deleteRequested {
+    -webkit-transition: all ease-out .2s;
+    transition: all ease-out .2s;
+    color: $gray-5;
+  }
+
+  .ng-leave {
+    -webkit-transition: all ease-out .5s;
+    transition: all ease-out .5s;
+  }
+
+  .ng-leave.ng-leave-active {
+    color: $gray-9;
+  }
+
+  .saved {
+    opacity: 1;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+  }
+
+}
+
+.table-scrollable {
+  border: $table-scrollable-border;
+
+  table {
+    table-layout: fixed;
+    tr:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .table {
+    margin: 0;
+  }
+
+  .table-scrollable-header {
+    border-bottom: $table-scrollable-header-border;
+  }
+
+  .table-scrollable-body {
+    border-top: $table-scrollable-body-border;
+    max-height: $table-scrollable-default-height;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  &.table-scrollable-sm {
+    .table-scrollable-body {
+      max-height: $table-scrollable-sm;
+    }
+  }
+  &.table-scrollable-md {
+    .table-scrollable-body {
+      max-height: $table-scrollable-md;
+    }
+  }
+  &.table-scrollable-lg {
+    .table-scrollable-body {
+      max-height: $table-scrollable-lg;
+    }
+  }
+}

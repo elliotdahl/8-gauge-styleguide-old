@@ -1,0 +1,344 @@
+---
+title: 8 Gauge Styleguide
+---
+
+.page
+  %section.pvxxl
+    .section-content.margin-auto.txt-c
+      %h1 Flex Tables
+      %p.type-lg Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.
+  %section
+    .section-content.margin-auto
+      %h2.mbxl.txt-c The Foundation
+      %p.type-lg.mbxl.txt-c
+        Basic css flex table with a
+        %code .box-shadow-key-1
+        to set it off from the background.
+      .table.box-shadow-key-1
+        .th.grid
+          .td.col.col-2
+            Header 1
+          .td.col.col-2
+            Header 2
+          .td.col.col-4
+            Header 3
+          .td.col.col-8
+            Header 4
+          .td.col.col-8
+            Header 5
+        .tr.grid
+          .td.col.col-2
+            %div Cell 1
+            %div Cell 1.2
+          .td.col.col-2
+            %div Cell 2
+            %div Cell 2.1
+            %div Cell 2.2
+          .td.col.col-4.col-top
+            Cell 3 .col-top
+          .td.col.col-8.col-bottom
+            Cell 4 .col-bottom
+          .td.col.col-8
+            Cell 5
+        .tr.grid
+          .td.col.col-2
+            Cell 1
+          .td.col.col-2
+            %div Cell 2
+            %div Cell 2.2
+          .td.col.col-4
+            .type-ellipsis
+              Ellipsis-example-HotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlinebling
+          .td.col
+            Cell 4 + 5 (auto width)
+      %h4.txt-c Table Borders and Hovers
+      %p.txt-c
+        This table has no box-shadow or hovers. The
+        %code .no-hover
+        class can be applied to the entire table or a specific row.
+      .table.no-hover
+        .th.grid
+          .td.col.col-4
+            Header 1
+          .td.col.col-2
+            Header 2
+          .td.col.col-4
+            Header 3
+          .td.col.col-6
+            Header 4
+          .td.col.col-8
+            Header 5
+        .tr.grid
+          .td.col.col-4
+            %code table.no-hover
+          .td.col.col-2
+            Cell 2
+          .td.col.col-4
+            Cell 3
+          .td.col.col-6
+            Cell 4
+          .td.col.col-8
+            Cell 5
+      .table
+        .th.grid
+          .td.col.col-4
+            Header 1
+          .td.col.col-2
+            Header 2
+          .td.col.col-4
+            Header 3
+          .td.col.col-6
+            Header 4
+          .td.col.col-8
+            Header 5
+        .tr.grid.no-hover
+          .td.col.col-4
+            %code .tr.no-hover
+          .td.col.col-2
+            Cell 2
+          .td.col.col-4
+            Cell 3
+          .td.col.col-6
+            Cell 4
+          .td.col.col-8
+            Cell 5
+        .tr.grid
+          .td.col.col-4
+            %code .tr
+          .td.col.col-2
+            Cell 2
+          .td.col.col-4
+            Cell 3
+          .td.col.col-6
+            Cell 4
+          .td.col.col-8
+            Cell 5
+      %p.txt-c
+        No side borders to cells using class
+        %code .tr-no-h-borders
+        on the
+        %code .tr
+        or
+        %code .table
+        or
+        %code .th
+      .table.tr-no-h-borders
+        .th.grid
+          .td.col.col-2
+            Header 1
+          .td.col.col-2
+            Header 2
+          .td.col.col-4
+            Header 3
+          .td.col.col-8
+            Header 4
+          .td.col.col-8
+            Header 5
+        .tr.grid
+          .td.col.col-2
+            Cell 1
+          .td.col.col-2
+            Cell 2
+          .td.col.col-4
+            Cell 3
+          .td.col.col-8
+            Cell 4
+          .td.col.col-8
+            Cell 5
+        .tr.grid
+          .td.col.col-2
+            Cell 1
+          .td.col.col-2
+            Cell 2
+          .td.col.col-4
+            Cell 3
+          .td.col.col-8
+            Cell 4
+          .td.col.col-8
+            Cell 5
+      %p.txt-c
+        No external borders to cells using class
+        %code .tr-no-ext-borders
+        on the
+        %code .tr
+        or
+        %code .table
+        or
+        %code .th
+      .table.tr-no-ext-borders
+        .th.grid
+          .td.col.col-2
+            Header 1
+          .td.col.col-2
+            Header 2
+          .td.col.col-4
+            Header 3
+          .td.col.col-8
+            Header 4
+          .td.col.col-8
+            Header 5
+        .tr.grid.tr-no-h-borders
+          .td.col.col-2
+            Cell 1
+          .td.col.col-2
+            Cell 2
+          .td.col.col-4
+            Cell 3
+          .td.col.col-8
+            Cell 4
+          .td.col.col-8
+            Cell 5
+      %p.txt-c
+        No borders on anything. Individual cell highlights. Add
+        %code .td-hover
+        to
+        %code .table
+      .table.table-no-borders.td-hover
+        .th.grid
+          .td.col.col-2
+            Header 1
+          .td.col.col-2
+            Header 2
+          .td.col.col-4
+            Header 3
+          .td.col.col-8
+            Header 4
+          .td.col.col-8
+            Header 5
+        .tr.grid
+          .td.col.col-2
+            Cell 1
+          .td.col.col-2
+            Cell 2
+          .td.col.col-4
+            Cell 3
+          .td.col.col-8
+            Cell 4
+          .td.col.col-8
+            Cell 5
+        .tr.grid
+          .td.col.col-2
+            Cell 1
+          .td.col.col-2
+            Cell 2
+          .td.col.col-4
+            Cell 3
+          .td.col.col-8
+            Cell 4
+          .td.col.col-8
+            Cell 5
+      %h4.txt-c Table Linking
+      %p.txt-c Row A tags and cell A tags. Apply the proper classes directly to the A tag.
+      .table
+        .th.grid
+          .td.col.col-2
+            Header 1
+          .td.col.col-2
+            Header 2
+          .td.col.col-4
+            Header 3
+          .td.col.col-8
+            Header 4
+          .td.col.col-8
+            Header 5
+        .tr.grid
+          .td.col.col-2
+            Cell 1
+          .td.col.col-2
+            Cell 2
+          .td.col.col-4
+            Cell 3
+          .td.col.col-8
+            Cell 4
+          %a.td.col.col-8{:href => "#tables", :title => "Everyone Can Read It"}
+            Cell 5
+        %a.tr.grid{:href => "#tables", :title => "Everyone Can Read It"}
+
+          .td.col.col-24
+            Cell 24
+
+      %h4.txt-c Table Breaks
+      %p.txt-c
+        Large Column breaks (750px) Collapse Rows add
+        %code .table-lg-row
+        to the
+        %code .table
+      .table.table-lg-row
+        .tr.grid
+          .td.col.col-lg.col-2
+            Cell 1
+          .td.col.col-lg.col-2
+            Cell 2
+          .td.col.col-lg.col-4
+            Cell 3
+          .td.col.col-lg.col-8
+            Cell 4
+          .td.col.col-lg.col-8
+            Cell 5
+        .tr.grid
+          .td.col.col-lg.col-2
+            Cell 1
+          .td.col.col-lg.col-2
+            Cell 2
+          .td.col.col-lg.col-4
+            Cell 3
+          .td.col.col-lg.col-8
+            Cell 4
+          .td.col.col-lg.col-8
+            Cell 5
+      %p.txt-c
+        Medium Column breaks (620px) Collapse Rows add
+        %code .table-md-row
+        to the
+        %code .table
+      .table.table-md-row
+        .tr.grid
+          .td.col.col-md.col-2
+            Cell 1
+          .td.col.col-md.col-2
+            Cell 2
+          .td.col.col-md.col-4
+            Cell 3
+          .td.col.col-md.col-8
+            Cell 4
+          .td.col.col-md.col-8
+            Cell 5
+        .tr.grid
+          .td.col.col-md.col-2
+            Cell 1
+          .td.col.col-md.col-2
+            Cell 2
+          .td.col.col-md.col-4
+            Cell 3
+          .td.col.col-md.col-8
+            Cell 4
+          .td.col.col-md.col-8
+            Cell 5
+      %p.txt-c
+        Small Column breaks (480px) Collapse Rows add
+        %code .table-sm-row
+        to the
+        %code .table
+      .table.table-sm-row
+        .tr.grid
+          .td.col.col-sm.col-2
+            Cell 1
+          .td.col.col-sm.col-2
+            Cell 2
+          .td.col.col-sm.col-4
+            Cell 3
+          .td.col.col-sm.col-8
+            Cell 4
+          .td.col.col-sm.col-8
+            Cell 5
+        .tr.grid
+          .td.col.col-sm.col-2
+            Cell 1
+          .td.col.col-sm.col-2
+            Cell 2
+          .td.col.col-sm.col-4
+            Cell 3
+          .td.col.col-sm.col-8
+            Cell 4
+          .td.col.col-sm.col-8
+            Cell 5
