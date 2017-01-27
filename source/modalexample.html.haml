@@ -6,7 +6,7 @@ title: 8 Gauge Styleguide
   %section.pvxxl
     .section-content.margin-auto.txt-c.type-white
       %h1 Modals
-      %p.sg.type-lg.mbxl These wonderful floating boxes are to be kept short and sweet as often as possible. The contents of the body are intended to hold an item that will push the footer down by 16px.
+      %p.sg.type-lg.mbxl These wonderful floating boxes are to be kept short and sweet as often as possible. The contents of the body are intended to hold an item that will push the footer down by 16px. The width of the modal is 744px.
     .section-content.margin-auto
       .modal
         .modal-dialog
@@ -52,16 +52,16 @@ title: 8 Gauge Styleguide
               %p Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod.
               .grid
                 .col
-                  .form-group
+                  .form-group.mrn
                     %label Name
                     %input.form-control{:type => "text", :placeholder => "Name"}
                 .col
-                  .form-group
+                  .form-group.mrn
                     %label Email
                     %input.form-control{:type => "email", :placeholder => "Email"}
               .grid
                 .col
-                  .form-group.form-group-select
+                  .form-group.form-group-select.mrn
                     %label Company
                     %select.form-control
                       %option Pivotal
@@ -71,7 +71,7 @@ title: 8 Gauge Styleguide
                     .svgicon
                       =partial 'images/svg-lib/select_chevrons.svg'
                 .col
-                  .form-group
+                  .form-group.mrn
                     %label Role
                     %input.form-control{:type => "text", :placeholder => "Role"}
 
