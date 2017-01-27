@@ -69,8 +69,12 @@ $sg-rim-high:#fff;
         font-size: 10px;
     }
 }
+//Styleguide Modal Example
+.modalexample {
+  background-color:$dark-2;
+}
 //Styleguide Grid Box
-.flexboxgrid, .flextables {
+.flexboxgrid, .flextables, .modalexample {
   .section-content {
     max-width:960px;
   }
@@ -80,7 +84,7 @@ $sg-rim-high:#fff;
   h2 {
     font-size:40px;
   }
-  p {
+  p.sg {
     max-width: 800px;
     margin:auto;
   }

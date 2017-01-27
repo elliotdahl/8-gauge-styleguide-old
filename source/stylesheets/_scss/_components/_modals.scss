@@ -1,0 +1,27 @@
+.modal {
+  @extend .box-shadow-3;
+}
+
+.modal-dialog {
+  width:744px;
+  margin:40px auto;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius:2px;
+}
+
+.modal-header {
+  padding: ($base-unit * 2) ($base-unit * 3) 0 ($base-unit * 3);
+}
+.modal-body {
+  padding: $base-unit ($base-unit * 3) $base-unit ($base-unit * 3);
+  p {
+    @extend .type-lg;
+  }
+}
+
+.modal-footer {
+  padding: 0 ($base-unit * 3) ($base-unit * 3) ($base-unit * 3);
+}

@@ -6,15 +6,15 @@ title: 8 Gauge Styleguide
   %section.pvxxl
     .section-content.margin-auto.txt-c
       %h1 Flex Grid
-      %p.type-lg Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.
+      %p.sg.type-lg Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.
   %section
     .section-content.margin-auto.txt-c
       %h2.mbxl The Foundation
-      %p.type-lg The reason why... Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit.
+      %p.sg.type-lg The reason why... Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit.
     %section#auto-layout
       .section-content.margin-auto.txt-c
         %h2.mbxl The Basic Auto Layout
-        %p.type-lg Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+        %p.sg.type-lg Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
 
         .grid.mvxl
           .col
@@ -58,7 +58,7 @@ title: 8 Gauge Styleguide
     %section#no-gutter
       .section-content.margin-auto.txt-c
         %h2.mbxl No Gutter
-        %p.type-lg
+        %p.sg.type-lg
           Remove the gutter by adding
           %code .grid-nogutter
           to the
@@ -79,7 +79,7 @@ title: 8 Gauge Styleguide
     %section#percent-layout
       .section-content.margin-auto.txt-c
         %h2.mbxl Percent Based Layout
-        %p.type-lg The familiar n/24 column based system
+        %p.sg.type-lg The familiar n/24 column based system
         .grid.mvxl
           .col.col-16
             .sg-box
@@ -116,7 +116,7 @@ title: 8 Gauge Styleguide
     %section#flex-grow-layout
       .section-content.margin-auto.txt-c
         %h2.mbxl Flex Grow Layout
-        %p.type-lg Based on flex-grow this layout style allows for dynamic content distribution. The flex-grow will attempt to respect it's given ratio until the content of the column exceeds it's parameters. This is the only reason a flex-grow based column will ever drop onto another row.
+        %p.sg.type-lg Based on flex-grow this layout style allows for dynamic content distribution. The flex-grow will attempt to respect it's given ratio until the content of the column exceeds it's parameters. This is the only reason a flex-grow based column will ever drop onto another row.
         .grid.mvxl
           .col.col-grow-2
             .sg-box
@@ -150,7 +150,7 @@ title: 8 Gauge Styleguide
     %section#fixed-column-layout
       .section-content.margin-auto.txt-c
         %h2.mbxl Fixed Column Layout
-        %p.type-lg Add in the fixed column class and pass the column a defined width or allow content like an image to dictate the desired width. It's recommended to fill the space with dynamic flex columns however you can mix in percent based columns too. Utilizing a fixed column with only percent based columns will make it difficult to reach 100%.
+        %p.sg.type-lg Add in the fixed column class and pass the column a defined width or allow content like an image to dictate the desired width. It's recommended to fill the space with dynamic flex columns however you can mix in percent based columns too. Utilizing a fixed column with only percent based columns will make it difficult to reach 100%.
         .grid.mvxl
           .col.col-fixed{:style => "width:240px"}
             .sg-box
@@ -211,7 +211,7 @@ title: 8 Gauge Styleguide
     %section#content-alignment
       .section-content.margin-auto.txt-c
         %h2.mbxl Content Alignments
-        %p.type-lg Donec id elit non mi porta gravida at eget metus.
+        %p.sg.type-lg Donec id elit non mi porta gravida at eget metus.
         .grid.mvxl
           .col.col-top
             .sg-box.col-top{:style => "height:80px;"}
@@ -225,7 +225,7 @@ title: 8 Gauge Styleguide
     %section#column-vertical-alignment
       .section-content.margin-auto.txt-c
         %h2.mbxl Column Vertical Alignments
-        %p.type-lg Donec id elit non mi porta gravida at eget metus.
+        %p.sg.type-lg Donec id elit non mi porta gravida at eget metus.
         .grid.mvxl
           .col.col-align-top
             .sg-box
@@ -242,7 +242,7 @@ title: 8 Gauge Styleguide
     %section#column-horizontal-alignment
       .section-content.margin-auto.txt-c
         %h2.mbxl Column Horizontal Alignments
-        %p.type-lg Donec id elit non mi porta gravida at eget metus.
+        %p.sg.type-lg Donec id elit non mi porta gravida at eget metus.
         .grid.grid-start.mvxl
           .col.col-12
             .sg-box
@@ -258,7 +258,7 @@ title: 8 Gauge Styleguide
     %section
       .section-content.margin-auto.txt-c
         %h2.mbxl Column Distribution
-        %p.type-lg Donec id elit non mi porta gravida at eget metus.
+        %p.sg.type-lg Donec id elit non mi porta gravida at eget metus.
         .grid.grid-around.mvxl
           .col.col-fixed{:style => "width:200px;"}
             .sg-box
@@ -282,7 +282,7 @@ title: 8 Gauge Styleguide
     %section
       .section-content.margin-auto.txt-c
         %h2.mbxl Column Ordering
-        %p.type-lg Donec id elit non mi porta gravida at eget metus.
+        %p.sg.type-lg Donec id elit non mi porta gravida at eget metus.
         .grid.mvxl
           .col
             .sg-box
@@ -316,7 +316,7 @@ title: 8 Gauge Styleguide
           .col
             .sg-box
               %span.em-high.type-md 3
-        %p.type-lg
+        %p.sg.type-lg
           Adding
           %code .grid-reverse
           to the
@@ -337,8 +337,8 @@ title: 8 Gauge Styleguide
     %section
       .section-content.margin-auto.txt-c
         %h2.mbxl Nested Columns
-        %p.type-lg Donec id elit non mi porta gravida at eget metus.
+        %p.sg.type-lg Donec id elit non mi porta gravida at eget metus.
     %section
       .section-content.margin-auto.txt-c
         %h2.mbxl Media Breaks
-        %p.type-lg Donec id elit non mi porta gravida at eget metus.
+        %p.sg.type-lg Donec id elit non mi porta gravida at eget metus.
