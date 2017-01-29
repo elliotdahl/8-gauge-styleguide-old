@@ -73,11 +73,20 @@ $sg-rim-high:#fff;
 .modalexample {
   background-color:$dark-2;
 }
+//Styleguide Flex Table
+ .flextables {
+   .section-content {
+     max-width:1200px;
+   }
+ }
 //Styleguide Grid Box
-.flexboxgrid, .flextables, .modalexample {
+.flexboxgrid, .modalexample {
   .section-content {
     max-width:960px;
   }
+}
+//Styleguide special pages
+.flexboxgrid, .flextables, .modalexample {
   h1 {
     font-size:64px;
   }

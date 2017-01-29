@@ -2,6 +2,7 @@
 .table {
     background-color: $table-bg;
     margin-bottom: ($base-unit*2);
+    border-color: $table-border-color;
     .grid {
         margin:0;
     }
@@ -13,10 +14,6 @@
         color: $table-header-color;
         .td {
             border-bottom: solid 1px $table-border-color;
-            &:after {
-                content:"";
-
-            }
         }
         &:first-child .td {
             &:first-child {
@@ -48,10 +45,10 @@
         &.no-hover {
             background-color: $table-bg;
         }
-        
+
     }
     //Table Cell
-    
+
 
     .td {
         border-left: solid 1px $table-border-color;
@@ -61,17 +58,12 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
-
-        // flex-direction: row;
-        
-        // align-items: center;
         &:last-child {
             border-right: solid 1px $table-border-color;
         }
     }
     .td.col {
-       padding: $base-unit; 
+       padding: $base-unit;
     }
     &.no-hover {
         .tr:hover {
@@ -86,7 +78,7 @@
             background-color: $table-bg-hover;
         }
     }
-    
+
     //No cell borders in row
     .tr.tr-no-h-borders {
         .td {
@@ -204,3 +196,19 @@
 
 }
 
+//HTML Tables
+table {
+  width:100%;
+  background-color: $table-bg;
+  margin-bottom: ($base-unit*2);
+}
+td {
+    border-left: solid 1px $table-border-color;
+    border-top: solid 1px $table-border-color;
+    border-right:none;
+    padding: $base-unit;
+
+    &:last-child {
+        border-right: solid 1px $table-border-color;
+    }
+}

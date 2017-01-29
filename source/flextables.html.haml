@@ -14,43 +14,68 @@ title: 8 Gauge Styleguide
         Basic css flex table with a
         %code .box-shadow-key-1
         to set it off from the background.
-      .table.box-shadow-key-1
-        .th.grid
-          .td.col.col-2
-            Header 1
-          .td.col.col-2
-            Header 2
-          .td.col.col-4
-            Header 3
-          .td.col.col-8
-            Header 4
-          .td.col.col-8
-            Header 5
-        .tr.grid
-          .td.col.col-2
-            %div Cell 1
-            %div Cell 1.2
-          .td.col.col-2
-            %div Cell 2
-            %div Cell 2.1
-            %div Cell 2.2
-          .td.col.col-4.col-top
-            Cell 3 .col-top
-          .td.col.col-8.col-bottom
-            Cell 4 .col-bottom
-          .td.col.col-8
-            Cell 5
-        .tr.grid
-          .td.col.col-2
-            Cell 1
-          .td.col.col-2
-            %div Cell 2
-            %div Cell 2.2
-          .td.col.col-4
-            .type-ellipsis
-              Ellipsis-example-HotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlinebling
-          .td.col
-            Cell 4 + 5 (auto width)
+      .grid
+        .col.col-12
+          .table.box-shadow-key-1
+            .th.grid
+              .td.col.col-6
+                Head
+              .td.col.col-4
+                Head
+              .td.col.col-4
+                Head
+              .td.col.col-6
+                Head
+              .td.col.col-4
+                Head
+            .tr.grid
+              .td.col.col-6
+                %div Cell 1
+                %div Cell 1.2
+              .td.col.col-4
+                %div Cell 2
+                %div Cell 2.1
+                %div Cell 2.2
+              .td.col.col-4.col-top
+                Cell 3 .col-top
+              .td.col.col-6.col-bottom
+                Cell 4 .col-bottom
+              .td.col.col-4
+                Cell 5
+            .tr.grid
+              .td.col.col-6
+                Cell 1
+              .td.col.col-4
+                %div Cell 2
+                %div Cell 2.2
+              .td.col.col-4
+                .type-ellipsis
+                  Ellipsis-example-HotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlinebling
+              .td.col
+                Cell 4 + 5 (auto width)
+        .col.col-12
+          %table
+            %tr
+              %th Head
+              %th Head
+              %th Head
+              %th Head
+              %th Head
+              %th Head
+            %tr
+              %td
+                Table Data
+              %td
+                Table Data
+              %td
+                Table Data
+              %td
+                Table Data
+              %td
+                Table Data
+              %td
+                Table Data
+
       %h4.txt-c Table Borders and Hovers
       %p.sg.txt-c
         This table has no box-shadow or hovers. The
