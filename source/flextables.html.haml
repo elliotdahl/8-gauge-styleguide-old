@@ -17,16 +17,16 @@ title: 8 Gauge Styleguide
       .grid
         .col.col-12
           .table.box-shadow-key-1
-            .th.grid
-              .td.col.col-6
+            .tr.grid.no-hover
+              .th.col.col-6
                 Head
-              .td.col.col-4
+              .th.col.col-4
                 Head
-              .td.col.col-4
+              .th.col.col-4
                 Head
-              .td.col.col-6
+              .th.col.col-6
                 Head
-              .td.col.col-4
+              .th.col.col-4
                 Head
             .tr.grid
               .td.col.col-6
@@ -76,22 +76,22 @@ title: 8 Gauge Styleguide
               %td
                 Table Data
 
-      %h4.txt-c Table Borders and Hovers
+      %h4.txt-c Table Hovers
       %p.sg.txt-c
         This table has no box-shadow or hovers. The
         %code .no-hover
         class can be applied to the entire table or a specific row.
       .table.no-hover
-        .th.grid
-          .td.col.col-4
+        .tr.grid
+          .th.col.col-4
             Header 1
-          .td.col.col-2
+          .th.col.col-2
             Header 2
-          .td.col.col-4
+          .th.col.col-4
             Header 3
-          .td.col.col-6
+          .th.col.col-6
             Header 4
-          .td.col.col-8
+          .th.col.col-8
             Header 5
         .tr.grid
           .td.col.col-4
@@ -105,16 +105,16 @@ title: 8 Gauge Styleguide
           .td.col.col-8
             Cell 5
       .table
-        .th.grid
-          .td.col.col-4
+        .tr.grid.no-hover
+          .th.col.col-4
             Header 1
-          .td.col.col-2
+          .th.col.col-2
             Header 2
-          .td.col.col-4
+          .th.col.col-4
             Header 3
-          .td.col.col-6
+          .th.col.col-6
             Header 4
-          .td.col.col-8
+          .th.col.col-8
             Header 5
         .tr.grid.no-hover
           .td.col.col-4
@@ -139,25 +139,65 @@ title: 8 Gauge Styleguide
           .td.col.col-8
             Cell 5
       %p.sg.txt-c
-        No side borders to cells using class
+        Individual cell hover higlights by adding
+        %code .td-hover
+        to the
+        %code .table
+        element.
+      .table.td-hover
+        .tr.grid
+          .th.col.col-2
+            Header 1
+          .th.col.col-2
+            Header 2
+          .th.col.col-4
+            Header 3
+          .th.col.col-8
+            Header 4
+          .th.col.col-8
+            Header 5
+        .tr.grid
+          .td.col.col-2
+            Cell 1
+          .td.col.col-2
+            Cell 2
+          .td.col.col-4
+            Cell 3
+          .td.col.col-8
+            Cell 4
+          .td.col.col-8
+            Cell 5
+        .tr.grid
+          .td.col.col-2
+            Cell 1
+          .td.col.col-2
+            Cell 2
+          .td.col.col-4
+            Cell 3
+          .td.col.col-8
+            Cell 4
+          .td.col.col-8
+            Cell 5
+      %h4.txt-c Table Borders
+      %p.sg.txt-c
+        No internal side borders to cells using class
         %code .tr-no-h-borders
         on the
         %code .tr
         or
         %code .table
-        or
-        %code .th
+        elements.
       .table.tr-no-h-borders
-        .th.grid
-          .td.col.col-2
+        .tr.grid.no-hover
+          .th.col.col-2
             Header 1
-          .td.col.col-2
+          .th.col.col-2
             Header 2
-          .td.col.col-4
+          .th.col.col-4
             Header 3
-          .td.col.col-8
+          .th.col.col-8
             Header 4
-          .td.col.col-8
+          .th.col.col-8
             Header 5
         .tr.grid
           .td.col.col-2
@@ -182,25 +222,22 @@ title: 8 Gauge Styleguide
           .td.col.col-8
             Cell 5
       %p.sg.txt-c
-        No external borders to cells using class
-        %code .tr-no-ext-borders
+        No external borders to rows using class
+        %code .table-no-ext-borders
         on the
-        %code .tr
-        or
         %code .table
-        or
-        %code .th
-      .table.tr-no-ext-borders
-        .th.grid
-          .td.col.col-2
+        element.
+      .table.table-no-ext-borders
+        .tr.grid.tr-no-h-borders.no-hover
+          .th.col.col-2
             Header 1
-          .td.col.col-2
+          .th.col.col-2
             Header 2
-          .td.col.col-4
+          .th.col.col-4
             Header 3
-          .td.col.col-8
+          .th.col.col-8
             Header 4
-          .td.col.col-8
+          .th.col.col-8
             Header 5
         .tr.grid.tr-no-h-borders
           .td.col.col-2
@@ -213,22 +250,35 @@ title: 8 Gauge Styleguide
             Cell 4
           .td.col.col-8
             Cell 5
-      %p.sg.txt-c
-        No borders on anything. Individual cell highlights. Add
-        %code .td-hover
-        to
-        %code .table
-      .table.table-no-borders.td-hover
-        .th.grid
+        .tr.grid.tr-no-h-borders
           .td.col.col-2
-            Header 1
+            Cell 1
           .td.col.col-2
-            Header 2
+            Cell 2
           .td.col.col-4
+            Cell 3
+          .td.col.col-8
+            Cell 4
+          .td.col.col-8
+            Cell 5
+
+      %p.sg.txt-c
+        No borders on anything using
+        %code .table-no-borders
+        on the
+        %code table
+        element.
+      .table.table-no-borders.td-hover
+        .tr.grid
+          .th.col.col-2
+            Header 1
+          .th.col.col-2
+            Header 2
+          .th.col.col-4
             Header 3
-          .td.col.col-8
+          .th.col.col-8
             Header 4
-          .td.col.col-8
+          .th.col.col-8
             Header 5
         .tr.grid
           .td.col.col-2
@@ -255,16 +305,16 @@ title: 8 Gauge Styleguide
       %h4.txt-c Table Linking
       %p.sg.txt-c Row A tags and cell A tags. Apply the proper classes directly to the A tag.
       .table
-        .th.grid
-          .td.col.col-2
+        .tr.grid.no-hover
+          .th.col.col-2
             Header 1
-          .td.col.col-2
+          .th.col.col-2
             Header 2
-          .td.col.col-4
+          .th.col.col-4
             Header 3
-          .td.col.col-8
+          .th.col.col-8
             Header 4
-          .td.col.col-8
+          .th.col.col-8
             Header 5
         .tr.grid
           .td.col.col-2

@@ -1,0 +1,37 @@
+//HTML Tables
+table {
+  width:100%;
+  background-color: $table-bg;
+  margin-bottom: ($base-unit*2);
+
+  //HTML Ugly stuff
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+//General Row
+tr {
+  border-top: solid 1px $table-border-color;
+  &:first-child {
+    border-radius: $table-border-radius $table-border-radius 0 0;
+  }
+  &:last-child {
+    border-bottom: solid 1px $table-border-color;
+    border-radius: 0 0 $table-border-radius $table-border-radius;
+  }
+}
+//Table Header Cell
+th {
+  font-size: $table-header-font-size;
+  font-weight: $table-header-font-weight;
+  border-bottom:solid 2px $table-border-color;
+}
+//General Cell
+td, th {
+    border-left: solid 1px $table-border-color;
+    border-right:none;
+    padding: $base-unit;
+
+    &:last-child {
+        border-right: solid 1px $table-border-color;
+    }
+}

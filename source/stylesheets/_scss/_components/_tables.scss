@@ -2,68 +2,47 @@
 .table {
     background-color: $table-bg;
     margin-bottom: ($base-unit*2);
-    border-color: $table-border-color;
+    border-radius: $table-border-radius;
     .grid {
         margin:0;
     }
-    //Table Row Header
-    .th {
-        font-size: $table-header-font-size;
-        font-weight: $table-header-font-weight;
-        //text-transform: $table-header-text-transform;
-        color: $table-header-color;
-        .td {
-            border-bottom: solid 1px $table-border-color;
-        }
-        &:first-child .td {
-            &:first-child {
-                border-radius: 2px 0 0 0;
-            }
-            &:last-child {
-                border-radius: 0 2px 0 0;
-            }
-        }
-        //Following TR should have no border on top
-        // ~ .tr .td {
-        //     border-top:none;
-        // }
-    }
     //Table Row
     .tr {
-        &:last-child .td {
-            border-bottom: solid 1px $table-border-color;
-            &:first-child {
-                border-radius: 0 0 0 2px;
-            }
-            &:last-child {
-                border-radius: 0 0 2px 0;
-            }
-        }
-        &:hover {
-            background-color: $table-bg-hover;
-        }
-        &.no-hover {
-            background-color: $table-bg;
-        }
+      border-top: solid 1px $table-border-color;
+      border-left: solid 1px $table-border-color;
+      border-right: solid 1px $table-border-color;
 
+      &:first-child {
+        border-radius: $table-border-radius $table-border-radius 0 0;
+      }
+      &:last-child {
+        border-bottom: solid 1px $table-border-color;
+        border-radius: 0 0 $table-border-radius $table-border-radius;
+      }
+      &:hover {
+          background-color: $table-bg-hover;
+      }
+      &.no-hover {
+          background-color: $table-bg;
+      }
     }
     //Table Cell
-
-
-    .td {
-        border-left: solid 1px $table-border-color;
-        border-top: solid 1px $table-border-color;
+    .th {
+      font-size: $table-header-font-size;
+      font-weight: $table-header-font-weight;
+      border-bottom:solid 1px $table-border-color;
+    }
+    //General Cell
+    .td, .th {
+        border-right: solid 1px $table-border-color;
         padding: $base-unit;
         //Vert-middle
         display: flex;
         flex-direction: column;
         justify-content: center;
         &:last-child {
-            border-right: solid 1px $table-border-color;
+            border-right: none;
         }
-    }
-    .td.col {
-       padding: $base-unit;
     }
     &.no-hover {
         .tr:hover {
@@ -81,51 +60,42 @@
 
     //No cell borders in row
     .tr.tr-no-h-borders {
-        .td {
-            border-left: none;
-            &:first-child {
-                border-left: solid 1px $table-border-color;
-            }
+        .td, .th {
+            border-right: none;
+
         }
     }
     //Attached to .table
     &.tr-no-h-borders {
-        .td {
-            border-left: none;
-            &:first-child {
-                border-left: solid 1px $table-border-color;
-            }
-        }
-    }
-    //No cell borders in row
-    .th.th-no-h-borders {
-        .td {
-            border-left: none;
-            &:first-child {
-                border-left: solid 1px $table-border-color;
-            }
+        .td, .th {
+            border-right: none;
         }
     }
     //No External borders to a table
-    &.tr-no-ext-borders .tr, &.tr-no-ext-borders .th, .tr.tr-no-ext-borders, .th.tr-no-ext-borders {
-        .td {
-            &:first-child {
-                border-left:none;
-                border-radius:0;
-            }
-            &:last-child {
-                border-right:none;
-                border-radius:0;
-            }
+    &.table-no-ext-borders .tr{
+        border-left:none;
+        border-right:none;
+        border-radius:0;
+        &:first-child {
+          border-top:none;
+        }
+        &:last-child {
+          border-bottom:none;
         }
     }
+
+
     //No borders on table
     &.table-no-borders {
-        .th .td,
-        .tr .td {
+        .tr,
+        .tr .td,
+        .tr .th {
             border: none;
+            border-radius: 0;
         }
     }
+
+
     //Table Row Collapse
     &.table-sm-row {
         @media only screen and (max-width: $screen-sm) {
@@ -194,21 +164,4 @@
         }
     }
 
-}
-
-//HTML Tables
-table {
-  width:100%;
-  background-color: $table-bg;
-  margin-bottom: ($base-unit*2);
-}
-td {
-    border-left: solid 1px $table-border-color;
-    border-top: solid 1px $table-border-color;
-    border-right:none;
-    padding: $base-unit;
-
-    &:last-child {
-        border-right: solid 1px $table-border-color;
-    }
 }
