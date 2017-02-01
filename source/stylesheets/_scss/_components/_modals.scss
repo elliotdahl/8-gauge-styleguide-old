@@ -10,6 +10,7 @@
 .modal-content {
   background-color: #fff;
   border-radius:2px;
+  position: relative;
 }
 
 .modal-header {
@@ -24,4 +25,9 @@
 
 .modal-footer {
   padding: 0 ($base-unit * 3) ($base-unit * 3) ($base-unit * 3);
+}
+.modal-close {
+  position: absolute;
+  top:($base-unit * 2);
+  right:($base-unit * 2);
 }
