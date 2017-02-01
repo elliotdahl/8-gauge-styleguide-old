@@ -3,6 +3,7 @@ table {
   width:100%;
   background-color: $table-bg;
   margin-bottom: ($base-unit*2);
+  border-radius: $table-border-radius;
 
   //HTML Ugly stuff
   border-collapse: collapse;
@@ -30,7 +31,7 @@ td, th {
     border-left: solid 1px $table-border-color;
     border-right:none;
     padding: $base-unit;
-
+    text-align: inherit;
     &:last-child {
         border-right: solid 1px $table-border-color;
     }

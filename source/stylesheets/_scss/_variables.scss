@@ -228,7 +228,7 @@ $table-bg-active:                    $table-bg-hover !default;
 
 $table-border-color:                 $dark-9; // table and cell border
 $table-border-header-color:			 $dark-7;
-$table-border-radius: 0px;
+$table-border-radius: 2px;
 
 // Tooltips
 //--------------------------
@@ -251,9 +251,9 @@ $tooltip-light-bg: #fff;
 $tooltip-light-color: $dark-2;
 $tooltip-light-border-color: $dark-9;
 //Tooltip Sizes
-$tooltip-sm-width:104px;
-$tooltip-md-width:136px;
-$tooltip-lg-width:200px;
+$tooltip-sm-width:120px;
+$tooltip-md-width:240px;
+$tooltip-lg-width:360px;
 
 
 //Screen Sizes
