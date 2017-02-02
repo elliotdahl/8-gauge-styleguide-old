@@ -56,4 +56,41 @@ table.table {
           background-color: $table-bg-hover;
       }
   }
+  /////////////////////////
+  //Borders
+  ////////////////////////
+
+  //No cell borders in row
+  tr.tr-no-h-borders {
+      td, th {
+          border-right: none;
+
+      }
+  }
+  //Attached to .table
+  &.tr-no-h-borders {
+      td, th {
+          border-right: none;
+      }
+  }
+  //No External borders to a table
+  &.table-no-ext-borders tr{
+      border-left:none;
+      border-right:none;
+      border-radius:0;
+      &:first-child {
+        border-top:none;
+      }
+      &:last-child {
+        border-bottom:none;
+      }
+  }
+  //No borders on table
+  &.table-no-borders {
+      tr,
+      tr td,
+      tr th {
+          border: none;
+      }
+  }
 }
