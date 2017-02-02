@@ -16,6 +16,7 @@ title: 8 Gauge Styleguide
         to set it off from the background.
       .grid
         .col.col-12
+          .h4.txt-c.em-high CSS
           .table.box-shadow-key-1
             .tr.grid.no-hover
               .th.col.col-6
@@ -54,36 +55,41 @@ title: 8 Gauge Styleguide
               .td.col
                 Cell 4 + 5 (auto width)
         .col.col-12
-          %table
+          .h4.txt-c.em-high HTML
+          %table.table.box-shadow-key-1
+            %tr.no-hover
+              %th{:width => "25%"} Head
+              %th{:width => "16.667%"} Head
+              %th{:width => "16.667%"}  Head
+              %th{:width => "25%"} Head
+              %th{:width => "16.667%"}  Head
             %tr
-              %th Head
-              %th Head
-              %th Head
-              %th Head
-              %th{:width => "35%"} Head
-            %tr
               %td
-                Table Data
+                %div Cell 1
+                %div Cell 1.2
               %td
-                Table Data
+                %div Cell 2
+                %div Cell 2.1
+                %div Cell 2.2
               %td
-                Table Data
+                Cell 3
               %td
-                Table Data
+                Cell 4
               %td
-                Table Data
+                Cell 5
 
             %tr
               %td
-                Table Data
+                Cell 1
               %td
-                Table Data
+                %div Cell 2
+                %div Cell 2.2
               %td
-                Table Data
-              %td
-                Table Data
-              %td
-                Table Data
+                .type-ellipsis
+                  Ellipsis-example-HotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlinebling
+              %td{:colspan => "2"}
+                Cell 4 + 5 (colspan 2)
+
 
 
       %h4.txt-c Table Hovers
@@ -91,63 +97,89 @@ title: 8 Gauge Styleguide
         This table has no box-shadow or hovers. The
         %code .no-hover
         class can be applied to the entire table or a specific row.
-      .table.no-hover
-        .tr.grid
-          .th.col.col-4
-            Header 1
-          .th.col.col-2
-            Header 2
-          .th.col.col-4
-            Header 3
-          .th.col.col-6
-            Header 4
-          .th.col.col-8
-            Header 5
-        .tr.grid
-          .td.col.col-4
-            %code table.no-hover
-          .td.col.col-2
-            Cell 2
-          .td.col.col-4
-            Cell 3
-          .td.col.col-6
-            Cell 4
-          .td.col.col-8
-            Cell 5
-      .table
-        .tr.grid.no-hover
-          .th.col.col-4
-            Header 1
-          .th.col.col-2
-            Header 2
-          .th.col.col-4
-            Header 3
-          .th.col.col-6
-            Header 4
-          .th.col.col-8
-            Header 5
-        .tr.grid.no-hover
-          .td.col.col-4
-            %code .tr.no-hover
-          .td.col.col-2
-            Cell 2
-          .td.col.col-4
-            Cell 3
-          .td.col.col-6
-            Cell 4
-          .td.col.col-8
-            Cell 5
-        .tr.grid
-          .td.col.col-4
-            %code .tr
-          .td.col.col-2
-            Cell 2
-          .td.col.col-4
-            Cell 3
-          .td.col.col-6
-            Cell 4
-          .td.col.col-8
-            Cell 5
+      .grid
+        .col.col-12
+          .h4.txt-c.em-high CSS
+          .table.no-hover
+            .tr.grid
+              .th.col
+                Header 1
+              .th.col
+                Header 2
+              .th.col
+                Header 3
+
+            .tr.grid
+              .td.col
+                %code table.no-hover
+              .td.col
+                Cell 2
+              .td.col
+                Cell 3
+
+          .table
+            .tr.grid.no-hover
+              .th.col
+                Header 1
+              .th.col
+                Header 2
+              .th.col
+                Header 3
+
+            .tr.grid.no-hover
+              .td.col
+                %code .tr.no-hover
+              .td.col
+                Cell 2
+              .td.col
+                Cell 3
+
+            .tr.grid
+              .td.col
+                %code .tr
+              .td.col
+                Cell 2
+              .td.col
+                Cell 3
+        .col.col-12
+          .h4.txt-c.em-high HTML
+          %table.table.no-hover
+            %tr
+              %th
+                Header 1
+              %th
+                Header 2
+              %th
+                Header 3
+            %tr
+              %td
+                %code table.no-hover
+              %td
+                Cell 2
+              %td
+                Cell 3
+          %table.table
+            %tr.no-hover
+              %th
+                Header 1
+              %th
+                Header 2
+              %th
+                Header 3
+            %tr.no-hover
+              %td
+                %code .tr.no-hover
+              %td
+                Cell 2
+              %td
+                Cell 3
+            %tr
+              %td
+                %code .tr
+              %td
+                Cell 2
+              %td
+                Cell 3
       %p.sg.txt-c
         Individual cell hover higlights by adding
         %code .td-hover

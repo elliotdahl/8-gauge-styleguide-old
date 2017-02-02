@@ -169,6 +169,11 @@ p {
 .type-underline {
   text-decoration: underline;
 }
+.type-underline-hover {
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
 
 /* Font Color

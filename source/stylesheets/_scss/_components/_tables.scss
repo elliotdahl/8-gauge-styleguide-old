@@ -2,22 +2,18 @@
 .table {
     background-color: $table-bg;
     margin-bottom: ($base-unit*2);
-    border-radius: $table-border-radius;
     .grid {
         margin:0;
     }
+
     //Table Row
     .tr {
       border-top: solid 1px $table-border-color;
       border-left: solid 1px $table-border-color;
       border-right: solid 1px $table-border-color;
 
-      &:first-child {
-        border-radius: $table-border-radius $table-border-radius 0 0;
-      }
       &:last-child {
         border-bottom: solid 1px $table-border-color;
-        border-radius: 0 0 $table-border-radius $table-border-radius;
       }
       &:hover {
           background-color: $table-bg-hover;
@@ -95,6 +91,18 @@
         }
     }
 
+    //Table Border Radius Modifier Switch
+    &.table-b-radius {
+      border-radius: $table-border-radius;
+      .tr {
+        &:first-child {
+          border-radius: $table-border-radius $table-border-radius 0 0;
+        }
+        &:last-child {
+          border-radius: 0 0 $table-border-radius $table-border-radius;
+        }
+      }
+    }
 
     //Table Row Collapse
     &.table-sm-row {
