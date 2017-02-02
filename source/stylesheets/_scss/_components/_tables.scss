@@ -106,46 +106,40 @@
     //Table Row Collapse
     &.table-sm-row {
         @media only screen and (max-width: $screen-sm) {
-            .tr {
-                &:hover {
-                    background-color: $table-bg;
-                }
-                &:last-child .td {
-                    border-bottom: none;
-                    &:last-child {
-                        border-bottom: solid 1px $table-border-color;
-                    }
-                }
-            }
-            .tr .td:hover {
-                background-color: $table-bg-hover;
-            }
-            .td {
-                border-left: solid 1px $table-border-color;
-                border-right: solid 1px $table-border-color;
-            }
+          .tr {
+              &:hover {
+                  background-color: $table-bg;
+              }
+              .td:last-child {
+                  border-bottom: none;
+              }
+          }
+          .tr .td:hover {
+              background-color: $table-bg-hover;
+          }
+          .td {
+              border-right:none;
+              border-bottom: solid 1px $table-border-color;
+          }
         }
     }
     &.table-md-row {
         @media only screen and (max-width: $screen-md) {
-            .tr {
-                &:hover {
-                    background-color: $table-bg;
-                }
-                &:last-child .td {
-                    border-bottom: none;
-                    &:last-child {
-                        border-bottom: solid 1px $table-border-color;
-                    }
-                }
-            }
-            .tr .td:hover {
-                background-color: $table-bg-hover;
-            }
-            .td {
-                border-left: solid 1px $table-border-color;
-                border-right: solid 1px $table-border-color;
-            }
+          .tr {
+              &:hover {
+                  background-color: $table-bg;
+              }
+              .td:last-child {
+                  border-bottom: none;
+              }
+          }
+          .tr .td:hover {
+              background-color: $table-bg-hover;
+          }
+          .td {
+              border-right:none;
+              border-bottom: solid 1px $table-border-color;
+          }
         }
     }
     &.table-lg-row {
@@ -154,19 +148,16 @@
                 &:hover {
                     background-color: $table-bg;
                 }
-                &:last-child .td {
+                .td:last-child {
                     border-bottom: none;
-                    &:last-child {
-                        border-bottom: solid 1px $table-border-color;
-                    }
                 }
             }
             .tr .td:hover {
                 background-color: $table-bg-hover;
             }
             .td {
-                border-left: solid 1px $table-border-color;
-                border-right: solid 1px $table-border-color;
+                border-right:none;
+                border-bottom: solid 1px $table-border-color;
             }
         }
     }

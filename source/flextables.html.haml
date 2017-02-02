@@ -3,13 +3,26 @@ title: 8 Gauge Styleguide
 ---
 
 .page
-  %section.pvxl
+  %section.mbn
     .section-content.margin-auto.txt-c
       %h1.mvxl Flex Tables & HTML Tables
       %p.sg.type-lg.mbxl
         This CSS api is meant to apply to standard HTML tables as well as divs assigned classes to make them act in a similar way. Since the CSS based system is based in the
         %a{:href => "/flexboxgrid.html"} Flex Grid System
         I've named these Flex Tables. This unlocks all of the basic functionalities of tables with a few powerups from flexbox.
+      .grid.margin-auto.txt-l.type-lg{:style => "max-width:800px;"}
+        .col.col-12
+          .em-high Use Flex Tables
+          %ul
+            %li Complex interactions (links & more...)
+            %li Building components into tables
+            %li Concerned about responsive
+        .col.col-12
+          .em-high Use HTML Tables
+          %ul
+            %li Large sets of data
+            %li Minimal interaction
+            %li Conventional accessibility
   %section
     .section-content.margin-auto
       %h2.mbxl.txt-c The Basics
