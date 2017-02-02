@@ -31,11 +31,11 @@ title: 8 Gauge Styleguide
         %code .box-shadow-key-1
         to set it off from the background. You can see the
         %a{:href => "/flexboxgrid.html"} Flex Grid
-        alignment classes at work aligning content. Both tables can utilize the
+        alignment classes at work in this example. Both tables can utilize the
         %code .type-ellipsis
-        class to obscure runaway content. The CSS table will require a fixed width or percentage width to the column you want to truncate content in. The HTML table has a similar requirement but it has been baked in with the
+        class to obscure runaway content. The CSS table will require a fixed width or percentage width to the column if you want to truncate content in it. The HTML table has a similar requirement but it has been baked with the
         %code table-layout:fixed;
-        css property.
+        CSS property.
       .grid
         .col.col-12
           %h3.txt-c.em-high CSS
@@ -191,14 +191,14 @@ title: 8 Gauge Styleguide
                 Header 3
             %tr.no-hover
               %td
-                %code .tr.no-hover
+                %code tr.no-hover
               %td
                 Cell 2
               %td
                 Cell 3
             %tr
               %td
-                %code .tr
+                %code tr
               %td
                 Cell 2
               %td
@@ -248,7 +248,7 @@ title: 8 Gauge Styleguide
                 Header 3
             %tr
               %td
-                %code .table.td-hover
+                %code table.td-hover
               %td
                 Cell 2
               %td
@@ -266,8 +266,10 @@ title: 8 Gauge Styleguide
         %code .tr-no-h-borders
         on the
         %code .tr
+        %code tr
         or
         %code .table
+        %code table
         elements.
       .grid
         .col.col-12
@@ -322,7 +324,7 @@ title: 8 Gauge Styleguide
         No external borders to rows using class
         %code .table-no-ext-borders
         on the
-        %code .table
+        %code table
         element.
       .grid
         .col.col-12
