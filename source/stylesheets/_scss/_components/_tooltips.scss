@@ -1,3 +1,4 @@
+//Hover Effect for HTML & CSS ONLY
 .tooltip {
   &:hover {
     .tooltip-container {
@@ -7,6 +8,61 @@
   }
 }
 
+
+.tooltip-container {
+  //Hover Effect for HTML & CSS ONLY
+  // visibility: hidden;
+  // opacity:0;
+  transition: opacity $tooltip-opacity-transition;
+  z-index: $tooltip-container-z;
+  position: absolute;
+  bottom:100%;
+  left:50%;
+  transform: translateX(-50%);
+  margin:0 0 $tooltip-margin 0; //space for the triangle indicator
+  @extend .txt-l;
+  .tooltip-content {
+    padding:$tooltip-padding;
+    font-size: $tooltip-font-size;
+    line-height: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+    background-color: $tooltip-bg;
+    color:$tooltip-color;
+    border-radius:$tooltip-border-radius;
+    border: 1px solid $tooltip-border-color;
+    @extend .box-shadow-1;
+
+    &:before {
+      content: "";
+      z-index: $tooltip-arrow-z-top;
+      position: absolute;
+      bottom: $tooltip-arrow-pull;
+      left:50%;
+      transform: translateX(-50%) rotateZ(45deg);
+      background-color:$tooltip-bg;
+      border-bottom:1px solid $tooltip-border-color;
+      border-right:1px solid $tooltip-border-color;
+      width: 8px;
+      height: 8px;
+    }
+    &:after {
+      content: "";
+      box-sizing: content-box;
+      z-index: $tooltip-arrow-z-bottom;
+      position: absolute;
+      bottom: $tooltip-arrow-pull;
+      left:50%;
+      transform: translateX(-50%) rotateZ(45deg);
+      background-color:$tooltip-bg;
+      @extend .box-shadow-1;
+      width: 8px;
+      height: 8px;
+
+    }
+  }
+}
 
 .tooltip {
   position: relative;
@@ -19,7 +75,6 @@
         background-color:$tooltip-light-bg;
         border-bottom:1px solid $tooltip-light-border-color;
         border-right:1px solid $tooltip-light-border-color;
-
       }
       &:after {
         background-color:$tooltip-light-bg;
@@ -122,60 +177,6 @@
         border-top:1px solid $tooltip-light-border-color;
         border-right:1px solid $tooltip-light-border-color;
       }
-    }
-  }
-}
-
-.tooltip-container {
-  // visibility: hidden;
-  // opacity:0;
-  transition: opacity $tooltip-opacity-transition;
-  z-index: $tooltip-container-z;
-  position: absolute;
-  bottom:100%;
-  left:50%;
-  transform: translateX(-50%);
-  margin:0 0 $tooltip-margin 0; //space for the triangle indicator
-  @extend .txt-l;
-  .tooltip-content {
-    padding:$tooltip-padding;
-    font-size: $tooltip-font-size;
-    line-height: 16px;
-    font-weight: 400;
-    letter-spacing: 0;
-    text-transform: none;
-    background-color: $tooltip-bg;
-    color:$tooltip-color;
-    border-radius:$tooltip-border-radius;
-    border: 1px solid $tooltip-border-color;
-    @extend .box-shadow-1;
-
-    &:before {
-      content: "";
-      z-index: $tooltip-arrow-z-top;
-      position: absolute;
-      bottom: $tooltip-arrow-pull;
-      left:50%;
-      transform: translateX(-50%) rotateZ(45deg);
-      background-color:$tooltip-bg;
-      border-bottom:1px solid $tooltip-border-color;
-      border-right:1px solid $tooltip-border-color;
-      width: 8px;
-      height: 8px;
-    }
-    &:after {
-      content: "";
-      box-sizing: content-box;
-      z-index: $tooltip-arrow-z-bottom;
-      position: absolute;
-      bottom: $tooltip-arrow-pull;
-      left:50%;
-      transform: translateX(-50%) rotateZ(45deg);
-      background-color:$tooltip-bg;
-      @extend .box-shadow-1;
-      width: 8px;
-      height: 8px;
-
     }
   }
 }
