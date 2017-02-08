@@ -1,6 +1,7 @@
 
 .table {
     background-color: $table-bg;
+    font-size:$table-font-size;
     margin-bottom: ($base-unit*2);
     .grid {
         margin:0;
