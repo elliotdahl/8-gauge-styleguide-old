@@ -12,10 +12,8 @@ table.table {
   //General Row
   tr {
     border-top: solid 1px $table-border-color;
-
     border-left: solid 1px $table-border-color;
     border-right: solid 1px $table-border-color;
-
     &:last-child {
       border-bottom: solid 1px $table-border-color;
     }
@@ -93,13 +91,16 @@ table.table {
 }
 //Table Scrollable
 .table-scrollable {
-  max-height: 164px;
-  overflow-y: scroll;
-  margin-bottom: ($base-unit*2);
-  table {
+  //////////////////
+  //defined in the CSS Tables
+  /////////////////
+  table.table {
     margin-bottom: 0;
-  }
-  tr:first-child {
-    border-top: none;
+    tr:first-child {
+      border-top: none;
+    }
+    tr:last-child {
+      border-bottom: none;
+    }
   }
 }

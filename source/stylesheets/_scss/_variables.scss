@@ -218,12 +218,9 @@ $table-font-size: 14px;
 $table-header-font-weight: 600;
 
 $table-bg:                           transparent !default; // overall background-color
-$table-bg-accent:                    $dark-10; // for striping
 $table-bg-hover:                     $dark-11;
-$table-bg-active:                    $table-bg-hover !default;
 
 $table-border-color:                 $dark-9; // table and cell border
-$table-border-header-color:			 $dark-7;
 $table-border-radius: 2px;
 
 // Tooltips
