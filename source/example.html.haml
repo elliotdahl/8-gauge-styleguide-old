@@ -2,48 +2,46 @@
 title: Example Page
 ---
 
-.page.map-8pt
+.page.map-8pt.paxl
+
   .grid
-    .col.col-fixed.bg-dark-10{:style => "width:200px;"}
+    .col.col-12
+      %h1 Title Header 1
+      %h2 Etiam Header 2
+      %h3 Egestas Header 3
+      %h4 Magna Header 4
+      %h5 Tellus Header 5
+      %h6 Egestas Header 6
+      %p.mtm
+        Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+      .form-group
+        %label Email
+        %input.form-control{:type => "email", :placeholder => "Email"}
+
+      .form-group
+        %label Password
+        %input.form-control{:type => "password", :placeholder => "Password"}
+
+      .form-group.left
+
+        %button.btn-default Submit
+
+
+    .col.col-6
+      %h3.mbl Paragraph Title
+      %p
+        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum.
+      %h3.em-high.mbl Paragraph Title
+      %p
+        Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit.
+    .col.col-6
+      %h6 Title
+      %h1.mbl Object Name
+      %p
+        Aenean lacinia bibendum nulla sed consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor.
+  .grid
+    .col.col-fixed
+      %div{:style => "width:56px;height:56px;background-color:red;display:inline-block"}
     .col
-      .grid
-        .col.col-12
-          %h1 Title Header 1
-          %h2 Etiam Header 2
-          %h3 Egestas Header 3
-          %h4 Magna Header 4
-          %h5 Tellus Header 5
-          %h6 Egestas Header 6
-          %p.mtm
-            Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-          .form-group
-            %label Email
-            %input.form-control{:type => "email", :placeholder => "Email"}
-
-          .form-group
-            %label Password
-            %input.form-control{:type => "password", :placeholder => "Password"}
-
-          .form-group.left
-
-            %button.btn-default Submit
-
-
-        .col.col-6
-          %h3.mbl Paragraph Title
-          %p
-            Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum.
-          %h3.em-high.mbl Paragraph Title
-          %p
-            Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit.
-        .col.col-6
-          %h6 Title
-          %h1.mbl Object Name
-          %p
-            Aenean lacinia bibendum nulla sed consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor.
-      .grid
-        .col.col-fixed
-          %div{:style => "width:56px;height:56px;background-color:red;display:inline-block"}
-        .col
-          %h2 Title
-          %p{:style => "margin-top:1px;"} Stuff Stuff Stuff
+      %h2 Title
+      %p{:style => "margin-top:1px;"} Stuff Stuff Stuff
