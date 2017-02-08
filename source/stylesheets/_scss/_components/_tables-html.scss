@@ -18,16 +18,12 @@ table.table {
     &:last-child {
       border-bottom: solid 1px $table-border-color;
     }
-    &:hover {
+    &.tr-hover:hover {
         background-color: $table-bg-hover;
-    }
-    &.no-hover {
-        background-color: $table-bg;
     }
   }
   //Table Header Cell
   th {
-    font-size: $table-header-font-size;
     font-weight: $table-header-font-weight;
     //Borders stack on HTML Tables so this needs to be 2px
     border-bottom:solid 2px $table-border-color;
@@ -41,10 +37,10 @@ table.table {
           border-right: none;
       }
   }
-  //HTML No Hover on Tables
-  &.no-hover {
+  //HTML Hover on Tables
+  &.tr-hover {
       tr:hover {
-          background-color: $table-bg;
+          background-color: $table-bg-hover;
       }
   }
   //HTML hover table cells

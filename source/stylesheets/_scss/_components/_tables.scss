@@ -15,16 +15,12 @@
       &:last-child {
         border-bottom: solid 1px $table-border-color;
       }
-      &:hover {
+      &.tr-hover:hover {
           background-color: $table-bg-hover;
-      }
-      &.no-hover {
-          background-color: $table-bg;
       }
     }
     //Table Cell
     .th {
-      font-size: $table-header-font-size;
       font-weight: $table-header-font-weight;
       border-bottom:solid 1px $table-border-color;
     }
@@ -40,9 +36,10 @@
             border-right: none;
         }
     }
-    &.no-hover {
+    //Table Hovers
+    &.tr-hover {
         .tr:hover {
-            background-color: $table-bg;
+            background-color: $table-bg-hover;
         }
     }
     &.td-hover {
@@ -58,7 +55,6 @@
     .tr.tr-no-h-borders {
         .td, .th {
             border-right: none;
-
         }
     }
     //Attached to .table
