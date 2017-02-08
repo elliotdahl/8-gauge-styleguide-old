@@ -403,10 +403,120 @@ title: 8 Gauge Styleguide
                 Cell 2
               %td
                 Cell 3
-      %h2.txt-c.mvxl#table-linking Table Scrollable
-      %p.sg.type-lg.txt-c.mbxl Create a scrollable table zone.
-
-
+      %h2.txt-c.mvxl#table-scrollable Table Scrollable
+      %p.sg.type-lg.txt-c.mbxl
+        Create a scrollable table zone by creating a new table for the body and wrap it in a div with
+        %code .table-scrollable
+        to turn that section into a scrollable table. The default height is 164px to show exactly four table rows. Modify the max-height to change the viewable area of the table.
+      .grid
+        .col.col-12
+          %h3.txt-c.em-high CSS
+          .table.mbn
+            .tr.grid
+              .th.col
+                Header 1
+              .th.col
+                Header 2
+              .th.col
+                Header 3
+          .table-scrollable
+            .table
+              .tr.grid
+                .td.col
+                  Cell 1
+                .td.col
+                  Cell 2
+                .td.col
+                  Cell 3
+              .tr.grid
+                .td.col
+                  Cell 1
+                .td.col
+                  Cell 2
+                .td.col
+                  Cell 3
+              .tr.grid
+                .td.col
+                  Cell 1
+                .td.col
+                  Cell 2
+                .td.col
+                  Cell 3
+              .tr.grid
+                .td.col
+                  Cell 1
+                .td.col
+                  Cell 2
+                .td.col
+                  Cell 3
+              .tr.grid
+                .td.col
+                  Cell 1
+                .td.col
+                  Cell 2
+                .td.col
+                  Cell 3
+              .tr.grid
+                .td.col
+                  Cell 1
+                .td.col
+                  Cell 2
+                .td.col
+                  Cell 3
+        .col.col-12
+          %h3.txt-c.em-high HTML
+          %table.table.mbn
+            %tr
+              %th
+                Header 1
+              %th
+                Header 2
+              %th
+                Header 3
+          .table-scrollable
+            %table.table
+              %tr
+                %td
+                  Cell 1
+                %td
+                  Cell 2
+                %td
+                  Cell 3
+              %tr
+                %td
+                  Cell 1
+                %td
+                  Cell 2
+                %td
+                  Cell 3
+              %tr
+                %td
+                  Cell 1
+                %td
+                  Cell 2
+                %td
+                  Cell 3
+              %tr
+                %td
+                  Cell 1
+                %td
+                  Cell 2
+                %td
+                  Cell 3
+              %tr
+                %td
+                  Cell 1
+                %td
+                  Cell 2
+                %td
+                  Cell 3
+              %tr
+                %td
+                  Cell 1
+                %td
+                  Cell 2
+                %td
+                  Cell 3
 
       %h2.txt-c.mvxl#table-linking Table Linking (CSS Only)
       %p.sg.type-lg.txt-c.mbxl Row A tags and cell A tags. Apply the proper classes directly to the A tag.

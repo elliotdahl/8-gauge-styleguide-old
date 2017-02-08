@@ -90,3 +90,15 @@ table.table {
       }
   }
 }
+//Table Scrollable
+.table-scrollable {
+  max-height: 164px;
+  overflow-y: scroll;
+  margin-bottom: ($base-unit*2);
+  table {
+    margin-bottom: 0;
+  }
+  tr:first-child {
+    border-top: none;
+  }
+}

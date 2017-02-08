@@ -85,7 +85,22 @@
             border: none;
         }
     }
+}
+//Table scrollable
+.table-scrollable {
+  max-height: 164px;
+  overflow-y: scroll;
+  margin-bottom: ($base-unit*2);
+  .table {
+    margin-bottom: 0;
+  }
+  .tr:first-child {
+    border-top: none;
+  }
+}
 
+
+.table {
     //Table Border Radius Modifier Switch
     &.table-b-radius {
       border-radius: $table-border-radius;
