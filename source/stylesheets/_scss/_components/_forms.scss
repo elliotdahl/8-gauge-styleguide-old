@@ -105,6 +105,7 @@ legend {
           bottom: 0;
           right: 0;
           fill:$dark-6;
+          transform: initial;
         }
     }
     input,
@@ -123,8 +124,9 @@ legend {
         pointer-events: none;
         position: absolute;
         right: $base-unit;
-        bottom: $base-unit;
-        font-size: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 18px;
         &.valid svg {
             fill: $input-border-valid;
         }
@@ -141,7 +143,7 @@ legend {
         top: 50%;
         left: 8px;
         transform: translateY(-50%);
-        font-size: 20px;
+        font-size: 18px;
         fill: $dark-2;
     }
     input {
@@ -220,24 +222,7 @@ textarea.valid {
     color: $input-invalid-text;
 }
 
-.form-group {
-    //Validation Icons
-    .svgicon {
-        &.valid,
-        &.invalid {
-            position: absolute;
-            right: $base-unit;
-            top: $base-unit;
-            font-size: 16px;
-        }
-        &.valid svg {
-            fill: $input-border-valid;
-        }
-        &.invalid svg {
-            fill: $input-border-invalid;
-        }
-    }
-}
+
 
 .simple-form {
     input[type="email"],
