@@ -105,7 +105,6 @@ legend {
           bottom: 0;
           right: 0;
           fill:$dark-6;
-          transform: initial;
         }
     }
     input,
@@ -124,8 +123,7 @@ legend {
         pointer-events: none;
         position: absolute;
         right: $base-unit;
-        top: 50%;
-        transform: translateY(-50%);
+        bottom: 7px;
         font-size: 18px;
         &.valid svg {
             fill: $input-border-valid;
