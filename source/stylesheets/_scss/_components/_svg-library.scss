@@ -1,3 +1,5 @@
+//Old SVG Icon
+
 // .svgicon {
 //     display: inline-flex;
 //     align-self: center;
@@ -15,6 +17,8 @@
 //     bottom: -0.125em;
 //     position: absolute;
 // }
+
+//New SVG Icon
 .svgicon {
     display: inline-flex;
     align-self: center;
@@ -30,4 +34,24 @@
 
 .svgicon.svg-baseline {
     top: 0.125em;
+}
+
+
+//BG Image Icons
+.svgicon div {
+  width: 1em;
+  height: 1em;
+  background-size: 1em;
+}
+.icon-select_chevrons {
+  background-image: url(../../../images/svg-lib/select_chevrons.svg);
+}
+.icon-chevron_down {
+  background-image: url(../../../images/svg-lib/chevron_down.svg);
+}
+.icon-search {
+  background-image: url(../../../images/svg-lib/search.svg);
+}
+.icon-info_outline {
+  background-image: url(../../../images/svg-lib/info_outline.svg);
 }

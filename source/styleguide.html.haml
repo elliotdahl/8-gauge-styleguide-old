@@ -316,8 +316,10 @@ title: 8 Gauge Styleguide
                     %option Google
                     %option Yahoo
                     %option Microsoft-Linkedin
+
                   .svgicon
-                    =partial 'images/svg-lib/select_chevrons.svg'
+                    .icon-select_chevrons
+                    -# =partial 'images/svg-lib/select_chevrons.svg'
             %h4 Dropdown
             .section-format.mbxl.pbl
               %form
@@ -325,14 +327,16 @@ title: 8 Gauge Styleguide
                   .dropdown.form-control
                     Drop to the down
                   .svgicon
-                    =partial 'images/svg-lib/chevron_down.svg'
+                    .icon-chevron_down
+                    -# =partial 'images/svg-lib/chevron_down.svg'
             %h4 Search
             .section-format.mbxl.pbl
               %form
                 .form-group.form-group-search
                   %input{:type => "search", :placeholder => "Search..."}
                   .svgicon
-                    =partial 'images/svg-lib/search.svg'
+                    .icon-search
+                    -# =partial 'images/svg-lib/search.svg'
             %h4 Text Area
             .section-format.mbxl.pbl
               %form

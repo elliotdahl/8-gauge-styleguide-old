@@ -118,13 +118,14 @@ legend {
             border-color: $input-border;
         }
     }
-    //Validation Icons
+
     .svgicon {
         pointer-events: none;
         position: absolute;
         right: $base-unit;
         bottom: 7px;
         font-size: 18px;
+        //Validation Icons
         &.valid svg {
             fill: $input-border-valid;
         }

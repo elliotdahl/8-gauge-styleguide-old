@@ -36,6 +36,9 @@ table.table {
           border-right: none;
       }
   }
+  p {
+    margin:0;
+  }
   //HTML Hover on Tables
   &.tr-hover {
       tr:hover {
