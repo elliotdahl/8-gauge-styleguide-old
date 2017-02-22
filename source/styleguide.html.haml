@@ -20,6 +20,8 @@ title: 8 Gauge Styleguide
           %li
             %a.hover-underline{:href => "#forms"} Forms
           %li
+            %a.hover-underline{:href => "#dropdowns"} Dropdowns
+          %li
             %a.hover-underline{:href => "#grids"} Grid
           %li
             %a.hover-underline{:href => "#lists"} Lists
@@ -405,12 +407,15 @@ title: 8 Gauge Styleguide
                   .svgicon.invalid
                     =partial 'images/svg-lib/close.svg'
                   .invalid-text Error please try again
+
+        =partial 'partials/dropdowns.haml'
+
         %section#grids
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Flexbox Grid
             %p
-              This got big, beautiful and complicated. View the example page
-              %a{:href => "/flexboxgrid.html"} here
+              This got big, beautiful and complicated. View the example page to learn more.
+            %a.btn.btn-default{:href => "/flexboxgrid.html"} View Flex Grid Examples
 
 
         %section#lists
@@ -479,15 +484,12 @@ title: 8 Gauge Styleguide
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Tables
             %p
-              This got big, beautiful and complicated. View the example page
-              %a{:href => "/flextables.html"} here
-
-
-
+              This got big, beautiful and complicated. View the example page to learn more.
+            %a.btn.btn-default{:href => "/flextables.html"} View Table Examples
 
         %section#tooltips
           .section-content.margin-auto.paxl
-            %h2 Tooltips
+            %h2.section-header Tooltips
             %p
               Default tooltip is dark and on top. Adding modifier classes will change the direction of the tooltip. For example
               %code .tooltip-right
