@@ -1,11 +1,7 @@
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+.btn {
     display: inline-flex;
     position: relative;
     height: ($base-unit*4);
@@ -47,7 +43,7 @@ input[type="button"] {
     }
 }
 
-button.btn-icon, .button.btn-icon {
+.btn.btn-icon {
     padding: 0;
     .svgicon {
         margin:5px;
@@ -84,8 +80,7 @@ button.btn-icon, .button.btn-icon {
     }
 }
 
-button.disabled,
-.button.disabled, button[disabled], .button[disabled] {
+.btn.disabled, .btn[disabled] {
     opacity: .5;
     cursor: default;
     pointer-events: none;
