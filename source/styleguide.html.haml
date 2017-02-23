@@ -20,6 +20,8 @@ title: 8 Gauge Styleguide
           %li
             %a.hover-underline{:href => "#forms"} Forms
           %li
+            %a.hover-underline{:href => "#dropdowns"} Dropdowns
+          %li
             %a.hover-underline{:href => "#grids"} Grid
           %li
             %a.hover-underline{:href => "#lists"} Lists
@@ -38,7 +40,7 @@ title: 8 Gauge Styleguide
         %section#get-started
           .section-content.margin-auto.paxl.mdl-color--white
             %h3 Get Started
-            %a.button.btn-highlight.btn-lg{:href => "https://github.com/elliotdahl/8-gauge-styleguide-old", :target => "_blank"} View Repo
+            %a.btn.btn-highlight.btn-lg{:href => "https://github.com/elliotdahl/8-gauge-styleguide-old", :target => "_blank"} View Repo
             %p.mtm.mbn Version: 0.1
         %section#buttons
           .section-content.margin-auto.paxl.mdl-color--white
@@ -52,65 +54,65 @@ title: 8 Gauge Styleguide
 
             .section-format.mbxl
               .mbxl
-                %button.btn-default
+                %button.btn.btn-default
                   %span Default
-                %button.btn-default-alt Default Alt
-                %button Flat
+                %button.btn.btn-default-alt Default Alt
+                %button.btn Flat
 
               .mbxl
-                %button.btn-highlight Highlight
-                %button.btn-highlight-alt Highlight Alt
-                %button.btn-highlight-flat Flat
+                %button.btn.btn-highlight Highlight
+                %button.btn.btn-highlight-alt Highlight Alt
+                %button.btn.btn-highlight-flat Flat
 
               .mbxl
-                %button.btn-positive Positive
-                %button.btn-positive-alt Positive Alt
-                %button.btn-positive-flat Flat
+                %button.btn.btn-positive Positive
+                %button.btn.btn-positive-alt Positive Alt
+                %button.btn.btn-positive-flat Flat
               %div
-                %button.btn-negative Negative
-                %button.btn-negative-alt Negative Alt
-                %button.btn-negative-flat Flat
+                %button.btn.btn-negative Negative
+                %button.btn.btn-negative-alt Negative Alt
+                %button.btn.btn-negative-flat Flat
 
 
             %h4 Disabled
 
             .section-format.mbxl
               .mbxl
-                %button.btn-default.disabled{:disabled => ""} Default
-                %button.btn-default-alt.disabled{:disabled => ""} Default Alt
-                %button.disabled{:disabled => ""} Flat
+                %button.btn.btn-default.disabled{:disabled => ""} Default
+                %button.btn.btn-default-alt.disabled{:disabled => ""} Default Alt
+                %button.btn.disabled{:disabled => ""} Flat
               .mbxl
-                %button.btn-highlight.disabled{:disabled => ""} Highlight
-                %button.btn-highlight-alt.disabled{:disabled => ""} Highlight Alt
-                %button.btn-highlight-flat.disabled{:disabled => ""} Flat
+                %button.btn.btn-highlight.disabled{:disabled => ""} Highlight
+                %button.btn.btn-highlight-alt.disabled{:disabled => ""} Highlight Alt
+                %button.btn.btn-highlight-flat.disabled{:disabled => ""} Flat
 
               .mbxl
-                %button.btn-positive.disabled{:disabled => ""} Positive
-                %button.btn-positive-alt.disabled{:disabled => ""} Positive Alt
-                %button.btn-positive-flat.disabled{:disabled => ""} Flat
+                %button.btn.btn-positive.disabled{:disabled => ""} Positive
+                %button.btn.btn-positive-alt.disabled{:disabled => ""} Positive Alt
+                %button.btn.btn-positive-flat.disabled{:disabled => ""} Flat
               %div
-                %button.btn-negative.disabled{:disabled => ""} Negative
-                %button.btn-negative-alt.disabled{:disabled => ""} Negative Alt
-                %button.btn-negative-flat.disabled{:disabled => ""} Flat
+                %button.btn.btn-negative.disabled{:disabled => ""} Negative
+                %button.btn.btn-negative-alt.disabled{:disabled => ""} Negative Alt
+                %button.btn.btn-negative-flat.disabled{:disabled => ""} Flat
             %h4 Icon Buttons
             .section-format.mbxl
               %div
-                %button.btn-default
+                %button.btn.btn-default
 
                   .svgicon
                     =partial 'images/svg-lib/add.svg'
                   %span
                     default
-                %button.btn-default.btn-icon
+                %button.btn.btn-default.btn-icon
                   .svgicon
                     =partial 'images/svg-lib/autorenew.svg'
-                %button.btn-positive.btn-icon.btn-sm
+                %button.btn.btn-positive.btn-icon.btn-sm
                   .svgicon
                     =partial 'images/svg-lib/add.svg'
-                %button.btn-default-alt.btn-icon
+                %button.btn.btn-default-alt.btn-icon
                   .svgicon
                     =partial 'images/svg-lib/add.svg'
-                %button.btn-highlight.btn-icon.btn-lg
+                %button.btn.btn-highlight.btn-icon.btn-lg
                   .svgicon
                     =partial 'images/svg-lib/add.svg'
 
@@ -120,75 +122,75 @@ title: 8 Gauge Styleguide
             .section-format.mbxl
 
               .mbxl
-                %button.btn-default
+                %button.btn.btn-default
                   .svgicon
                     =partial 'images/loading/spinner-sm.svg'
                   %span
                     Loading
 
-                %button.btn-default-alt
+                %button.btn.btn-default-alt
                   .svgicon
                     =partial 'images/loading/spinner-sm.svg'
                   Loading
 
               .mbxl
-                %button.btn-highlight
+                %button.btn.btn-highlight
                   .svgicon
                     =partial 'images/loading/spinner-sm.svg'
                   Loading
-                %button.btn-highlight-alt
+                %button.btn.btn-highlight-alt
                   .svgicon
                     =partial 'images/loading/spinner-sm.svg'
                   Loading
               .mbxl
-                %button.btn-positive
+                %button.btn.btn-positive
                   .svgicon
                     =partial 'images/loading/spinner-sm.svg'
                   Loading
-                %button.btn-positive-alt
+                %button.btn.btn-positive-alt
                   .svgicon
                     =partial 'images/loading/spinner-sm.svg'
                   Loading
               %div
-                %button.btn-negative
+                %button.btn.btn-negative
                   .svgicon
                     =partial 'images/loading/spinner-sm.svg'
                   Loading
-                %button.btn-negative-alt
+                %button.btn.btn-negative-alt
                   .svgicon
                     =partial 'images/loading/spinner-sm.svg'
                   Loading
             %h4 Sizes
             .section-format.mbxl
               .mbxl
-                %button.btn-default.btn-sm
+                %button.btn.btn-default.btn-sm
                   %div small
-                %button.btn-default default
-                %button.btn-default.btn-lg
+                %button.btn.btn-default default
+                %button.btn.btn-default.btn-lg
                   %div large
               .mbxl
-                %button.btn-default.btn-sm
+                %button.btn.btn-default.btn-sm
                   .svgicon
                     =partial 'images/loading/spinner-sm.svg'
                   Small Load
-                %button.btn-default
+                %button.btn.btn-default
                   .svgicon
                     =partial 'images/loading/spinner-sm.svg'
                   Loading
-                %button.btn-default.btn-lg
+                %button.btn.btn-default.btn-lg
                   .svgicon
                     =partial 'images/loading/spinner-sm.svg'
                   Large Load
               %div
-                %button.btn-default.btn-sm
+                %button.btn.btn-default.btn-sm
                   .svgicon
                     =partial 'images/svg-lib/add.svg'
                   %div small
-                %button.btn-default
+                %button.btn.btn-default
                   .svgicon
                     =partial 'images/svg-lib/add.svg'
                   %div default
-                %button.btn-default.btn-lg
+                %button.btn.btn-default.btn-lg
                   .svgicon
                     =partial 'images/svg-lib/add.svg'
                   %div large
@@ -197,18 +199,18 @@ title: 8 Gauge Styleguide
               .mbxl
 
                 .btn-group
-                  %button.btn-default-alt yes
-                  %button.btn-default> maybe
-                  %button.btn-default-alt no
+                  %button.btn.btn-default-alt yes
+                  %button.btn.btn-default> maybe
+                  %button.btn.btn-default-alt no
               %div
                 .btn-group
-                  %button.btn-default-alt.btn-icon
+                  %button.btn.btn-default-alt.btn-icon
                     .svgicon
                       =partial 'images/svg-lib/add.svg'
-                  %button.btn-default-alt.btn-icon>
+                  %button.btn.btn-default-alt.btn-icon>
                     .svgicon
                       =partial 'images/svg-lib/close.svg'
-                  %button.btn-default-alt.btn-icon
+                  %button.btn.btn-default-alt.btn-icon
                     .svgicon
                       =partial 'images/svg-lib/search.svg'
             %h4 Button Group Flat
@@ -216,41 +218,41 @@ title: 8 Gauge Styleguide
             .section-format
               .mbxl
                 .btn-group-flat
-                  %button.btn-icon
+                  %button.btn.btn-icon
                     .svgicon
                       =partial 'images/svg-lib/chevron_left.svg'
-                  %button>
+                  %button.btn>
                     3
-                  %button>
+                  %button.btn>
                     4
-                  %button.btn-default>
+                  %button.btn.btn-default>
                     5
-                  %button.btn-icon
+                  %button.btn.btn-icon
                     .svgicon
                       =partial 'images/svg-lib/chevron_right.svg'
               .mbxl
                 .btn-group-flat
-                  %button.btn-icon
+                  %button.btn.btn-icon
                     .svgicon
                       =partial 'images/svg-lib/format_align_left.svg'
-                  %button.btn-icon
+                  %button.btn.btn-icon
                     .svgicon
                       =partial 'images/svg-lib/format_align_justify.svg'
-                  %button.btn-icon.btn-default
+                  %button.btn.btn-icon.btn-default
                     .svgicon
                       =partial 'images/svg-lib/format_align_center.svg'
-                  %button.btn-icon
+                  %button.btn.btn-icon
                     .svgicon
                       =partial 'images/svg-lib/format_align_right.svg'
               %div
                 .btn-group-flat
-                  %button>
+                  %button.btn>
                     Yes
-                  %button>
+                  %button.btn>
                     Maybe
-                  %button.btn-default>
+                  %button.btn.btn-default>
                     Kinda
-                  %button>
+                  %button.btn>
                     No
 
 
@@ -266,7 +268,7 @@ title: 8 Gauge Styleguide
                   %label Password
                   %input.form-control{:type => "password", :placeholder => "Password"}
                 .form-group
-                  %button.btn-default Submit
+                  %button.btn.btn-default Submit
             %h4 Row Form (single column)
             .section-format.mbxl.pbl
               .form-group.left
@@ -279,7 +281,7 @@ title: 8 Gauge Styleguide
 
               .form-group.left
 
-                %button.btn-default.mtxxxl Submit
+                %button.btn.btn-default.mtxxxl Submit
               .clear
             %h4 Inline Single Row
             .section-format.mbxl.pbl
@@ -289,7 +291,7 @@ title: 8 Gauge Styleguide
                 .form-group.form-inline
                   %input.form-control{:type => "email", :placeholder => "Enter email"}
                 .form-group.form-inline
-                  %button.btn-default Submit
+                  %button.btn.btn-default Submit
             %h4 Disabled
             .section-format.mbxl.pbl
               %form
@@ -297,7 +299,7 @@ title: 8 Gauge Styleguide
                   %label Email
                   %input.form-control.disabled{:type => "email", :placeholder => "Enter email", :disabled => ""}
                 .form-group
-                  %button.btn-default.disabled{:disabled => ""} Submit
+                  %button.btn.btn-default.disabled{:disabled => ""} Submit
             %h4 Large
             .section-format.mbxl.pbl
               %form
@@ -305,7 +307,7 @@ title: 8 Gauge Styleguide
                   %label Large
                   %input.form-control{:type => "text", :placeholder => "Larger"}
                 .form-group.form-lg
-                  %button.btn-default.btn-lg Large Btn
+                  %button.btn.btn-default.btn-lg Large Btn
             %h4 Select
             .section-format.mbxl.pbl
               %form
@@ -405,12 +407,15 @@ title: 8 Gauge Styleguide
                   .svgicon.invalid
                     =partial 'images/svg-lib/close.svg'
                   .invalid-text Error please try again
+
+        =partial 'partials/dropdowns.haml'
+
         %section#grids
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Flexbox Grid
             %p
-              This got big, beautiful and complicated. View the example page
-              %a{:href => "/flexboxgrid.html"} here
+              This got big, beautiful and complicated. View the example page to learn more.
+            %a.btn.btn-default{:href => "/flexboxgrid.html"} View Flex Grid Examples
 
 
         %section#lists
@@ -479,15 +484,12 @@ title: 8 Gauge Styleguide
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Tables
             %p
-              This got big, beautiful and complicated. View the example page
-              %a{:href => "/flextables.html"} here
-
-
-
+              This got big, beautiful and complicated. View the example page to learn more.
+            %a.btn.btn-default{:href => "/flextables.html"} View Table Examples
 
         %section#tooltips
           .section-content.margin-auto.paxl
-            %h2 Tooltips
+            %h2.section-header Tooltips
             %p
               Default tooltip is dark and on top. Adding modifier classes will change the direction of the tooltip. For example
               %code .tooltip-right

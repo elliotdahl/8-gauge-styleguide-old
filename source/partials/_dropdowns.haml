@@ -1,0 +1,152 @@
+%section#dropdowns
+  .section-content.margin-auto.paxl.mdl-color--white
+    %h2.section-header Dropdowns
+    %p
+      Big, beautiful, and complicated.
+
+    %h4 Basic Dropdown
+    .example.mbxl
+      %div drop to the down icon (drop)
+      %div drop to the down icon (select)
+      .form-group{:style => "width:200px;"}
+        %label Drop It Low
+        .dropdown
+          %button.dropdown-toggle Transmission
+          .svgicon
+            =partial 'images/svg-lib/chevron_down.svg'
+          .dropdown-menu
+            %ul
+              %li Automatic
+              %li Manual
+              %li Other
+      .form-group{:style => "width:200px;"}
+        %label Select Me
+        .dropdown
+          %button.dropdown-toggle Automatic
+          .svgicon
+            =partial 'images/svg-lib/select_chevrons.svg'
+          .dropdown-menu
+            %ul
+              %li Manual
+              %li Other
+
+
+    %h4 Float Dropdown Menu
+    .example.mbxl
+      %div drop to the down w/ float menu match width
+      %div drop to the down w/ float menu left align
+      %div drop to the down w/ float menu right align
+      %div drop to the down w/ float menu match width & scroll
+      .form-group.form-inline{:style => "width:200px;"}
+        %label Label
+        .dropdown
+          %button.dropdown-toggle Float dropdown
+          .svgicon
+            =partial 'images/svg-lib/chevron_down.svg'
+          .dropdown-menu.dropdown-menu-float
+            %ul
+              %li
+                Extra long wrapping line Ipsum Mattis Etiam
+              %li.type-ellipsis Ellipsified Venenatis Ornare Malesuada Etiam
+              %li Other
+      .form-group.form-inline{:style => "width:200px;"}
+        %label Float Left
+        .dropdown
+          %button.dropdown-toggle Dropdown
+          .svgicon
+            =partial 'images/svg-lib/chevron_down.svg'
+          .dropdown-menu.dropdown-menu-float.dropdown-menu-left
+            %ul
+              %li Purus
+              %li Elit
+              %li Pellentesque Sollicitudin Lorem Vestibulum
+      .form-group.form-inline{:style => "width:200px;"}
+        %label Float Right
+        .dropdown
+          %button.dropdown-toggle Dropdown
+          .svgicon
+            =partial 'images/svg-lib/chevron_down.svg'
+          .dropdown-menu.dropdown-menu-float.dropdown-menu-right
+            %ul
+              %li Purus
+              %li Elit
+              %li Pellentesque
+      .form-group.form-inline{:style => "width:200px;"}
+        %label Float Scroll
+        .dropdown
+          %button.dropdown-toggle Dropdown
+          .svgicon
+            =partial 'images/svg-lib/chevron_down.svg'
+          .dropdown-menu.dropdown-menu-float.dropdown-menu-scroll
+            %ul
+              %li Purus
+              %li Elit
+              %li Pellentesque
+              %li Parturient
+              %li Fringilla
+              %li Cursus
+              %li Elit
+              %li Fusce
+              %li Consectetur
+              %li Vestibulum
+
+    %h4 Split Dropdown
+    .example.mbxl
+      %div drop to the down w/ float
+      .form-group{:style => "width:200px;"}
+        %label Split Float
+        .dropdown.dropdown-icon.dropdown-split
+          %a.dropdown-label{:href => "#dropdowns"} Action to take
+          %button.dropdown-toggle
+          .svgicon
+            =partial 'images/svg-lib/chevron_down.svg'
+          .dropdown-menu.dropdown-menu-float
+            %ul
+              %li Purus
+              %li Elit
+              %li Pellentesque
+
+    %h4 Flat Button Dropdown
+    .example.mbxl
+      %div drop to the down .btn + color mod
+      .form-group.form-inline{:style => "width:200px;"}
+        %label Flat Button
+        .dropdown.dropdown-flat
+          %button.dropdown-toggle Dropdown
+          .svgicon
+            =partial 'images/svg-lib/chevron_down.svg'
+          .dropdown-menu.dropdown-menu-float
+            %ul
+              %li Fusce
+              %li Consectetur
+              %li Vestibulum
+
+    %h4 Link Dropdown
+    .example.mbxl
+      %div drop to the down link w/ float menu
+      .form-group{:style => "width:200px;"}
+        %label Link Float
+        .dropdown.dropdown-link
+          %a.dropdown-toggle Dropdown
+          .svgicon
+            =partial 'images/svg-lib/chevron_down.svg'
+          .dropdown-menu.dropdown-menu-float
+            %ul
+              %li Fusce
+              %li Consectetur
+              %li Vestibulum
+
+    %h4 Icon Dropdown
+    %p An icon can be used inside of a basic dropdown, flat button, link dropdown to change the style and space it takes up.
+    .example.mbxl
+      %div dropdown w/ no text and icon w/ float menu
+      .form-group
+        .dropdown.dropdown-icon
+          %button.dropdown-toggle
+          .svgicon
+            =partial 'images/svg-lib/chevron_down.svg'
+          .dropdown-menu.dropdown-menu-float.dropdown-menu-left
+            %ul
+              %li Purus
+              %li Elit
+              %li Pellentesque Sollicitudin Lorem Vestibulum

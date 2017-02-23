@@ -1,11 +1,7 @@
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+.btn {
     display: inline-flex;
     position: relative;
     height: ($base-unit*4);
@@ -47,7 +43,7 @@ input[type="button"] {
     }
 }
 
-button.btn-icon, .button.btn-icon {
+.btn.btn-icon {
     padding: 0;
     .svgicon {
         margin:5px;
@@ -84,8 +80,7 @@ button.btn-icon, .button.btn-icon {
     }
 }
 
-button.disabled,
-.button.disabled, button[disabled], .button[disabled] {
+.btn.disabled, .btn[disabled] {
     opacity: .5;
     cursor: default;
     pointer-events: none;
@@ -93,11 +88,7 @@ button.disabled,
 
 //Default Button
 //---------------------------------------
-button.btn-default,
-.button.btn-default,
-input[type="submit"].btn-default,
-input[type="reset"].btn-default,
-input[type="button"].btn-default {
+.btn.btn-default {
     background-color: $btn-default-color;
     color: #fff;
     border-color: $btn-default-color;
@@ -106,37 +97,21 @@ input[type="button"].btn-default {
     }
 }
 
-.button.btn-default:focus,
-button.btn-default:focus,
-input[type="submit"].btn-default:focus,
-input[type="reset"].btn-default:focus,
-input[type="button"].btn-default:focus {
+.btn.btn-default:focus {
     background-color: $btn-default-color-focus;
     border-color: $btn-default-color-focus;
     outline: none;
 }
 
-.button.btn-default:hover,
-.button.btn-default:focus:hover,
-button.btn-default:hover,
-button.btn-default:focus:hover,
-input[type="submit"].btn-default:hover,
-input[type="submit"].btn-default:focus:hover,
-input[type="reset"].btn-default:hover,
-input[type="reset"].btn-default:focus:hover,
-input[type="button"].btn-default:hover,
-input[type="button"].btn-default:focus:hover {
+.btn.btn-default:hover,
+.btn.btn-default:focus:hover {
     background-color: $btn-default-color-hover;
     border-color: $btn-default-color-hover;
     outline: none;
 }
 
 //Spinner
-button.btn-default,
-.button.btn-default,
-input[type="submit"].btn-default,
-input[type="reset"].btn-default,
-input[type="button"].btn-default {
+.btn.btn-default {
     .spinner,
     .spinner-md,
     .spinner-sm {
@@ -151,11 +126,7 @@ input[type="button"].btn-default {
 
 //Default Alt Button
 //---------------------------------------
-button.btn-default-alt,
-.button.btn-default-alt,
-input[type="submit"].btn-default-alt,
-input[type="reset"].btn-default-alt,
-input[type="button"].btn-default-alt,
+.btn.btn-default-alt,
 {
     background-color: transparent;
     color: $btn-default-color;
@@ -165,11 +136,7 @@ input[type="button"].btn-default-alt,
     }
 }
 
-.button.btn-default-alt:focus,
-button.btn-default-alt:focus,
-input[type="submit"].btn-default-alt:focus,
-input[type="reset"].btn-default-alt:focus,
-input[type="button"].btn-default-alt:focus {
+.btn.btn-default-alt:focus {
     background-color: transparent;
     color: $btn-default-color-focus;
     border-color: $btn-default-color-focus;
@@ -179,16 +146,8 @@ input[type="button"].btn-default-alt:focus {
     }
 }
 
-.button.btn-default-alt:hover,
-.button.btn-default-alt:focus:hover,
-button.btn-default-alt:hover,
-button.btn-default-alt:focus:hover,
-input[type="submit"].btn-default-alt:hover,
-input[type="submit"].btn-default-alt:focus:hover,
-input[type="reset"].btn-default-alt:hover,
-input[type="reset"].btn-default-alt:focus:hover,
-input[type="button"].btn-default-alt:hover,
-input[type="button"].btn-default-alt:focus:hover {
+.btn.btn-default-alt:hover,
+.btn.btn-default-alt:focus:hover {
     background-color: transparent;
     color: $btn-default-color-hover;
     border-color: $btn-default-color-hover;
@@ -199,11 +158,7 @@ input[type="button"].btn-default-alt:focus:hover {
 }
 
 //Spinner
-button.btn-default-alt,
-.button.btn-default-alt,
-input[type="submit"].btn-default-alt,
-input[type="reset"].btn-default-alt,
-input[type="button"].btn-default-alt {
+.btn.btn-default-alt {
     .spinner,
     .spinner-md,
     .spinner-sm {
@@ -218,11 +173,7 @@ input[type="button"].btn-default-alt {
 
 //Default Alt Button WHITE
 //---------------------------------------
-button.btn-default-alt-wh,
-.button.btn-default-alt-wh,
-input[type="submit"].btn-default-alt-wh,
-input[type="reset"].btn-default-alt-wh,
-input[type="button"].btn-default-alt-wh {
+.btn.btn-default-alt-wh {
     background-color: transparent;
     color: #fff;
     border-color: #fff;
@@ -231,11 +182,7 @@ input[type="button"].btn-default-alt-wh {
     }
 }
 
-.button.btn-default-alt-wh:focus,
-button.btn-default-alt-wh:focus,
-input[type="submit"].btn-default-alt-wh:focus,
-input[type="reset"].btn-default-alt-wh:focus,
-input[type="button"].btn-default-alt-wh:focus {
+.btn.btn-default-alt-wh:focus {
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
     border-color: #fff;
@@ -245,16 +192,8 @@ input[type="button"].btn-default-alt-wh:focus {
     }
 }
 
-.button.btn-default-alt-wh:hover,
-.button.btn-default-alt-wh:focus:hover,
-button.btn-default-alt-wh:hover,
-button.btn-default-alt-wh:focus:hover,
-input[type="submit"].btn-default-alt-wh:hover,
-input[type="submit"].btn-default-alt-wh:focus:hover,
-input[type="reset"].btn-default-alt-wh:hover,
-input[type="reset"].btn-default-alt-wh:focus:hover,
-input[type="button"].btn-default-alt-wh:hover,
-input[type="button"].btn-default-alt-wh:focus:hover {
+.btn.btn-default-alt-wh:hover,
+.btn.btn-default-alt-wh:focus:hover {
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
     border-color: #fff;
@@ -265,11 +204,7 @@ input[type="button"].btn-default-alt-wh:focus:hover {
 }
 
 //Spinner
-button.btn-default-alt-wh,
-.button.btn-default-alt-wh,
-input[type="submit"].btn-default-alt-wh,
-input[type="reset"].btn-default-alt-wh,
-input[type="button"].btn-default-alt-wh {
+.btn.btn-default-alt-wh {
     .spinner,
     .spinner-md,
     .spinner-sm {
@@ -284,11 +219,7 @@ input[type="button"].btn-default-alt-wh {
 
 //Highlight Button
 //---------------------------------------
-button.btn-highlight,
-.button.btn-highlight,
-input[type="submit"].btn-highlight,
-input[type="reset"].btn-highlight,
-input[type="button"].btn-highlight {
+.btn.btn-highlight {
     background-color: $btn-highlight-color;
     color: #fff;
     border-color: $btn-highlight-color;
@@ -297,37 +228,21 @@ input[type="button"].btn-highlight {
     }
 }
 
-.button.btn-highlight:focus,
-button.btn-highlight:focus,
-input[type="submit"].btn-highlight:focus,
-input[type="reset"].btn-highlight:focus,
-input[type="button"].btn-highlight:focus {
+.btn.btn-highlight:focus {
     background-color: $btn-highlight-color-focus;
     border-color: $btn-highlight-color-focus;
     outline: none;
 }
 
-.button.btn-highlight:hover,
-.button.btn-highlight:focus:hover,
-button.btn-highlight:hover,
-button.btn-highlight:focus:hover,
-input[type="submit"].btn-highlight:hover,
-input[type="submit"].btn-highlight:focus:hover,
-input[type="reset"].btn-highlight:hover,
-input[type="reset"].btn-highlight:focus:hover,
-input[type="button"].btn-highlight:hover,
-input[type="button"].btn-highlight:focus:hover {
+.btn.btn-highlight:hover,
+.btn.btn-highlight:focus:hover {
     background-color: $btn-highlight-color-hover;
     border-color: $btn-highlight-color-hover;
     outline: none;
 }
 
 //Spinner
-button.btn-highlight,
-.button.btn-highlight,
-input[type="submit"].btn-highlight,
-input[type="reset"].btn-highlight,
-input[type="button"].btn-highlight {
+.btn.btn-highlight {
     .spinner,
     .spinner-md,
     .spinner-sm {
@@ -359,11 +274,7 @@ input[type="button"].btn-highlight {
 
 //Highlight Alt Button
 //---------------------------------------
-button.btn-highlight-alt,
-.button.btn-highlight-alt,
-input[type="submit"].btn-highlight-alt,
-input[type="reset"].btn-highlight-alt,
-input[type="button"].btn-highlight-alt {
+.btn.btn-highlight-alt {
     background-color: transparent;
     color: $btn-highlight-color;
     border-color: $btn-highlight-color;
@@ -372,11 +283,7 @@ input[type="button"].btn-highlight-alt {
     }
 }
 
-.button.btn-highlight-alt:focus,
-button.btn-highlight-alt:focus,
-input[type="submit"].btn-highlight-alt:focus,
-input[type="reset"].btn-highlight-alt:focus,
-input[type="button"].btn-highlight-alt:focus {
+.btn.btn-highlight-alt:focus {
     background-color: transparent;
     color: $btn-highlight-color-focus;
     border-color: $btn-highlight-color-focus;
@@ -386,16 +293,8 @@ input[type="button"].btn-highlight-alt:focus {
     }
 }
 
-.button.btn-highlight-alt:hover,
-.button.btn-highlight-alt:focus:hover,
-button.btn-highlight-alt:hover,
-button.btn-highlight-alt:focus:hover,
-input[type="submit"].btn-highlight-alt:hover,
-input[type="submit"].btn-highlight-alt:focus:hover,
-input[type="reset"].btn-highlight-alt:hover,
-input[type="reset"].btn-highlight-alt:focus:hover,
-input[type="button"].btn-highlight-alt:hover,
-input[type="button"].btn-highlight-alt:focus:hover {
+.btn.btn-highlight-alt:hover,
+.btn.btn-highlight-alt:focus:hover {
     background-color: transparent;
     color: $btn-highlight-color-hover;
     border-color: $btn-highlight-color-hover;
@@ -406,11 +305,7 @@ input[type="button"].btn-highlight-alt:focus:hover {
 }
 
 //Spinner
-button.btn-highlight-alt,
-.button.btn-highlight-alt,
-input[type="submit"].btn-highlight-alt,
-input[type="reset"].btn-highlight-alt,
-input[type="button"].btn-highlight-alt {
+.btn.btn-highlight-alt {
     .spinner,
     .spinner-md,
     .spinner-sm {
@@ -425,11 +320,7 @@ input[type="button"].btn-highlight-alt {
 
 //Positive Button
 //---------------------------------------
-button.btn-positive,
-.button.btn-positive,
-input[type="submit"].btn-positive,
-input[type="reset"].btn-positive,
-input[type="button"].btn-positive {
+.btn.btn-positive {
     background-color: $btn-positive-color;
     color: #fff;
     border-color: $btn-positive-color;
@@ -438,36 +329,20 @@ input[type="button"].btn-positive {
     }
 }
 
-.button.btn-positive:focus,
-button.btn-positive:focus,
-input[type="submit"].btn-positive:focus,
-input[type="reset"].btn-positive:focus,
-input[type="button"].btn-positive:focus {
+.btn.btn-positive:focus {
     background-color: $btn-positive-color-focus;
     border-color: $btn-positive-color-focus;
     outline: none;
 }
 
-.button.btn-positive:hover,
-.button.btn-positive:focus:hover,
-button.btn-positive:hover,
-button.btn-positive:focus:hover,
-input[type="submit"].btn-positive:hover,
-input[type="submit"].btn-positive:focus:hover,
-input[type="reset"].btn-positive:hover,
-input[type="reset"].btn-positive:focus:hover,
-input[type="button"].btn-positive:hover,
-input[type="button"].btn-positive:focus:hover {
+.btn.btn-positive:hover,
+.btn.btn-positive:focus:hover {
     background-color: $btn-positive-color-hover;
     border-color: $btn-positive-color-hover;
     outline: none;
 }
 
-button.btn-positive,
-.button.btn-positive,
-input[type="submit"].btn-positive,
-input[type="reset"].btn-positive,
-input[type="button"].btn-positive {
+.btn.btn-positive {
     .spinner,
     .spinner-md,
     .spinner-sm {
@@ -480,7 +355,7 @@ input[type="button"].btn-positive {
     }
 }
 //Flat Positive
-.btn-positive-flat {
+.btn.btn-positive-flat {
     color: $btn-positive-color;
     .svgicon {
         fill: $btn-positive-color;
@@ -497,11 +372,7 @@ input[type="button"].btn-positive {
 }
 //Positive Alt Button
 //---------------------------------------
-button.btn-positive-alt,
-.button.btn-positive-alt,
-input[type="submit"].btn-positive-alt,
-input[type="reset"].btn-positive-alt,
-input[type="button"].btn-positive-alt {
+.btn.btn-positive-alt {
     background-color: transparent;
     color: $btn-positive-color;
     border-color: $btn-positive-color;
@@ -510,11 +381,7 @@ input[type="button"].btn-positive-alt {
     }
 }
 
-.button.btn-positive-alt:focus,
-button.btn-positive-alt:focus,
-input[type="submit"].btn-positive-alt:focus,
-input[type="reset"].btn-positive-alt:focus,
-input[type="button"].btn-positive-alt:focus {
+.btn.btn-positive-alt:focus {
     background-color: transparent;
     color: $btn-positive-color-focus;
     border-color: $btn-positive-color-focus;
@@ -524,16 +391,8 @@ input[type="button"].btn-positive-alt:focus {
     }
 }
 
-.button.btn-positive-alt:hover,
-.button.btn-positive-alt:focus:hover,
-button.btn-positive-alt:hover,
-button.btn-positive-alt:focus:hover,
-input[type="submit"].btn-positive-alt:hover,
-input[type="submit"].btn-positive-alt:focus:hover,
-input[type="reset"].btn-positive-alt:hover,
-input[type="reset"].btn-positive-alt:focus:hover,
-input[type="button"].btn-positive-alt:hover,
-input[type="button"].btn-positive-alt:focus:hover {
+.btn.btn-positive-alt:hover,
+.btn.btn-positive-alt:focus:hover {
     background-color: transparent;
     color: $btn-positive-color-hover;
     border-color: $btn-positive-color-hover;
@@ -543,11 +402,7 @@ input[type="button"].btn-positive-alt:focus:hover {
     }
 }
 
-button.btn-positive-alt,
-.button.btn-positive-alt,
-input[type="submit"].btn-positive-alt,
-input[type="reset"].btn-positive-alt,
-input[type="button"].btn-positive-alt {
+.btn.btn-positive-alt {
     .spinner,
     .spinner-md,
     .spinner-sm {
@@ -562,11 +417,7 @@ input[type="button"].btn-positive-alt {
 
 //Negative Button
 //---------------------------------------
-button.btn-negative,
-.button.btn-negative,
-input[type="submit"].btn-negative,
-input[type="reset"].btn-negative,
-input[type="button"].btn-negative {
+.btn.btn-negative {
     background-color: $btn-negative-color;
     color: #fff;
     border-color: $btn-negative-color;
@@ -575,36 +426,20 @@ input[type="button"].btn-negative {
     }
 }
 
-.button.btn-negative:focus,
-button.btn-negative:focus,
-input[type="submit"].btn-negative:focus,
-input[type="reset"].btn-negative:focus,
-input[type="button"].btn-negative:focus {
+.btn.btn-negative:focus {
     background-color: $btn-negative-color-focus;
     border-color: $btn-negative-color-focus;
     outline: none;
 }
 
-.button.btn-negative:hover,
-.button.btn-negative:focus:hover,
-button.btn-negative:hover,
-button.btn-negative:focus:hover,
-input[type="submit"].btn-negative:hover,
-input[type="submit"].btn-negative:focus:hover,
-input[type="reset"].btn-negative:hover,
-input[type="reset"].btn-negative:focus:hover,
-input[type="button"].btn-negative:hover,
-input[type="button"].btn-negative:focus:hover {
+.btn.btn-negative:hover,
+.btn.btn-negative:focus:hover {
     background-color: $btn-negative-color-hover;
     border-color: $btn-negative-color-hover;
     outline: none;
 }
 
-button.btn-negative,
-.button.btn-negative,
-input[type="submit"].btn-negative,
-input[type="reset"].btn-negative,
-input[type="button"].btn-negative {
+.btn.btn-negative {
     .spinner,
     .spinner-md,
     .spinner-sm {
@@ -617,7 +452,7 @@ input[type="button"].btn-negative {
     }
 }
 //Flat negative
-.btn-negative-flat {
+.btn.btn-negative-flat {
     color: $btn-negative-color;
     .svgicon {
         fill: $btn-negative-color;
@@ -634,11 +469,7 @@ input[type="button"].btn-negative {
 }
 //negative Alt Button
 //---------------------------------------
-button.btn-negative-alt,
-.button.btn-negative-alt,
-input[type="submit"].btn-negative-alt,
-input[type="reset"].btn-negative-alt,
-input[type="button"].btn-negative-alt {
+.btn.btn-negative-alt {
     background-color: transparent;
     color: $btn-negative-color;
     border-color: $btn-negative-color;
@@ -647,11 +478,7 @@ input[type="button"].btn-negative-alt {
     }
 }
 
-.button.btn-negative-alt:focus,
-button.btn-negative-alt:focus,
-input[type="submit"].btn-negative-alt:focus,
-input[type="reset"].btn-negative-alt:focus,
-input[type="button"].btn-negative-alt:focus {
+.btn.btn-negative-alt:focus {
     background-color: transparent;
     color: $btn-negative-color-focus;
     border-color: $btn-negative-color-focus;
@@ -661,16 +488,8 @@ input[type="button"].btn-negative-alt:focus {
     }
 }
 
-.button.btn-negative-alt:hover,
-.button.btn-negative-alt:focus:hover,
-button.btn-negative-alt:hover,
-button.btn-negative-alt:focus:hover,
-input[type="submit"].btn-negative-alt:hover,
-input[type="submit"].btn-negative-alt:focus:hover,
-input[type="reset"].btn-negative-alt:hover,
-input[type="reset"].btn-negative-alt:focus:hover,
-input[type="button"].btn-negative-alt:hover,
-input[type="button"].btn-negative-alt:focus:hover {
+.btn.btn-negative-alt:hover,
+.btn.btn-negative-alt:focus:hover {
     background-color: transparent;
     color: $btn-negative-color-hover;
     border-color: $btn-negative-color-hover;
@@ -680,11 +499,7 @@ input[type="button"].btn-negative-alt:focus:hover {
     }
 }
 
-button.btn-negative-alt,
-.button.btn-negative-alt,
-input[type="submit"].btn-negative-alt,
-input[type="reset"].btn-negative-alt,
-input[type="button"].btn-negative-alt {
+.btn.btn-negative-alt {
     .spinner,
     .spinner-md,
     .spinner-sm {
@@ -700,35 +515,24 @@ input[type="button"].btn-negative-alt {
 //Button Groups
 //---------------------------------------
 .btn-group {
-    .button:hover,
-    button:hover {
+    .btn:hover {
         z-index: 2;
     }
-    .button+ .button,
-    button+ button {
+    .btn+ .btn {
         margin-left: -2px;
     }
-    //Middle Btn
-    // .button:first-child:not(:last-child):not(.dropdown-toggle),
-    // button:first-child:not(:last-child):not(.dropdown-toggle) {
-    //     border-radius:0;
-    // }
-    .button:not(:first-child):not(:last-child):not(.dropdown-toggle),
-    button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+    .btn:not(:first-child):not(:last-child) {
         border-radius: 0;
     }
     //First Btn
-    .button:first-child,
-    button:first-child {
+    .btn:first-child {
         border-bottom-left-radius: $btn-radius;
         border-top-left-radius: $btn-radius;
         border-bottom-right-radius: 0;
         border-top-right-radius: 0;
     }
     //Last Btn
-    .button:last-child:not(:first-child),
-    button:last-child:not(:first-child),
-    .dropdown-toggle:not(:first-child) {
+    .btn:last-child:not(:first-child) {
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
         border-bottom-right-radius: $btn-radius;
@@ -737,8 +541,7 @@ input[type="button"].btn-negative-alt {
 }
 
 .btn-group-flat {
-    button,
-    .button {
+    .btn {
         padding: 0 $base-unit;
     }
     .btn-icon {

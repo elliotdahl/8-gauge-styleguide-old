@@ -1,0 +1,180 @@
+.dropdown {
+  display: block;
+  width:100%;
+  position: relative;
+  .dropdown-toggle {
+    display: inline-flex;
+    width:100%;
+    vertical-align: top;
+    padding:0 (($base-unit*4)- 1px) 0 $base-unit; //32px - 1px border
+    height:($base-unit*4);
+    line-height: ($base-unit*4) - 2px;
+    background-color: #fff;
+    border: 1px solid $input-border;
+    border-radius: 2px;
+    text-align: left;
+    font-size: 14px;
+    color: $dark-2;
+    -webkit-appearance: none;
+    cursor:pointer;
+    &:focus {
+      -webkit-appearance: none;
+      box-shadow: none;
+      outline:none;
+    }
+  }
+  .svgicon svg path {
+    fill:$dark-5;
+  }
+
+
+  //Open and Close Dropdown - handled by JS
+  &.open {
+    .dropdown-menu {
+      display: block;
+    }
+  }
+  //Dropdown menu - default connected
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width:100%;
+    //This z-index needs to fit into the z-index map ** MAKE THIS **
+    z-index: 100;
+    margin-top:-1px;
+    background-color:#fff;
+    border-top:none;
+    border-left: 1px solid $input-border;
+    border-right: 1px solid $input-border;
+    border-bottom: 1px solid $input-border;
+    border-radius: 0 0 2px 2px;
+    cursor:pointer;
+    ul {
+      //UL reset
+      list-style: none;
+      margin:0;
+      padding:0;
+      width:100%;
+      li {
+        margin:0;
+        padding:($base-unit/2) $base-unit;
+        line-height: 24px;
+        //Needs to be handled with JS
+        &:hover {
+          background-color:$dark-11;
+        }
+        /////////////////////////////////////////////////////
+        //This is for some Elliot crap. Don't include.
+        &:after {
+          position: inherit;
+          width:0;
+          height: 0;
+          display: none;
+        /////////////////////////////////////////////////////
+        }
+      }
+    }
+
+
+    //Dropdown Menu Floats
+    &.dropdown-menu-float {
+      margin-top:2px;
+      border: 1px solid $input-border;
+      border-radius:2px;
+
+      &.dropdown-menu-left, &.dropdown-menu-right {
+        width: initial;
+        //min-width: 1000px;
+        min-width: -webkit-max-content;
+        min-width: -moz-max-content;
+        min-width: max-content;
+        ul {
+          width:initial;
+        }
+      }
+      &.dropdown-menu-left {
+        left:0;
+        ul {
+          float:left;
+        }
+
+      }
+      &.dropdown-menu-right {
+        right:0;
+        text-align: right;
+        ul {
+          float:right;
+        }
+      }
+    }
+    //Dropdown Scroll
+    &.dropdown-menu-scroll {
+      max-height: ($base-unit * 20);
+      overflow-y: scroll;
+    }
+  }
+  //Dropdown Split
+  &.dropdown-split {
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    .dropdown-label {
+      // display: flex;
+      // flex:1;
+      border-top: 1px solid $input-border;
+      border-left: 1px solid $input-border;
+      border-bottom: 1px solid $input-border;
+      width:auto;
+      padding:0 $base-unit; //32px - 1px border
+      height:($base-unit*4);
+      line-height: ($base-unit*4) - 2px;
+      border-radius:2px 0 0 2px;
+    }
+    a.dropdown-label {
+      color:inherit;
+    }
+    .dropdown-toggle {
+      display: flex;
+      border-radius:0 2px 2px 0;
+    }
+  }
+  //Dropdown Flat
+  &.dropdown-flat {
+    max-width: max-content;
+
+    .dropdown-toggle {
+      max-width: max-content;
+      border:0;
+      text-transform: uppercase;
+      color: $btn-default-color;
+      font-weight: $btn-font-weight;
+      letter-spacing: $btn-letter-spacing;
+    }
+  }
+  //Dropdown Link
+  &.dropdown-link {
+    max-width: max-content;
+
+    .dropdown-toggle {
+      max-width: max-content;
+      border: 1px solid transparent;
+      color: $link-color;
+    }
+    .svgicon svg path{
+      fill:$link-color;
+    }
+  }
+
+  //Icon only toggle
+  &.dropdown-icon {
+    max-width: max-content;
+    .dropdown-toggle {
+      width:32px;
+      padding:0;
+      // vertical-align: top;
+    }
+  }
+
+}
