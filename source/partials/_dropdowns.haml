@@ -2,13 +2,12 @@
   .section-content.margin-auto.paxl.mdl-color--white
     %h2.section-header Dropdowns
     %p
-      Big, beautiful, and complicated.
+      The flashy cousin to the HTML select element but from a different side of the DOM.
 
     %h4 Basic Dropdown
+    %p Basic dropdown has an attached expanding menu and can have a customized icon. There is no such thing as a non html select. There is only a dropdown with a new icon.
     .example.mbxl
-      %div drop to the down icon (drop)
-      %div drop to the down icon (select)
-      .form-group{:style => "width:200px;"}
+      .form-group.form-inline{:style => "width:200px;"}
         %label Drop It Low
         .dropdown
           %button.dropdown-toggle Transmission
@@ -19,7 +18,7 @@
               %li Automatic
               %li Manual
               %li Other
-      .form-group{:style => "width:200px;"}
+      .form-group.form-inline{:style => "width:200px;"}
         %label Select Me
         .dropdown
           %button.dropdown-toggle Automatic
@@ -32,11 +31,8 @@
 
 
     %h4 Float Dropdown Menu
+    %p Float dropdown menu is spaced 2px away from the toggle. Can be used to float left or right for content that exceeds the parent dropdown width.
     .example.mbxl
-      %div drop to the down w/ float menu match width
-      %div drop to the down w/ float menu left align
-      %div drop to the down w/ float menu right align
-      %div drop to the down w/ float menu match width & scroll
       .form-group.form-inline{:style => "width:200px;"}
         %label Label
         .dropdown
@@ -71,6 +67,9 @@
               %li Purus
               %li Elit
               %li Pellentesque
+    %h4 Float Scroll Menu
+    %p Lists that are indeterminately long can utilize the float scroll menu. The size is fixed so you'll have to customize the fixed height to acheieve your desired results.
+    .example.mbxl
       .form-group.form-inline{:style => "width:200px;"}
         %label Float Scroll
         .dropdown
@@ -91,8 +90,8 @@
               %li Vestibulum
 
     %h4 Split Dropdown
+    %p Action with additional actions hidden in a dropdown. Only comes in a float menu.
     .example.mbxl
-      %div drop to the down w/ float
       .form-group{:style => "width:200px;"}
         %label Split Float
         .dropdown.dropdown-icon.dropdown-split
@@ -107,8 +106,8 @@
               %li Pellentesque
 
     %h4 Flat Button Dropdown
+    %p Dropdown with the flat button styling.
     .example.mbxl
-      %div drop to the down .btn + color mod
       .form-group.form-inline{:style => "width:200px;"}
         %label Flat Button
         .dropdown.dropdown-flat
@@ -122,8 +121,8 @@
               %li Vestibulum
 
     %h4 Link Dropdown
+    %p Dropdown with the link styling, still spacing like a button.
     .example.mbxl
-      %div drop to the down link w/ float menu
       .form-group{:style => "width:200px;"}
         %label Link Float
         .dropdown.dropdown-link
@@ -139,9 +138,18 @@
     %h4 Icon Dropdown
     %p An icon can be used inside of a basic dropdown, flat button, link dropdown to change the style and space it takes up.
     .example.mbxl
-      %div dropdown w/ no text and icon w/ float menu
-      .form-group
+      .form-group.form-inline
         .dropdown.dropdown-icon
+          %button.dropdown-toggle
+          .svgicon
+            =partial 'images/svg-lib/chevron_down.svg'
+          .dropdown-menu.dropdown-menu-float.dropdown-menu-left
+            %ul
+              %li Purus
+              %li Elit
+              %li Pellentesque Sollicitudin Lorem Vestibulum
+      .form-group.form-inline
+        .dropdown.dropdown-flat.dropdown-icon
           %button.dropdown-toggle
           .svgicon
             =partial 'images/svg-lib/chevron_down.svg'
