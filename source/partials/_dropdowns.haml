@@ -94,9 +94,10 @@
     .example.mbxl
       %div drop to the down w/ float
       .form-group{:style => "width:200px;"}
-        .dropdown
-          .dropdown-label Split dropdown
-          %button.dropdown-toggle ^
+        %label Split Float
+        .dropdown.dropdown-icon.dropdown-split
+          %a.dropdown-label{:href => "#dropdowns"} Action to take
+          %button.dropdown-toggle
           .svgicon
             .icon-chevron_down
           .dropdown-menu.dropdown-menu-float
@@ -107,7 +108,18 @@
 
     %h4 Flat Button Dropdown
     .example.mbxl
-      drop to the down .btn + color mod
+      %div drop to the down .btn + color mod
+      .form-group.form-inline{:style => "width:200px;"}
+        %label Flat Button
+        .dropdown.dropdown-flat
+          %button.dropdown-toggle Float dropdown
+          .svgicon
+            .icon-chevron_down
+          .dropdown-menu.dropdown-menu-float
+            %ul
+              %li Fusce
+              %li Consectetur
+              %li Vestibulum
 
     %h4 Link Dropdown
     .example.mbxl
@@ -116,7 +128,7 @@
     %h4 Icon Dropdown
     %p An icon can be used inside of a basic dropdown, flat button, link dropdown to change the style and space it takes up.
     .example.mbxl
-      %div flat button icon w/ float menu
+      %div dropdown w/ no text and icon w/ float menu
       .form-group
         .dropdown.dropdown-icon
           %button.dropdown-toggle
