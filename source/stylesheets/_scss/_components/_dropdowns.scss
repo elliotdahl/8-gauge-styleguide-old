@@ -1,0 +1,125 @@
+.dropdown {
+  display: block;
+  width:100%;
+  position: relative;
+  button {
+    width:100%;
+    border:0;
+    padding:0 ($base-unit*4) 0 $base-unit;
+    height:($base-unit*4);
+    line-height: ($base-unit*4) - 2px;
+    background-color: #fff;
+    border: 1px solid $input-border;
+    border-radius: 2px;
+    text-align: left;
+    font-size: 14px;
+    color: $dark-2;
+    -webkit-appearance: none;
+    &:focus {
+      -webkit-appearance: none;
+      box-shadow: none;
+      outline:none;
+    }
+  }
+
+
+  //Open and Close Dropdown - handled by JS
+  &.open {
+    .dropdown-menu {
+      display: block;
+    }
+  }
+  //Dropdown menu - default connected
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width:100%;
+    pointer-events: none;
+    //This z-index needs to fit into the z-index map ** MAKE THIS **
+    z-index: 100;
+
+    ul {
+      //UL reset
+      list-style: none;
+      margin:0;
+      padding:0;
+      //Styles
+      //This z-index needs to fit into the z-index map ** MAKE THIS **
+      z-index: 100;
+      pointer-events: auto;
+      width:100%;
+      margin-top:-1px;
+      background-color:#fff;
+      border-top:none;
+      border-left: 1px solid $input-border;
+      border-right: 1px solid $input-border;
+      border-bottom: 1px solid $input-border;
+      li {
+        margin:0;
+        padding:($base-unit/2) $base-unit;
+        line-height: 24px;
+        //Needs to be handled with JS
+        &:hover {
+          background-color:$dark-11;
+        }
+        /////////////////////////////////////////////////////
+        //This is for some Elliot crap. Don't include.
+        &:after {
+          position: inherit;
+          width:0;
+          height: 0;
+          display: none;
+        /////////////////////////////////////////////////////
+        }
+      }
+    }
+
+
+    //Dropdown Menu Floats
+    &.dropdown-menu-float {
+      ul {
+        margin-top:2px;
+        border: 1px solid $input-border;
+      }
+      &.dropdown-menu-left, &.dropdown-menu-right {
+        width: initial;
+        min-width: 1000px;
+        ul {
+          width:initial;
+        }
+      }
+      &.dropdown-menu-left {
+        left:0;
+        ul {
+          float:left;
+        }
+
+      }
+      &.dropdown-menu-right {
+        right:0;
+        text-align: right;
+        ul {
+          float:right;
+        }
+      }
+    }
+    //Dropdown Scroll
+    &.dropdown-menu-scroll {
+      max-height: ($base-unit * 20);
+      overflow-y: scroll;
+    }
+
+
+
+
+
+
+
+  }
+
+  //icon for the dropdown. Pushes from the top instead of bottom
+  .svgicon {
+    top: 7px;
+  }
+}
