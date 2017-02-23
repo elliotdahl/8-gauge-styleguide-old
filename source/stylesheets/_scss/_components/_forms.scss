@@ -121,7 +121,7 @@ legend {
     .svgicon {
         pointer-events: none;
         position: absolute;
-        right: $base-unit;
+        right: 7px; //8px - 1px border
         bottom: 7px;
         font-size: 18px;
         //Validation Icons
@@ -171,6 +171,7 @@ legend {
     display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
+    vertical-align: top;
     label {
         // display: inline-flex;
         margin-bottom: 0;

@@ -5,7 +5,7 @@
   .dropdown-label {
     display: inline-block;
   }
-  .dropdown-trigger {
+  .dropdown-toggle {
     width:100%;
     border:0;
     padding:0 ($base-unit*4) 0 $base-unit;
@@ -38,27 +38,22 @@
     position: absolute;
     top: 100%;
     width:100%;
-    pointer-events: none;
     //This z-index needs to fit into the z-index map ** MAKE THIS **
     z-index: 100;
+    margin-top:-1px;
+    background-color:#fff;
+    border-top:none;
+    border-left: 1px solid $input-border;
+    border-right: 1px solid $input-border;
+    border-bottom: 1px solid $input-border;
+    border-radius: 0 0 2px 2px;
 
     ul {
       //UL reset
       list-style: none;
       margin:0;
       padding:0;
-      //Styles
-      //This z-index needs to fit into the z-index map ** MAKE THIS **
-      z-index: 100;
-      pointer-events: auto;
       width:100%;
-      margin-top:-1px;
-      background-color:#fff;
-      border-top:none;
-      border-left: 1px solid $input-border;
-      border-right: 1px solid $input-border;
-      border-bottom: 1px solid $input-border;
-      border-radius: 0 0 2px 2px;
       li {
         margin:0;
         padding:($base-unit/2) $base-unit;
@@ -82,14 +77,16 @@
 
     //Dropdown Menu Floats
     &.dropdown-menu-float {
-      ul {
-        margin-top:2px;
-        border: 1px solid $input-border;
-        border-radius:2px;
-      }
+      margin-top:2px;
+      border: 1px solid $input-border;
+      border-radius:2px;
+
       &.dropdown-menu-left, &.dropdown-menu-right {
         width: initial;
-        min-width: 1000px;
+        //min-width: 1000px;
+        min-width: -webkit-max-content;
+        min-width: -moz-max-content;
+        min-width: max-content;
         ul {
           width:initial;
         }
@@ -113,7 +110,6 @@
     &.dropdown-menu-scroll {
       max-height: ($base-unit * 20);
       overflow-y: scroll;
-      //border-bottom: 1px solid $input-border;
     }
 
 
@@ -123,9 +119,21 @@
 
 
   }
+  //icon only toggle
+  &.dropdown-icon {
+    width:32px;
+    .dropdown-toggle {
+      padding:0;
+      vertical-align: top;
 
+    }
+    .svgicon {
+      right:7px;
+    }
+  }
   //icon for the dropdown. Pushes from the top instead of bottom
   .svgicon {
     top: 7px;
   }
+
 }

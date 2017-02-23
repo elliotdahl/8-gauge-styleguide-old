@@ -11,7 +11,7 @@
       .form-group{:style => "width:200px;"}
         %label Drop It Low
         .dropdown
-          %button.dropdown-trigger Transmission
+          %button.dropdown-toggle Transmission
           .svgicon
             .icon-chevron_down
           .dropdown-menu
@@ -22,7 +22,7 @@
       .form-group{:style => "width:200px;"}
         %label Select Me
         .dropdown
-          %button.dropdown-trigger Automatic
+          %button.dropdown-toggle Automatic
           .svgicon
             .icon-select_chevrons
           .dropdown-menu
@@ -38,8 +38,9 @@
       %div drop to the down w/ float menu right align
       %div drop to the down w/ float menu match width & scroll
       .form-group.form-inline{:style => "width:200px;"}
+        %label Label
         .dropdown
-          %button.dropdown-trigger Float dropdown
+          %button.dropdown-toggle Float dropdown
           .svgicon
             .icon-chevron_down
           .dropdown-menu.dropdown-menu-float
@@ -49,8 +50,9 @@
               %li.type-ellipsis Ellipsified Venenatis Ornare Malesuada Etiam
               %li Other
       .form-group.form-inline{:style => "width:200px;"}
-        .dropdown.open
-          %button.dropdown-trigger Float left dropdown
+        %label Float Left
+        .dropdown
+          %button.dropdown-toggle Dropdown
           .svgicon
             .icon-chevron_down
           .dropdown-menu.dropdown-menu-float.dropdown-menu-left
@@ -59,8 +61,9 @@
               %li Elit
               %li Pellentesque Sollicitudin Lorem Vestibulum
       .form-group.form-inline{:style => "width:200px;"}
-        .dropdown.open
-          %button.dropdown-trigger Float right dropdown
+        %label Float Right
+        .dropdown
+          %button.dropdown-toggle Dropdown
           .svgicon
             .icon-chevron_down
           .dropdown-menu.dropdown-menu-float.dropdown-menu-right
@@ -69,8 +72,9 @@
               %li Elit
               %li Pellentesque
       .form-group.form-inline{:style => "width:200px;"}
-        .dropdown.open
-          %button.dropdown-trigger Float scroll dropdown
+        %label Float Scroll
+        .dropdown
+          %button.dropdown-toggle Dropdown
           .svgicon
             .icon-chevron_down
           .dropdown-menu.dropdown-menu-float.dropdown-menu-scroll
@@ -88,11 +92,11 @@
 
     %h4 Split Dropdown
     .example.mbxl
-      drop to the down w/ float
+      %div drop to the down w/ float
       .form-group{:style => "width:200px;"}
         .dropdown
           .dropdown-label Split dropdown
-          %button.dropdown-trigger ^
+          %button.dropdown-toggle ^
           .svgicon
             .icon-chevron_down
           .dropdown-menu.dropdown-menu-float
@@ -100,6 +104,7 @@
               %li Purus
               %li Elit
               %li Pellentesque
+
     %h4 Flat Button Dropdown
     .example.mbxl
       drop to the down .btn + color mod
@@ -111,4 +116,14 @@
     %h4 Icon Dropdown
     %p An icon can be used inside of a basic dropdown, flat button, link dropdown to change the style and space it takes up.
     .example.mbxl
-      flat button icon w/ float menu
+      %div flat button icon w/ float menu
+      .form-group
+        .dropdown.dropdown-icon
+          %button.dropdown-toggle
+          .svgicon
+            .icon-chevron_down
+          .dropdown-menu.dropdown-menu-float.dropdown-menu-left
+            %ul
+              %li Purus
+              %li Elit
+              %li Pellentesque Sollicitudin Lorem Vestibulum
