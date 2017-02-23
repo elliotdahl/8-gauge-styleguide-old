@@ -11,7 +11,7 @@
       .form-group{:style => "width:200px;"}
         %label Drop It Low
         .dropdown
-          %button Transmission
+          %button.dropdown-trigger Transmission
           .svgicon
             .icon-chevron_down
           .dropdown-menu
@@ -22,7 +22,7 @@
       .form-group{:style => "width:200px;"}
         %label Select Me
         .dropdown
-          %button Automatic
+          %button.dropdown-trigger Automatic
           .svgicon
             .icon-select_chevrons
           .dropdown-menu
@@ -39,7 +39,7 @@
       %div drop to the down w/ float menu match width & scroll
       .form-group.form-inline{:style => "width:200px;"}
         .dropdown
-          %button Float dropdown
+          %button.dropdown-trigger Float dropdown
           .svgicon
             .icon-chevron_down
           .dropdown-menu.dropdown-menu-float
@@ -50,7 +50,7 @@
               %li Other
       .form-group.form-inline{:style => "width:200px;"}
         .dropdown.open
-          %button Float left dropdown
+          %button.dropdown-trigger Float left dropdown
           .svgicon
             .icon-chevron_down
           .dropdown-menu.dropdown-menu-float.dropdown-menu-left
@@ -60,7 +60,7 @@
               %li Pellentesque Sollicitudin Lorem Vestibulum
       .form-group.form-inline{:style => "width:200px;"}
         .dropdown.open
-          %button Float right dropdown
+          %button.dropdown-trigger Float right dropdown
           .svgicon
             .icon-chevron_down
           .dropdown-menu.dropdown-menu-float.dropdown-menu-right
@@ -70,7 +70,7 @@
               %li Pellentesque
       .form-group.form-inline{:style => "width:200px;"}
         .dropdown.open
-          %button Float right dropdown
+          %button.dropdown-trigger Float scroll dropdown
           .svgicon
             .icon-chevron_down
           .dropdown-menu.dropdown-menu-float.dropdown-menu-scroll
@@ -89,7 +89,17 @@
     %h4 Split Dropdown
     .example.mbxl
       drop to the down w/ float
-
+      .form-group{:style => "width:200px;"}
+        .dropdown
+          .dropdown-label Split dropdown
+          %button.dropdown-trigger ^
+          .svgicon
+            .icon-chevron_down
+          .dropdown-menu.dropdown-menu-float
+            %ul
+              %li Purus
+              %li Elit
+              %li Pellentesque
     %h4 Flat Button Dropdown
     .example.mbxl
       drop to the down .btn + color mod
