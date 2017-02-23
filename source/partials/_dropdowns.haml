@@ -13,7 +13,7 @@
         .dropdown
           %button.dropdown-toggle Transmission
           .svgicon
-            .icon-chevron_down
+            =partial 'images/svg-lib/chevron_down.svg'
           .dropdown-menu
             %ul
               %li Automatic
@@ -24,7 +24,7 @@
         .dropdown
           %button.dropdown-toggle Automatic
           .svgicon
-            .icon-select_chevrons
+            =partial 'images/svg-lib/select_chevrons.svg'
           .dropdown-menu
             %ul
               %li Manual
@@ -42,7 +42,7 @@
         .dropdown
           %button.dropdown-toggle Float dropdown
           .svgicon
-            .icon-chevron_down
+            =partial 'images/svg-lib/chevron_down.svg'
           .dropdown-menu.dropdown-menu-float
             %ul
               %li
@@ -54,7 +54,7 @@
         .dropdown
           %button.dropdown-toggle Dropdown
           .svgicon
-            .icon-chevron_down
+            =partial 'images/svg-lib/chevron_down.svg'
           .dropdown-menu.dropdown-menu-float.dropdown-menu-left
             %ul
               %li Purus
@@ -65,7 +65,7 @@
         .dropdown
           %button.dropdown-toggle Dropdown
           .svgicon
-            .icon-chevron_down
+            =partial 'images/svg-lib/chevron_down.svg'
           .dropdown-menu.dropdown-menu-float.dropdown-menu-right
             %ul
               %li Purus
@@ -76,7 +76,7 @@
         .dropdown
           %button.dropdown-toggle Dropdown
           .svgicon
-            .icon-chevron_down
+            =partial 'images/svg-lib/chevron_down.svg'
           .dropdown-menu.dropdown-menu-float.dropdown-menu-scroll
             %ul
               %li Purus
@@ -99,7 +99,7 @@
           %a.dropdown-label{:href => "#dropdowns"} Action to take
           %button.dropdown-toggle
           .svgicon
-            .icon-chevron_down
+            =partial 'images/svg-lib/chevron_down.svg'
           .dropdown-menu.dropdown-menu-float
             %ul
               %li Purus
@@ -112,9 +112,9 @@
       .form-group.form-inline{:style => "width:200px;"}
         %label Flat Button
         .dropdown.dropdown-flat
-          %button.dropdown-toggle Float dropdown
+          %button.dropdown-toggle Dropdown
           .svgicon
-            .icon-chevron_down
+            =partial 'images/svg-lib/chevron_down.svg'
           .dropdown-menu.dropdown-menu-float
             %ul
               %li Fusce
@@ -123,7 +123,18 @@
 
     %h4 Link Dropdown
     .example.mbxl
-      drop to the down link w/ float menu
+      %div drop to the down link w/ float menu
+      .form-group{:style => "width:200px;"}
+        %label Link Float
+        .dropdown.dropdown-link
+          %a.dropdown-toggle Dropdown
+          .svgicon
+            =partial 'images/svg-lib/chevron_down.svg'
+          .dropdown-menu.dropdown-menu-float
+            %ul
+              %li Fusce
+              %li Consectetur
+              %li Vestibulum
 
     %h4 Icon Dropdown
     %p An icon can be used inside of a basic dropdown, flat button, link dropdown to change the style and space it takes up.
@@ -133,7 +144,7 @@
         .dropdown.dropdown-icon
           %button.dropdown-toggle
           .svgicon
-            .icon-chevron_down
+            =partial 'images/svg-lib/chevron_down.svg'
           .dropdown-menu.dropdown-menu-float.dropdown-menu-left
             %ul
               %li Purus

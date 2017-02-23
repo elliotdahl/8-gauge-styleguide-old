@@ -2,7 +2,7 @@ $(document).ready(function() {
   console.log("dropdowns working");
 
 
-   $(".dropdown button").on('click', function(){
+   $(".dropdown .dropdown-toggle").on('click', function(){
         console.log("dropdown clicked");
         $dropdown = $(this).parent(".dropdown")
 
