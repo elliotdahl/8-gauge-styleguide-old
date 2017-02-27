@@ -19,11 +19,11 @@
               %li Manual
               %li Other
       .form-group.form-inline{:style => "width:200px;"}
-        %label Select Me
+        %label Custom Icon Dropdown
         .dropdown
           %button.dropdown-toggle Automatic
           .svgicon
-            =partial 'images/svg-lib/select_chevrons.svg'
+            =partial 'images/svg-lib/more_vert.svg'
           .dropdown-menu
             %ul
               %li Manual
@@ -79,7 +79,7 @@
           .dropdown-menu.dropdown-menu-float.dropdown-menu-scroll
             %ul
               %li Purus
-              %li Elit
+              %li.border-bottom Elit
               %li Pellentesque
               %li Parturient
               %li Fringilla
@@ -108,7 +108,7 @@
     %h4 Flat Button Dropdown
     %p Dropdown with the flat button styling.
     .example.mbxl
-      .form-group.form-inline{:style => "width:200px;"}
+      .form-group.form-inline
         %label Flat Button
         .dropdown.dropdown-flat
           %button.dropdown-toggle Dropdown
@@ -123,7 +123,7 @@
     %h4 Link Dropdown
     %p Dropdown with the link styling, still spacing like a button.
     .example.mbxl
-      .form-group{:style => "width:200px;"}
+      .form-group.form-inline
         %label Link Float
         .dropdown.dropdown-link
           %a.dropdown-toggle Dropdown
