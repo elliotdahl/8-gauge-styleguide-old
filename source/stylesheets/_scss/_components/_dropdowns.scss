@@ -82,12 +82,12 @@
 
       &.dropdown-menu-left, &.dropdown-menu-right {
         width: initial;
-        //min-width: 1000px;
-        min-width: -webkit-max-content;
-        min-width: -moz-max-content;
-        min-width: max-content;
+
         ul {
           width:initial;
+          li {
+            white-space: nowrap;
+          }
         }
       }
       &.dropdown-menu-left {
