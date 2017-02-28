@@ -23,7 +23,7 @@
       outline:none;
     }
   }
-  .svgicon svg path {
+  .icon svg path {
     fill:$dark-5;
   }
   //Dropdown menu - default connected
@@ -156,7 +156,7 @@
       border: 1px solid transparent;
       color: $link-color;
     }
-    .svgicon svg path{
+    .icon svg path{
       fill:$link-color;
     }
   }
@@ -208,7 +208,7 @@
       width:24px;
       padding:11px;
     }
-    .svgicon {
+    .icon {
         font-size: 14px;
         right:5px;
         bottom:5px;
@@ -238,7 +238,7 @@
       width:40px;
       padding:18px;
     }
-    .svgicon {
+    .icon {
         font-size: 20px;
         right:10px;
         bottom:10px;

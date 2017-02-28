@@ -26,7 +26,7 @@
     transition: all 200ms ease-out;
     -webkit-transition-property: background-color, color, opacity, border;
     transition-property: background-color, color, opacity, border;
-    .svgicon {
+    .icon {
         font-size: 18px;
         margin: 0 5px 0 0;
         fill: $btn-default-color;
@@ -37,7 +37,7 @@
     &:hover:focus {
 
         outline: none;
-        .svgicon {
+        .icon {
 
         }
     }
@@ -45,7 +45,7 @@
 
 .btn.btn-icon {
     padding: 0;
-    .svgicon {
+    .icon {
         margin:5px;
     }
 }
@@ -56,11 +56,11 @@
     font-size: 16px;
     &.btn-icon {
         padding: 0;
-        .svgicon {
+        .icon {
           margin:8px;
         }
     }
-    .svgicon {
+    .icon {
         font-size: 20px;
     }
 }
@@ -71,11 +71,11 @@
     font-size: 12px;
     &.btn-icon {
         padding: 0;
-        .svgicon {
+        .icon {
           margin: 3px;
         }
     }
-    .svgicon {
+    .icon {
         font-size: 14px;
     }
 }
@@ -92,7 +92,7 @@
     background-color: $btn-default-color;
     color: #fff;
     border-color: $btn-default-color;
-    .svgicon {
+    .icon {
         fill: #fff;
     }
 }
@@ -131,7 +131,7 @@
     background-color: transparent;
     color: $btn-default-color;
     border-color: $btn-default-color;
-    .svgicon {
+    .icon {
         fill: $btn-default-color;
     }
 }
@@ -141,7 +141,7 @@
     color: $btn-default-color-focus;
     border-color: $btn-default-color-focus;
     outline: none;
-    .svgicon {
+    .icon {
         fill: $btn-default-color-focus;
     }
 }
@@ -152,7 +152,7 @@
     color: $btn-default-color-hover;
     border-color: $btn-default-color-hover;
     outline: none;
-    .svgicon {
+    .icon {
         fill: $btn-default-color-hover;
     }
 }
@@ -177,7 +177,7 @@
     background-color: transparent;
     color: #fff;
     border-color: #fff;
-    .svgicon {
+    .icon {
         fill: #fff;
     }
 }
@@ -187,7 +187,7 @@
     color: #fff;
     border-color: #fff;
     outline: none;
-    .svgicon {
+    .icon {
         fill: #fff;
     }
 }
@@ -198,7 +198,7 @@
     color: #fff;
     border-color: #fff;
     outline: none;
-    .svgicon {
+    .icon {
         fill: #fff;
     }
 }
@@ -223,7 +223,7 @@
     background-color: $btn-highlight-color;
     color: #fff;
     border-color: $btn-highlight-color;
-    .svgicon {
+    .icon {
         fill: #fff;
     }
 }
@@ -258,7 +258,7 @@
 //Flat Highlight
 .btn-highlight-flat {
     color: $btn-highlight-color;
-    .svgicon {
+    .icon {
         fill: $btn-highlight-color;
     }
     &:hover,
@@ -266,7 +266,7 @@
     &:hover:focus {
         color: $btn-highlight-color-focus;
         outline: none;
-        .svgicon {
+        .icon {
             fill: $btn-highlight-color-focus;
         }
     }
@@ -278,7 +278,7 @@
     background-color: transparent;
     color: $btn-highlight-color;
     border-color: $btn-highlight-color;
-    .svgicon {
+    .icon {
         fill: $btn-highlight-color;
     }
 }
@@ -288,7 +288,7 @@
     color: $btn-highlight-color-focus;
     border-color: $btn-highlight-color-focus;
     outline: none;
-    .svgicon {
+    .icon {
         fill: $btn-highlight-color-focus;
     }
 }
@@ -299,7 +299,7 @@
     color: $btn-highlight-color-hover;
     border-color: $btn-highlight-color-hover;
     outline: none;
-    .svgicon {
+    .icon {
         fill: $btn-highlight-color-hover;
     }
 }
@@ -324,7 +324,7 @@
     background-color: $btn-positive-color;
     color: #fff;
     border-color: $btn-positive-color;
-    .svgicon {
+    .icon {
         fill: #fff;
     }
 }
@@ -357,7 +357,7 @@
 //Flat Positive
 .btn.btn-positive-flat {
     color: $btn-positive-color;
-    .svgicon {
+    .icon {
         fill: $btn-positive-color;
     }
     &:hover,
@@ -365,7 +365,7 @@
     &:hover:focus {
         color: $btn-positive-color-focus;
         outline: none;
-        .svgicon {
+        .icon {
             fill: $btn-positive-color-focus;
         }
     }
@@ -376,7 +376,7 @@
     background-color: transparent;
     color: $btn-positive-color;
     border-color: $btn-positive-color;
-    .svgicon {
+    .icon {
         fill: $btn-positive-color;
     }
 }
@@ -386,7 +386,7 @@
     color: $btn-positive-color-focus;
     border-color: $btn-positive-color-focus;
     outline: none;
-    .svgicon {
+    .icon {
         fill: $btn-positive-color-focus;
     }
 }
@@ -397,7 +397,7 @@
     color: $btn-positive-color-hover;
     border-color: $btn-positive-color-hover;
     outline: none;
-    .svgicon {
+    .icon {
         fill: $btn-positive-color-hover;
     }
 }
@@ -421,7 +421,7 @@
     background-color: $btn-negative-color;
     color: #fff;
     border-color: $btn-negative-color;
-    .svgicon {
+    .icon {
         fill: #fff;
     }
 }
@@ -454,7 +454,7 @@
 //Flat negative
 .btn.btn-negative-flat {
     color: $btn-negative-color;
-    .svgicon {
+    .icon {
         fill: $btn-negative-color;
     }
     &:hover,
@@ -462,7 +462,7 @@
     &:hover:focus {
         color: $btn-negative-color-focus;
         outline: none;
-        .svgicon {
+        .icon {
             fill: $btn-negative-color-focus;
         }
     }
@@ -473,7 +473,7 @@
     background-color: transparent;
     color: $btn-negative-color;
     border-color: $btn-negative-color;
-    .svgicon {
+    .icon {
         fill: $btn-negative-color;
     }
 }
@@ -483,7 +483,7 @@
     color: $btn-negative-color-focus;
     border-color: $btn-negative-color-focus;
     outline: none;
-    .svgicon {
+    .icon {
         fill: $btn-negative-color-focus;
     }
 }
@@ -494,7 +494,7 @@
     color: $btn-negative-color-hover;
     border-color: $btn-negative-color-hover;
     outline: none;
-    .svgicon {
+    .icon {
         fill: $btn-negative-color-hover;
     }
 }

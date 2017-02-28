@@ -1,6 +1,6 @@
 //Old SVG Icon
 
-// .svgicon {
+// .icon {
 //     display: inline-flex;
 //     align-self: center;
 //     position: relative;
@@ -8,18 +8,18 @@
 //     width: 1em;
 // }
 //
-// .svgicon svg, .svgicon img {
+// .icon svg, .icon img {
 //     height: 1em;
 //     width: 1em;
 // }
 //
-// .svgicon.svg-baseline svg, .svgicon.svg-baseline img {
+// .icon.svg-baseline svg, .icon.svg-baseline img {
 //     bottom: -0.125em;
 //     position: absolute;
 // }
 
 //New SVG Icon
-.svgicon {
+.icon {
     display: inline-flex;
     align-self: center;
     position: relative;
@@ -27,18 +27,18 @@
     width: 1em;
 }
 
-.svgicon svg, .svgicon img {
+.icon svg, .icon img {
     height: 1em;
     width: 1em;
 }
 
-.svgicon.svg-baseline {
+.icon.icon-baseline {
     top: 0.125em;
 }
 
 
 //BG Image Icons
-.svgicon div {
+.icon div {
   width: 1em;
   height: 1em;
   background-size: 1em;
