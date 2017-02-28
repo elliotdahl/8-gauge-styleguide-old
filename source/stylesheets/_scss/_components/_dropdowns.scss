@@ -53,7 +53,7 @@
         margin:0;
         padding:($base-unit/2) $base-unit;
         line-height: 24px;
-
+        font-size:14px;
         &:hover {
           background-color:$dark-11;
         }
@@ -188,6 +188,40 @@
       border-top: 1px solid $input-border-focus;
       border-left: 1px solid $input-border-focus;
       border-bottom: 1px solid $input-border-focus;
+    }
+  }
+  //////////////////////////////////////////////////
+  //////////////////////////////////////////////////
+  //////////////////////////////////////////////////
+  //-------------------IN PROGRESS----------------//
+  //////////////////////////////////////////////////
+  //////////////////////////////////////////////////
+  //////////////////////////////////////////////////
+  //Dropdown Size
+  &.dropdown-sm {
+    .dropdown-toggle {
+      padding:0 (($base-unit*3)- 1px) 0 $base-unit; //24px - 1px
+      height:($base-unit*3);
+      line-height: ($base-unit*3) - 2px;
+      font-size: 12px;
+    }
+    .dropdown-menu {
+      ul {
+
+      }
+      li {
+        line-height: 16px;
+        font-size:12px;
+      }
+    }
+    &.dropdown-icon .dropdown-toggle{
+      width:24px;
+      padding:11px;
+    }
+    .svgicon {
+        font-size: 14px;
+        right:5px;
+        bottom:5px;
     }
   }
 }
