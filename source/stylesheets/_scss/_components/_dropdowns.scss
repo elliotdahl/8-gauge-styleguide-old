@@ -26,15 +26,13 @@
   .svgicon svg path {
     fill:$dark-5;
   }
-
   //Dropdown menu - default connected
   .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
     width:100%;
-    //This z-index needs to fit into the z-index map ** MAKE THIS **
-    z-index: 100;
+    z-index: 1000;
     margin-top:-1px;
     background-color:#fff;
     border-top:none;
@@ -44,8 +42,7 @@
     border-radius: 0 0 2px 2px;
     cursor:pointer;
     ul {
-      //UL reset
-      list-style: none;
+      list-style: none; //UL reset
       margin:0;
       padding:0;
       width:100%;
@@ -67,20 +64,19 @@
         /////////////////////////////////////////////////////
         /////////////////////////////////////////////////////
         /////////////////////////////////////////////////////
-        //This is for some Elliot crap. Don't include.
+        /////This is for some Elliot crap. Don't include.////
         &:after {
           position: inherit;
           width:0;
           height: 0;
           display: none;
-        /////////////////////////////////////////////////////
-        /////////////////////////////////////////////////////
-        /////////////////////////////////////////////////////
         }
+        /////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////
       }
     }
-
-
     //Dropdown Menu Floats
     &.dropdown-menu-float {
       margin-top:2px;
@@ -89,7 +85,6 @@
 
       &.dropdown-menu-left, &.dropdown-menu-right {
         width: initial;
-
         ul {
           width:initial;
           li {
@@ -102,7 +97,6 @@
         ul {
           float:left;
         }
-
       }
       &.dropdown-menu-right {
         right:0;
@@ -129,7 +123,7 @@
       border-left: 1px solid $input-border;
       border-bottom: 1px solid $input-border;
       width:100%;
-      padding:0 $base-unit; //32px - 1px border
+      padding:0 $base-unit;
       height:($base-unit*4);
       line-height: ($base-unit*4) - 2px;
       font-size:14px;
@@ -191,16 +185,8 @@
       border-bottom: 1px solid $input-border-focus;
     }
   }
-  //////////////////////////////////////////////////
-  //////////////////////////////////////////////////
-  //////////////////////////////////////////////////
-  //-------------------IN PROGRESS----------------//
-  //////////////////////////////////////////////////
-  //////////////////////////////////////////////////
-  //////////////////////////////////////////////////
   //Dropdown Small
   &.dropdown-sm {
-
     .dropdown-toggle {
       padding:0 (($base-unit*3)- 1px) 0 $base-unit; //24px - 1px
       height:($base-unit*3);
@@ -213,9 +199,6 @@
       font-size: 12px;
     }
     .dropdown-menu {
-      ul {
-
-      }
       li {
         line-height: 16px;
         font-size:12px;
@@ -233,7 +216,6 @@
   }
   //Dropdown Large
   &.dropdown-lg {
-
     .dropdown-toggle {
       padding:0 (($base-unit*5)- 1px) 0 $base-unit; //24px - 1px
       height:($base-unit*5);
@@ -246,9 +228,6 @@
       font-size: 16px;
     }
     .dropdown-menu {
-      ul {
-
-      }
       li {
         padding:$base-unit;
         line-height: 24px;
