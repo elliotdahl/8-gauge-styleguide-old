@@ -23,6 +23,7 @@ select {
     box-shadow: none;
     box-sizing: border-box;
     color: $dark-2;
+
 }
 
 
@@ -117,13 +118,15 @@ legend {
             border-color: $input-border;
         }
     }
-
     .svgicon {
         pointer-events: none;
         position: absolute;
         right: 7px; //8px - 1px border
         bottom: 7px;
         font-size: 18px;
+        svg path {
+          fill:$dark-5;
+        }
         //Validation Icons
         &.valid svg {
             fill: $input-border-valid;
@@ -139,10 +142,10 @@ legend {
     .svgicon {
         position: absolute;
         top: 50%;
-        left: 8px;
+        left: 7px;
         transform: translateY(-50%);
         font-size: 18px;
-        fill: $dark-2;
+        //fill: $dark-2;
     }
     input {
         padding-left: 32px;
