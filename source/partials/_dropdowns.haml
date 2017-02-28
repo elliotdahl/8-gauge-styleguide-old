@@ -227,3 +227,65 @@
               %li Pellentesque Sollicitudin Lorem Vestibulum
     %h4 Dropdown Large
     %p Large dropdowns
+    .example.mbxl
+      .form-group.form-inline{:style => "width:200px;"}
+        .dropdown.dropdown-lg
+          %button.dropdown-toggle Basic dropdown
+          .svgicon
+            =partial 'images/svg-lib/chevron_down.svg'
+          .dropdown-menu
+            %ul
+              %li Purus
+              %li Elit
+              %li Pellentesque
+      .form-group.form-inline{:style => "width:200px;"}
+        .dropdown.dropdown-lg
+          %button.dropdown-toggle Float dropdown
+          .svgicon
+            =partial 'images/svg-lib/chevron_down.svg'
+          .dropdown-menu.dropdown-menu-float
+            %ul
+              %li Purus
+              %li Elit
+              %li Pellentesque
+      .form-group.form-inline{:style => "width:200px;"}
+        .dropdown.dropdown-icon.dropdown-split.dropdown-lg
+          %a.dropdown-label{:href => "#dropdowns"} Action to take
+          %button.dropdown-toggle
+          .svgicon
+            =partial 'images/svg-lib/chevron_down.svg'
+          .dropdown-menu.dropdown-menu-float
+            %ul
+              %li Purus
+              %li Elit
+              %li Pellentesque
+      .form-group.form-inline
+        .dropdown.dropdown-flat.dropdown-lg
+          %button.dropdown-toggle Dropdown
+          .svgicon
+            =partial 'images/svg-lib/chevron_down.svg'
+          .dropdown-menu.dropdown-menu-float
+            %ul
+              %li Fusce
+              %li Consectetur
+              %li Vestibulum
+      .form-group.form-inline
+        .dropdown.dropdown-link.dropdown-lg
+          %a.dropdown-toggle Dropdown
+          .svgicon
+            =partial 'images/svg-lib/chevron_down.svg'
+          .dropdown-menu.dropdown-menu-float
+            %ul
+              %li Fusce
+              %li Consectetur
+              %li Vestibulum
+      .form-group.form-inline
+        .dropdown.dropdown-icon.dropdown-lg
+          %button.dropdown-toggle
+          .svgicon
+            =partial 'images/svg-lib/chevron_down.svg'
+          .dropdown-menu.dropdown-menu-float.dropdown-menu-left
+            %ul
+              %li Purus
+              %li Elit
+              %li Pellentesque Sollicitudin Lorem Vestibulum
