@@ -28,6 +28,7 @@
     font-weight: 400;
     letter-spacing: 0;
     text-transform: none;
+    white-space:nowrap;
     background-color: $tooltip-bg;
     color:$tooltip-color;
     border-radius:$tooltip-border-radius;
@@ -185,15 +186,24 @@
 .tooltip-sm {
   .tooltip-container {
     width:$tooltip-sm-width;
+    .tooltip-content{
+      white-space: normal;
+    }
   }
 }
 .tooltip-md {
   .tooltip-container {
     width:$tooltip-md-width;
+    .tooltip-content{
+      white-space: normal;
+    }
   }
 }
 .tooltip-lg {
   .tooltip-container {
     width:$tooltip-lg-width;
+    .tooltip-content{
+      white-space: normal;
+    }
   }
 }
