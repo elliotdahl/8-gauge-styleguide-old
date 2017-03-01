@@ -81,31 +81,18 @@
 //This could be .flex-justify-content-top, better?
 //Needs to be clear that this goes on the .col generally
 .col-top {
-    // -webkit-align-items: flex-start;
-    // -ms-flex-align: start;
-    // -webkit-box-align: start;
-    // align-items: flex-start;
     justify-content: flex-start !important;
     flex-direction: column;
     display: flex;
 }
 
 .col-bottom {
-    // -webkit-align-items: flex-end;
-    // -ms-flex-align: end;
-    // -webkit-box-align: end;
-    // align-items: flex-end;
     justify-content: flex-end !important;
     flex-direction: column;
     display: flex;
 }
 
 .col-middle {
-    // -webkit-justify-content: center;
-    // -ms-flex-pack: center;
-    // -webkit-box-pack: center;
-    // justify-content: center;
-    // text-align: center;
     justify-content: center;
     flex-direction: column;
     display: flex;
