@@ -104,7 +104,7 @@ legend {
           font-size: 16px;
           bottom: 0;
           right: 0;
-          fill:$dark-6;
+
         }
     }
     input,
@@ -160,6 +160,11 @@ legend {
     input {
         height: ($base-unit*5);
         font-size: 16px;
+    }
+    .icon {
+      font-size: 20px;
+      right: 10px;
+      bottom: 10px;
     }
 }
 

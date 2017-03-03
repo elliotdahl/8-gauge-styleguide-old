@@ -161,6 +161,9 @@
     }
   }
   //Icon only toggle
+  &.dropdown-icon:not(.dropdown-split) {
+    width:32px;
+  }
   &.dropdown-icon {
     .dropdown-toggle {
       width:32px;
@@ -234,9 +237,14 @@
         font-size:16px;
       }
     }
-    &.dropdown-icon .dropdown-toggle{
+    &.dropdown-icon:not(.dropdown-split) {
       width:40px;
-      padding:18px;
+    }
+    &.dropdown-icon{
+      .dropdown-toggle{
+        width:40px;
+        padding:18px;
+      }
     }
     .icon {
         font-size: 20px;
