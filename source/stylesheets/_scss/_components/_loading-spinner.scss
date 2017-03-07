@@ -1,10 +1,10 @@
 //Loading Spinner
 $loading-spinner:$accent-3;
-$svg-size: 100px;
+$svg-size: 96px;
 $offset: 430;
 $duration: 2s;
 
-.spinner svg {
+.spinner-lg svg {
     width: $svg-size;
     height: $svg-size;
     animation: rotator ($duration/2) linear infinite;
@@ -20,8 +20,8 @@ $duration: 2s;
 }
 
 .spinner-sm svg {
-    width: 16px;
-    height: 16px;
+    width: ($svg-size/6);
+    height: ($svg-size/6);
     animation: rotator ($duration/4) linear infinite;
     .path {
         animation: dash-100 $duration ease-in-out infinite,

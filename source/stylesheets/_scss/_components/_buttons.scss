@@ -112,9 +112,7 @@
 
 //Spinner
 .btn.btn-default {
-    .spinner,
-    .spinner-md,
-    .spinner-sm {
+    .spinner-svg {
         .ring {
             stroke: #fff;
         }
@@ -159,9 +157,7 @@
 
 //Spinner
 .btn.btn-default-alt {
-    .spinner,
-    .spinner-md,
-    .spinner-sm {
+    .spinner-svg {
         .ring {
             stroke: $btn-default-color;
         }
@@ -205,9 +201,7 @@
 
 //Spinner
 .btn.btn-default-alt-wh {
-    .spinner,
-    .spinner-md,
-    .spinner-sm {
+    .spinner-svg {
         .ring {
             stroke: #fff;
         }
@@ -243,9 +237,7 @@
 
 //Spinner
 .btn.btn-highlight {
-    .spinner,
-    .spinner-md,
-    .spinner-sm {
+    .spinner-svg {
         .ring {
             stroke: #fff;
         }
@@ -306,9 +298,7 @@
 
 //Spinner
 .btn.btn-highlight-alt {
-    .spinner,
-    .spinner-md,
-    .spinner-sm {
+    .spinner-svg {
         .ring {
             stroke: $btn-highlight-color;
         }
@@ -343,9 +333,7 @@
 }
 
 .btn.btn-positive {
-    .spinner,
-    .spinner-md,
-    .spinner-sm {
+    .spinner-svg {
         .ring {
             stroke: #fff;
         }
@@ -403,9 +391,7 @@
 }
 
 .btn.btn-positive-alt {
-    .spinner,
-    .spinner-md,
-    .spinner-sm {
+    .spinner-svg {
         .ring {
             stroke: $btn-positive-color;
         }
@@ -440,9 +426,7 @@
 }
 
 .btn.btn-negative {
-    .spinner,
-    .spinner-md,
-    .spinner-sm {
+    .spinner-svg {
         .ring {
             stroke: #fff;
         }
@@ -500,9 +484,7 @@
 }
 
 .btn.btn-negative-alt {
-    .spinner,
-    .spinner-md,
-    .spinner-sm {
+    .spinner-svg {
         .ring {
             stroke: $btn-negative-color;
         }
