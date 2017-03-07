@@ -20,8 +20,6 @@ $duration: 2s;
 }
 
 .spinner-sm svg {
-    // width:($svg-size/10);
-    // height:($svg-size/10);
     width: 16px;
     height: 16px;
     animation: rotator ($duration/4) linear infinite;
@@ -30,17 +28,16 @@ $duration: 2s;
     }
 }
 
-.spinner, .spinner-md, .spinner-sm {
+
+.spinner-svg {
   .ring {
       stroke: $loading-spinner;
       opacity: .1;
       stroke-width: 10%;
   }
-
   .path {
       stroke-dasharray: $offset;
       stroke-dashoffset: 360;
-      //stroke-dashoffset: $offset/2;
       transform-origin: center;
       stroke: $loading-spinner;
       animation: dash-50 $duration ease-in-out infinite,
