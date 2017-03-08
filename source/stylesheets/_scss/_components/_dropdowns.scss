@@ -146,6 +146,7 @@
       color: $btn-default-color;
       font-weight: $btn-font-weight;
       letter-spacing: $btn-letter-spacing;
+      background-color: transparent;
     }
   }
   //Dropdown Link
@@ -155,6 +156,7 @@
     .dropdown-toggle {
       border: 1px solid transparent;
       color: $link-color;
+      background-color: transparent;
     }
     .icon svg path{
       fill:$link-color;

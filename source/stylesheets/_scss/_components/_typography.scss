@@ -45,42 +45,42 @@ h6 {
     //line-height: 1;
 }
 
-h1 {
+h1, .h1 {
     font-size: 32px;
     //line-height: 32px;
     line-height: 1;
     letter-spacing: -.5px;
 }
 
-h2 {
+h2, .h2 {
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -.5px;
 }
 
-h3 {
+h3, .h3 {
     font-size: 20px;
     line-height: 32px;
 }
 
-h4 {
+h4, .h4 {
     font-size: 18px;
     line-height: 24px;
 }
 
-h5 {
+h5, .h5 {
     font-size: 16px;
     line-height: 24px;
 
 }
 
-h6 {
+h6, .h6 {
     font-size: 13px;
     line-height: 20px;
     letter-spacing: .25px;
 }
 
-p {
+p, .p {
     font-size: 14px;
     line-height: 20px;
     margin-top: 0;

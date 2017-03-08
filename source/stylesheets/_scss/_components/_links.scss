@@ -12,11 +12,21 @@ a:hover {
 
 .no-underline {
     text-decoration: none;
+    background-image:none !important;
 }
+
 .underline {
-    text-decoration:underline;
+    //background-image: linear-gradient(rgba(0, 0, 0, 0) 94%,#3b78e7 94%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 84%, $link-color 84%, $link-color 90%,rgba(0, 0, 0, 0) 90%);
+}
+.underline-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 94%, $link-color 94%);
+}
+
+.type-underline {
+
 }
 
 .hover-underline:hover {
-	text-decoration:underline;
+	background-image: linear-gradient(rgba(0, 0, 0, 0) 84%, $link-color 84%, $link-color 90%,rgba(0, 0, 0, 0) 90%);
 }

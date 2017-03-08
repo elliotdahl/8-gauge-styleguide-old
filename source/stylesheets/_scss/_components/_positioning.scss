@@ -5,11 +5,11 @@
 .fixed {
     position:fixed;
 }
-
 .full-vh {
     height: 100vh;
 }
 
+//Vertical Alignment
 .vert-middle {
     display: flex;
     flex-direction: column;
@@ -26,25 +26,24 @@
     justify-content: flex-end !important;
 }
 
-
+//Position Absolute
 .pos-v-mid {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
-
 .pos-h-mid {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
-
 .pos-a-mid {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 //Floats
 .left {
     float:left;
