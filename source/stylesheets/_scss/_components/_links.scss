@@ -21,20 +21,23 @@ $underline-clear:rgba(0, 0, 0, 0);
 $underline-blue:$link-hover-color;
 $underline-gray:$dark-7;
 
+$underline:linear-gradient(rgba(0, 0, 0, 0) $u-top, $underline-blue $u-top, $underline-blue $u-btm,rgba(0, 0, 0, 0) $u-btm);
+$underline-gray:linear-gradient(rgba(0, 0, 0, 0) $u-top, $underline-gray $u-top, $underline-gray $u-btm,rgba(0, 0, 0, 0) $u-btm);
+
 //Underline Blue (Default)
 .underline {
-  background-image: linear-gradient(rgba(0, 0, 0, 0) $u-top, $underline-blue $u-top, $underline-blue $u-btm,rgba(0, 0, 0, 0) $u-btm);
+  background-image: $underline;
 }
 .underline-hover:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0) $u-top, $underline-blue $u-top, $underline-blue $u-btm,rgba(0, 0, 0, 0) $u-btm);
+  background-image: $underline;
 }
 
 //Underline Gray
 .underline-gray {
-  background-image: linear-gradient(rgba(0, 0, 0, 0) $u-top, $underline-gray $u-top, $underline-gray $u-btm,rgba(0, 0, 0, 0) $u-btm);
+  background-image: $underline-gray;
 }
 .underline-hover-gray:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0) $u-top, $underline-gray $u-top, $underline-gray $u-btm,rgba(0, 0, 0, 0) $u-btm);
+  background-image: $underline-gray;
 }
 
 //Basic Text Decoration Underline
