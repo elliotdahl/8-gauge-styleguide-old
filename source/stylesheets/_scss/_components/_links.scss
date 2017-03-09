@@ -11,22 +11,43 @@ a:hover {
 }
 
 .no-underline {
-    text-decoration: none;
+    text-decoration: none !important;
     background-image:none !important;
 }
 
+$u-top:85%;
+$u-btm:91%;
+$underline-clear:rgba(0, 0, 0, 0);
+$underline-blue:$link-hover-color;
+$underline-gray:$dark-8;
+
+//Underline Blue (Default)
 .underline {
-    //background-image: linear-gradient(rgba(0, 0, 0, 0) 94%,#3b78e7 94%);
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 84%, $link-color 84%, $link-color 90%,rgba(0, 0, 0, 0) 90%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0) $u-top, $underline-blue $u-top, $underline-blue $u-btm,rgba(0, 0, 0, 0) $u-btm);
 }
+.underline-hover:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0) $u-top, $underline-blue $u-top, $underline-blue $u-btm,rgba(0, 0, 0, 0) $u-btm);
+}
+
+//Underline Gray
+.underline-gray {
+  background-image: linear-gradient(rgba(0, 0, 0, 0) $u-top, $underline-gray $u-top, $underline-gray $u-btm,rgba(0, 0, 0, 0) $u-btm);
+}
+.underline-hover-gray:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0) $u-top, $underline-gray $u-top, $underline-gray $u-btm,rgba(0, 0, 0, 0) $u-btm);
+}
+
+//Basic Text Decoration Underline
+.underline-basic {
+  text-decoration: underline;
+}
+.underline-basic-hover:hover {
+  text-decoration: underline;
+}
+
+
+////////Experimental/////////
+$u-one:94%;
 .underline-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0) 94%, $link-color 94%);
-}
-
-.type-underline {
-
-}
-
-.hover-underline:hover {
-	background-image: linear-gradient(rgba(0, 0, 0, 0) 84%, $link-color 84%, $link-color 90%,rgba(0, 0, 0, 0) 90%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0) $u-one, $link-color $u-one);
 }

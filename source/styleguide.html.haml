@@ -429,27 +429,41 @@ title: 8 Gauge Styleguide
             %p Links are useful for linking.
             .section-format.mbxl.pbl
               .pbl
-                %a{:href => "#links"} Link Example
+                %a{:href => "#links"} Basic Link Example
               .pbl
-                %a.underline{:href => "#links"} Link Underline 1 pTylg 14px
+                %a.underline{:href => "#links"} Underline Link Example
               .pbl
-                %a.underline-2{:href => "#links"} Link Underline 2 pTylg 14px
+                %a.underline-hover{:href => "#links"} Underline Hover Link Example
+            %h4 Link Underline Size Examples
+            %p Underlines are built with linear-gradients on a background-image property.
+            .section-format.mbxl.pbl
               .pbl
-                %a.type-underline{:href => "#links"} Link Underline 3 pTylg 14px
+                %a.type-xs.underline{:href => "#links"} Underline Link 12px
               .pbl
-                %a.type-lg.underline{:href => "#links"} Link Underline 1 pTylg 18px
+                %a.underline{:href => "#links"} Underline Link 14px
               .pbl
-                %a.type-lg.underline-2{:href => "#links"} Link Underline 2 pTylg 18px
+                %a.type-md.underline{:href => "#links"} Underline Link 16px
               .pbl
-                %a.type-lg.type-underline{:href => "#links"} Link Underline 3 pTylg 18px
+                %a.type-lg.underline{:href => "#links"} Underline Link 18px
               .pbl
-                %a.h1.underline{:href => "#links"} Link Underline 1 pTylg 32px
+                %a.h2.underline{:href => "#links"} Underline Link 24px
               .pbl
-                %a.h1.underline-2{:href => "#links"} Link Underline 2 pTylg 32px
+                %a.h1.underline{:href => "#links"} Underline Link 32px
+            %h4 Underline Color Examples
+            %p
+              Use
+              %code .underline
+              for the classic link blue color or
+              %code .underline-gray
+              for a light gray color. Use a
+              %code &lt;span&gt;
+              tag to keep the underline under the text where appropriate.
+            .section-format.mbxl.pbl
               .pbl
-                %a.h1.type-underline{:href => "#links"} Link Underline 3 pTylg 32px
+                %a.underline{:href => "#links"} Underline Link 14px
               .pbl
-                %a.hover-underline{:href => "#links"} Link Hover-line pTyl
+                %span.underline-gray{:href => "#links"} Underline Link 14px
+
         %section#lists
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Lists
