@@ -6,6 +6,9 @@ a {
     text-decoration: none;
     // -webkit-transition: color 150ms ease-out;
     // transition: color 150ms ease-out;
+    svg {
+      fill: $link-color;
+    }
 }
 
 a:hover {
@@ -42,7 +45,7 @@ $underline-gray:linear-gradient(rgba(0, 0, 0, 0) $u-top, $underline-gray $u-top,
   background-image: $underline;
 }
 .underline-blue-hover:hover {
-  background-image: $underline;
+  background-image: $underline !important;
 }
 
 //Underline Gray
@@ -50,7 +53,7 @@ $underline-gray:linear-gradient(rgba(0, 0, 0, 0) $u-top, $underline-gray $u-top,
   background-image: $underline-gray;
 }
 .underline-gray-hover:hover {
-  background-image: $underline-gray;
+  background-image: $underline-gray !important;
 }
 
 

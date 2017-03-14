@@ -69,6 +69,25 @@ $sg-rim-high:#fff;
         font-size: 10px;
     }
 }
+//Styleguide linksexample
+.linksexample-table {
+  .app-name {
+    color:inherit;
+  }
+  .td:hover .app-name span {
+    color: $link-hover-color;
+    background-image: $underline !important;
+  }
+  .tr:hover {
+    .app-name span {
+      @extend .underline-gray;
+    }
+    .app-route .app-route-link {
+      @extend .underline-gray;
+    }
+  }
+}
+
 //Styleguide Modal Example
 .modalexample {
   background-color:$dark-2;

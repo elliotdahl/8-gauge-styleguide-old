@@ -19,7 +19,40 @@ title: 8 Gauge Styleguide
       %h2.mbxl.txt-c External Link
       %p.sg.mbxl.txt-c.margin-auto{:style => "width:400px;"}
         %a.underline-hover{:href => "#"}
-          %span
-            Autobots roll out
-            %span.icon.icon-baseline
-              =partial 'images/svg-lib/open_in_new.svg'
+          Autobots roll out
+          %span.icon.icon-baseline
+            =partial 'images/svg-lib/open_in_new.svg'
+  %section
+    .section-content.margin-auto
+      %h2.mbxl.txt-c Links in a table
+      %p.sg.mbxl.txt-c.margin-auto{:style => "width:400px;"}
+        Note the two different types of clickable zones in this table.
+        .table.linksexample-table
+          .tr.grid.tr-no-h-borders
+            .th.col
+              Apps
+            .th.col Memory
+            .th.col Disk
+            .th.col Route
+          .tr.grid.tr-no-h-borders.tr-hover
+            .td.col
+              %a.app-name{:href => "#"}
+                %span Vestibulum
+            .td.col 512 MB
+            .td.col 1 GB
+            .td.col
+              %a.app-route{:href => "https://google.com"}
+                %span.app-route-link.underline-blue-hover https://google.com
+                %span.icon.icon-baseline
+                  =partial 'images/svg-lib/open_in_new.svg'
+          .tr.grid.tr-no-h-borders.tr-hover
+            .td.col
+              %a.app-name{:href => "#"}
+                %span Aenean
+            .td.col 128 MB
+            .td.col 512 MB
+            .td.col
+              %a.app-route{:href => "https://google.com"}
+                %span.app-route-link.underline-blue-hover https://google.com
+                %span.icon.icon-baseline
+                  =partial 'images/svg-lib/open_in_new.svg'
