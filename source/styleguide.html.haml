@@ -438,29 +438,34 @@ title: 8 Gauge Styleguide
             %p Underlines are built with linear-gradients on a background-image property.
             .section-format.mbxl.pbl
               .pbl
-                %a.type-xs.underline{:href => "#links"} Underline Link 12px
+                %a.type-xs.underline-blue{:href => "#links"} Underline Link 12px
               .pbl
-                %a.underline{:href => "#links"} Underline Link 14px
+                %a.underline-blue{:href => "#links"} Underline Link 14px
               .pbl
-                %a.type-md.underline{:href => "#links"} Underline Link 16px
+                %a.type-md.underline-blue{:href => "#links"} Underline Link 16px
               .pbl
-                %a.type-lg.underline{:href => "#links"} Underline Link 18px
+                %a.type-lg.underline-blue{:href => "#links"} Underline Link 18px
               .pbl
-                %a.h2.underline{:href => "#links"} Underline Link 24px
+                %a.h2.underline-blue{:href => "#links"} Underline Link 24px
               .pbl
-                %a.h1.underline{:href => "#links"} Underline Link 32px
+                %a.h1.underline-blue{:href => "#links"} Underline Link 32px
+              
             %h4 Underline Color Examples
             %p
               Use
               %code .underline
-              for the classic link blue color or
+              for the classic HTML text decoration,
+              %code .underline-blue
+              for a link blue color, or
               %code .underline-gray
               for a light gray color. Use a
               %code &lt;span&gt;
-              tag to keep the underline under the text where appropriate.
+              tag to keep the underline under the text where appropriate. The color defined underlines are made to mimic the HTML text decoration but they are acutally using a linear-gradient background-image.
             .section-format.mbxl.pbl
               .pbl
                 %a.underline{:href => "#links"} Underline Link 14px
+              .pbl
+                %span.underline-blue{:href => "#links"} Underline Link 14px
               .pbl
                 %span.underline-gray{:href => "#links"} Underline Link 14px
 
