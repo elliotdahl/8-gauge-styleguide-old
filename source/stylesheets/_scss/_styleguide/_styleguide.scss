@@ -78,6 +78,9 @@ $sg-rim-high:#fff;
     color: $link-hover-color;
     background-image: $underline !important;
   }
+  .td:hover .app-route-link span {
+    background-image: $underline !important;
+  }
   .tr:hover {
     .app-name span {
       @extend .underline-gray;
