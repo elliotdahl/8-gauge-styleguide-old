@@ -311,6 +311,15 @@ title: 8 Gauge Styleguide
             %h4 Select
             .section-format.mbxl.pbl
               %form
+                .form-group.form-sm.form-group-select
+                  %label Select Me
+                  %select.form-control
+                    %option Pivotal
+                    %option Google
+                    %option Yahoo
+                    %option Microsoft-Linkedin
+                  -# .icon
+                  -#   =partial 'images/svg-lib/select_chevrons.svg'
                 .form-group.form-group-select
                   %label Select Me
                   %select.form-control
@@ -318,23 +327,18 @@ title: 8 Gauge Styleguide
                     %option Google
                     %option Yahoo
                     %option Microsoft-Linkedin
-                  .icon
-                    =partial 'images/svg-lib/select_chevrons.svg'
+                  -# .icon
+                  -#   =partial 'images/svg-lib/select_chevrons.svg'
                 .form-group.form-lg.form-group-select
                   %label Select Me
-                  %input.form-control{:type => "text", :placeholder => "Larger"}
-                  .icon
-                    =partial 'images/svg-lib/select_chevrons.svg'
-                .form-group.form-sm.form-group-select
-                  %label Select Me
-
-                  %select.form-control
+                  %select.form-control{:type => "text", :placeholder => "Larger"}
                     %option Pivotal
                     %option Google
                     %option Yahoo
                     %option Microsoft-Linkedin
-                  .icon
-                    =partial 'images/svg-lib/select_chevrons.svg'
+                  -# .icon
+                  -#   =partial 'images/svg-lib/select_chevrons.svg'
+
 
             %h4 Search
             .section-format.mbxl.pbl
