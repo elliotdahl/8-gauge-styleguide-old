@@ -209,6 +209,9 @@
         font-size:12px;
       }
     }
+    &.dropdown-icon:not(.dropdown-split) {
+      width:24px;
+    }
     &.dropdown-icon .dropdown-toggle{
       width:24px;
       padding:11px;
@@ -222,7 +225,7 @@
   //Dropdown Large
   &.dropdown-lg {
     .dropdown-toggle {
-      padding:0 (($base-unit*5)- 1px) 0 $base-unit; //24px - 1px
+      padding:0 (($base-unit*5)- 1px) 0 $base-unit; //40px - 1px
       height:($base-unit*5);
       line-height: ($base-unit*5) - 2px;
       font-size: 16px;
