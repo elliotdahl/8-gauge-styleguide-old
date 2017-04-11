@@ -267,28 +267,52 @@ title: 8 Gauge Styleguide
                 .form-group
                   %label Password
                   %input.form-control{:type => "password", :placeholder => "Password"}
-                .form-group
-                  %button.btn.btn-default Submit
-            %h4 Row Form (single column)
+                %button.btn.btn-default Submit
+
+            %h4 Row Form (two columns)
+            %p
+              Use the Flex Grid to organize the
+              %code form-group
+              into columns
             .section-format.mbxl.pbl
-              .form-group.left
-                %label Email
-                %input.form-control{:type => "email", :placeholder => "Email"}
+              .grid
+                .col
+                  .form-group.has-error
+                    %label
+                      First Name
+                      .icon.icon-baseline
+                        =partial 'images/svg-lib/info_outline.svg'
+                    %input.form-control{:type => "text", :placeholder => "First Name"}
+                    .icon.invalid
+                      =partial 'images/svg-lib/close.svg'
+                    .help-block Error please try again with a real name
+                .col
+                  .form-group
+                    %label Last Name
+                    %input.form-control{:type => "text", :placeholder => "Last Name"}
+              .grid
+                .col
+                  .form-group
+                    %label Email
+                    %input.form-control{:type => "email", :placeholder => "Email"}
+                .col
+                  .form-group
+                    %label Password
+                    %input.form-control{:type => "password", :placeholder => "Password"}
+              .grid
+                .col.txt-r
+                  %button.btn.btn-default-alt> Cancel
+                  %button.btn.btn-default> Submit
+                  %button.btn.btn-default Submit
 
-              .form-group.left
-                %label Password
-                %input.form-control{:type => "password", :placeholder => "Password"}
-
-              .form-group.left
-
-                %button.btn.btn-default.mtxxxl Submit
-              .clear
             %h4 Inline Single Row
             .section-format.mbxl.pbl
               %form
                 .form-group.form-inline
                   %label Email
+                  %input.form-control{:type => "email", :placeholder => "Enter email"}
                 .form-group.form-inline
+                  %label Password
                   %input.form-control{:type => "email", :placeholder => "Enter email"}
                 .form-group.form-inline
                   %button.btn.btn-default Submit
@@ -393,7 +417,7 @@ title: 8 Gauge Styleguide
                   %input.invalid{:type => "text", :placeholder => "Enter text", :value => "Wrong Answer"}
                   .icon.invalid
                     =partial 'images/svg-lib/close.svg'
-                  .invalid-text Error please try again
+                  .help-block Error please try again
                 .form-group.form-inline
                   %input.valid{:type => "text", :placeholder => "Enter text", :value => "Right Answer"}
                   .icon.valid
@@ -414,7 +438,7 @@ title: 8 Gauge Styleguide
                   %input.invalid{:type => "text", :placeholder => "Enter text", :value => "Wrong Answer"}
                   .icon.invalid
                     =partial 'images/svg-lib/close.svg'
-                  .invalid-text Error please try again
+                  .help-block Error please try again
 
         =partial 'partials/dropdowns.haml'
 

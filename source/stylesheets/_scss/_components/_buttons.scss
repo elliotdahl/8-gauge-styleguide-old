@@ -42,6 +42,10 @@
         }
     }
 }
+.btn + .btn {
+  margin-left:$base-unit;
+}
+
 
 .btn.btn-icon {
     padding: 0;

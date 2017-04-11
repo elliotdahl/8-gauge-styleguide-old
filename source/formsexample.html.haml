@@ -1,0 +1,238 @@
+.page
+  %section.mbn
+    .section-content.margin-auto.txt-c
+      %h1.mvxl Forms
+      %p.sg.type-lg.mbxl
+        Forms are good for taking in form info.
+  %section
+    .section-content.margin-auto
+      %h2.mtxxxl.mbxl.txt-c Basic Stacked Form
+      %p.txt-c
+        Stacking the
+        %code .form-group
+        elements and relying on their basic structure to space out the form. The bottom two fields get a little more complex. The "Add Parameters" input field has a divorced label because the key/values can all be described from a single label.
+      %form
+        .form-group.has-error
+          %label
+            Instance Name
+            .icon.icon-baseline
+              =partial 'images/svg-lib/info_outline.svg'
+          %input.form-control{:type => "text", :placeholder => "Instance Name"}
+          .help-block
+            Please enter a valid instance name
+        .form-group
+          %label Add to Space
+          %select.form-control
+            %option Development
+            %option Production
+            %option Staging
+            %option Dumping-ground
+        .form-group
+          %label Bind to App
+          %select.form-control
+            %option [do not bind]
+            %option app 1
+            %option app 2
+            %option app 3
+            %option app 4
+        .grid
+          .col
+            .form-group
+              %label Bind to Route
+              %select.form-control
+                %option [do not bind]
+                %option this-route.cfapps.io
+                %option kinda-route.cfapps.io
+                %option optimum-route.cfapps.io
+          .col.col-fixed
+            %button.btn.btn-default-alt.mtxxxl Create Route
+        .form-group.mbn
+          %label
+            Add Parameters
+            .icon.icon-baseline
+              =partial 'images/svg-lib/info_outline.svg'
+        .grid
+          .col
+            .form-group
+              %input.form-control{:type => "text", :placeholder => "Key"}
+          .col
+            .form-group
+              %input.form-control{:type => "text", :placeholder => "Value"}
+          .col-fixed
+            %button.btn.btn-icon
+              .icon
+                =partial 'images/svg-lib/remove.svg'
+        .grid
+          .col
+            .form-group
+              %input.form-control{:type => "text", :placeholder => "Key"}
+          .col
+            .form-group
+              %input.form-control{:type => "text", :placeholder => "Value"}
+          .col-fixed
+            %button.btn.btn-icon
+              .icon
+                =partial 'images/svg-lib/remove.svg'
+        .grid
+          .col
+            .form-group
+              %input.form-control{:type => "text", :placeholder => "Key"}
+          .col
+            .form-group
+              %input.form-control{:type => "text", :placeholder => "Value"}
+          .col-fixed
+            %button.btn.btn-icon
+              .icon
+                =partial 'images/svg-lib/add.svg'
+        .grid
+          .col.txt-r
+            %button.btn.btn-highlight-alt> Cancel
+            %button.btn.btn-highlight Provision
+  %section
+    .section-content.margin-auto
+      %h2.mtxxxl.mbxl.txt-c Two Column Form
+      %p.txt-c
+        Placing the
+        %code .form-group
+        elements inside of the Flex Grid columns. It may be necessary to next another grid inside for the "Bind to Route" field example.
+      %form
+        .grid
+          .col
+            .form-group.has-error
+              %label
+                Instance Name
+                .icon.icon-baseline
+                  =partial 'images/svg-lib/info_outline.svg'
+              %input.form-control{:type => "text", :placeholder => "Instance Name"}
+              .help-block
+                Please enter a valid instance name
+          .col
+            .form-group
+              %label Add to Space
+              %select.form-control
+                %option Development
+                %option Production
+                %option Staging
+                %option Dumping-ground
+        .grid
+          .col
+            .form-group
+              %label Bind to App
+              %select.form-control
+                %option [do not bind]
+                %option app 1
+                %option app 2
+                %option app 3
+                %option app 4
+          .col
+            .grid
+              .col
+                .form-group
+                  %label Bind to Route
+                  %select.form-control
+                    %option [do not bind]
+                    %option this-route.cfapps.io
+                    %option kinda-route.cfapps.io
+                    %option optimum-route.cfapps.io
+              .col.col-fixed
+                %button.btn.btn-default-alt.mtxxxl Create Route
+        .grid
+          .col.txt-r
+            %button.btn.btn-highlight-alt> Cancel
+            %button.btn.btn-highlight Provision
+  %section
+    .section-content.margin-auto
+      %h2.mtxxxl.mbxl.txt-c Inlined Form (native widths)
+      %p.txt-c
+        The input fields are taking the initial width and stacking inlined to the left. Please mind the gap that appears between inlined items. The prefered method is ensuring that you have no physical space between the HTML elements.
+      %form
+        .form-group.form-inline.has-error>
+          %label>
+            User Name
+            .icon.icon-baseline
+              =partial 'images/svg-lib/info_outline.svg'
+          %input.form-control{:type => "text", :placeholder => "User Name"}
+          .help-block
+            Please enter a valid  name
+        .form-group.form-inline>
+          %label>
+            Password
+            -# .icon.icon-baseline
+            -#   =partial 'images/svg-lib/info_outline.svg'
+          %input.form-control{:type => "password", :placeholder => "Password"}
+        .btn.btn-default> Enter
+        .btn.btn-default-alt Cancel
+  %section
+    .section-content.margin-auto
+      %h2.mtxxxl.mbxl.txt-c Inlined Form (Flex Grid widths)
+      %p.txt-c
+        The
+        %code .form-group
+        is combined with the
+        %code .col
+        to ensure the input zone expands to it's full column width.
+      %form
+
+        .grid
+          .form-group.form-inline.has-error.col
+            %label>
+              User Name
+              .icon.icon-baseline
+                =partial 'images/svg-lib/info_outline.svg'
+            %input.form-control{:type => "text", :placeholder => "User Name"}
+            .help-block
+              Please enter a valid  name
+
+          .form-group.form-inline.col
+            %label>
+              Password
+              -# .icon.icon-baseline
+              -#   =partial 'images/svg-lib/info_outline.svg'
+            %input.form-control{:type => "password", :placeholder => "Password"}
+          .col.col-fixed>
+            .btn.btn-default> Enter
+            .btn.btn-default-alt Cancel
+
+  %section
+    .section-content.margin-auto
+      %h2.mtxxxl.mbxl.txt-c Form With Dropdowns
+      %p.txt-c
+        Don't do this. Just checking this works.
+      %form
+        .form-group
+          %label
+            Drop It Low
+            .icon.icon-baseline
+              =partial 'images/svg-lib/info_outline.svg'
+          .dropdown
+            %button.dropdown-toggle Transmission
+            .icon
+              =partial 'images/svg-lib/chevron_down.svg'
+            .dropdown-menu
+              %ul
+                %li Automatic
+                %li Manual
+                %li Other
+
+        .form-group.has-error
+          %label
+            Instance Name
+            .icon.icon-baseline
+              =partial 'images/svg-lib/info_outline.svg'
+          %input.form-control{:type => "text", :placeholder => "Instance Name"}
+          .help-block
+            Please enter a valid instance name
+
+        .form-group.has-error
+          %label Add to Space
+          %select.form-control
+            %option Development
+            %option Production
+            %option Staging
+            %option Dumping-ground
+          .help-block
+            Please enter a valid instance name
+        .grid
+          .col.txt-r
+            %button.btn.btn-highlight-alt> Cancel
+            %button.btn.btn-highlight Provision

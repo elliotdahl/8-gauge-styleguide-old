@@ -88,7 +88,7 @@ legend {
 //-------------------------------------
 .form-group {
     margin-bottom: ($base-unit*2);
-    margin-right: ($base-unit*2);
+    //margin-right: ($base-unit*2);
     position: relative;
     label {
         position: relative;
@@ -97,7 +97,7 @@ legend {
         font-weight: 600;
         line-height: ($base-unit*4);
         margin-bottom: 0;
-        margin-right: $base-unit;
+        white-space: nowrap;
         .icon {
           pointer-events: initial;
           position: relative;
@@ -126,13 +126,6 @@ legend {
         font-size: 18px;
         svg {
           fill:$dark-5;
-        }
-        //Validation Icons
-        &.valid svg {
-            fill: $input-border-valid;
-        }
-        &.invalid svg {
-            fill: $input-border-invalid;
         }
     }
     //Select Chevrons
@@ -218,69 +211,55 @@ legend {
     }
 }
 
-.form-inline.form-lg {
-    label {
-        line-height: ($base-unit*5);
-    }
-}
-
 .form-inline {
-    // display: inline-block;
     display: inline-flex;
-    flex-direction: column;
-    justify-content: flex-start;
     vertical-align: top;
+    &:not(.col) + .form-inline {
+      margin-left: ($base-unit*2);
+    }
+    &:not(.col) + .btn {
+      margin-left: ($base-unit*2);
+    }
     label {
-        // display: inline-flex;
-        margin-bottom: 0;
+        margin-right: $base-unit;
         line-height: ($base-unit*4);
     }
-    button,
-    .button {
-        display: inline-flex;
-        margin-bottom: 0;
-    }
-    input,
-    textarea,
-    select {
-        display: inline-flex;
-        margin-bottom: 0;
+    .help-block {
+      right:0;
     }
 }
 
 //Accept & Error (valid/invalid)
-input[type="email"].invalid,
-input[type="number"].invalid,
-input[type="search"].invalid,
-input[type="text"].invalid,
-input[type="tel"].invalid,
-input[type="url"].invalid,
-input[type="password"].invalid,
-textarea.invalid {
+
+.has-error {
+  .help-block {
+    color: $input-invalid-text;
+  }
+  input,
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  textarea,
+  select {
     border: 1px solid $input-border-invalid;
+  }
+  .invalid svg {
+      fill: $input-border-invalid;
+  }
 }
-
-input[type="email"].valid,
-input[type="number"].valid,
-input[type="search"].valid,
-input[type="text"].valid,
-input[type="tel"].valid,
-input[type="url"].valid,
-input[type="password"].valid,
-textarea.valid {
-    border: 1px solid $input-border-valid;
-}
-
-.invalid-text {
+.help-block {
     position: absolute;
     bottom: -16px;
     font-size: 12px;
     line-height: 16px;
-    color: $input-invalid-text;
 }
 
 
-
+//Simple Forms - Experimental
 .simple-form {
     input[type="email"],
     input[type="number"],
