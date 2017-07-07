@@ -376,16 +376,50 @@ title: 8 Gauge Styleguide
               %form
                 .form-group
                   %textarea{:placeholder => "Type body here..."}
-            %h4 Radio/Checkbox
+            %h4 Checkbox
+            %p The checkbox class added to the form-group does not change the bottom margin.
             .section-format.mbxl.pbl
               %form
-                .form-group-checkbox
-                  %input#check-me{:type => "checkbox"}
-                  %label{:for => "check-me"}
+                .form-group.checkbox.mbn
+                  %label{:for => "check-me1"}
+                    %input#check-me1{:type => "checkbox"}
                     Remember Me
-                .form-group
-                  %input{:type => "radio"}
-                  Don't Remember me
+                .form-group.checkbox
+                  %label{:for => "check-me2"}
+                    %input#check-me2{:type => "checkbox"}
+                    Send me more emails
+            %h4 Radio
+            %p The radio class added to the form-group removes the bottom margin since radio buttons are generally in groups
+            .section-format.mbxl.pbl
+              %form.mbxl
+                .form-group.radio
+                  %label{:for => "radio1"}
+                    %input#radio1{:type => "radio", :name => "radio_example"}
+                    Yellow
+                .form-group.radio
+                  %label{:for => "radio2"}
+                    %input#radio2{:type => "radio", :name => "radio_example"}
+                    %span.radio-input
+                    Blue
+                .form-group.radio
+                  %label{:for => "radio3"}
+                    %input#radio3{:type => "radio", :name => "radio_example"}
+                    %span.radio-input
+                    Red
+              %form
+                .form-group.radio
+                  %label{:for => "radio4"}
+                    .panel.border.paxl.mbxl{:style => "width:200px;"}
+                      %input#radio4{:type => "radio", :name => "radio_panels"}
+                      %span.radio-input
+                      Panel Content A
+                .form-group.radio
+                  %label{:for => "radio5"}
+                    .panel.border.paxl{:style => "width:200px;"}
+                      %input#radio5{:type => "radio", :name => "radio_panels"}
+                      %span.radio-input
+                      Panel Content B
+
             %h4 Label Tooltips and Icons
             %p
               Place the
