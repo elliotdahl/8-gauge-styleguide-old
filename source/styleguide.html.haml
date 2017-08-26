@@ -600,261 +600,263 @@ title: 8 Gauge Styleguide
               This got big, beautiful and complicated. View the example page to learn more.
             %a.btn.btn-default{:href => "/flextables.html"} View Table Examples
 
-        %section#tooltips
-          .section-content.margin-auto.paxl
-            %h2.section-header Tooltips
-            %p
-              Default tooltip is dark and on top. Adding modifier classes will change the direction of the tooltip. For example
-              %code .tooltip-right
-              will change the direction of the tooltip.
-            .section-format.mbxl.pbxl
-              .grid.grid-around.txt-c.mbn
-                .col
-                  %a.tooltip.tooltip-right
-                    Tooltip Right
-                    .tooltip-container
-                      .tooltip-content
-                        Lorem
-                .col
-                  %a.tooltip
-                    Tooltip Top
-                    .tooltip-container
-                      .tooltip-content
-                        Lorem
-                .col
-                  %a.tooltip.tooltip-bottom
-                    Tooltip Bottom
-                    .tooltip-container
-                      .tooltip-content
-                        Lorem
-                .col
-                  %a.tooltip.tooltip-left
-                    Tooltip Left
-                    .tooltip-container
-                      .tooltip-content
-                        Lorem
+        -# %section#tooltips
+        -#   .section-content.margin-auto.paxl
+        -#     %h2.section-header Tooltips
+        -#     %p
+        -#       Default tooltip is dark and on top. Adding modifier classes will change the direction of the tooltip. For example
+        -#       %code .tooltip-right
+        -#       will change the direction of the tooltip.
+        -#     .section-format.mbxl.pbxl
+        -#       .grid.grid-around.txt-c.mbn
+        -#         .col
+        -#           %a.tooltip.tooltip-right
+        -#             Tooltip Right
+        -#             .tooltip-container
+        -#               .tooltip-content
+        -#                 Lorem
+        -#         .col
+        -#           %a.tooltip
+        -#             Tooltip Top
+        -#             .tooltip-container
+        -#               .tooltip-content
+        -#                 Lorem
+        -#         .col
+        -#           %a.tooltip.tooltip-bottom
+        -#             Tooltip Bottom
+        -#             .tooltip-container
+        -#               .tooltip-content
+        -#                 Lorem
+        -#         .col
+        -#           %a.tooltip.tooltip-left
+        -#             Tooltip Left
+        -#             .tooltip-container
+        -#               .tooltip-content
+        -#                 Lorem
+        -#
+        -#     %h4 Light Tooltips
+        -#     %p
+        -#       Add
+        -#       %code .tooltip-light
+        -#       to
+        -#       %code .tooltip
+        -#       to change the color scheme. This should be utilized for sentences that need to be read for more than a quick glance.
+        -#     .section-format.mbxl.pbxl
+        -#       .grid.grid-around.txt-c.mbn
+        -#         .col
+        -#           %a.tooltip.tooltip-right.tooltip-light
+        -#             Tooltip Right
+        -#             .tooltip-container
+        -#               .tooltip-content
+        -#                 Lorem
+        -#         .col
+        -#           %a.tooltip.tooltip-light
+        -#             Tooltip Top
+        -#             .tooltip-container
+        -#               .tooltip-content
+        -#                 Lorem
+        -#         .col
+        -#           %a.tooltip.tooltip-bottom.tooltip-light
+        -#             Tooltip Bottom
+        -#             .tooltip-container
+        -#               .tooltip-content
+        -#                 Lorem
+        -#         .col
+        -#           %a.tooltip.tooltip-left.tooltip-light
+        -#             Tooltip Left
+        -#             .tooltip-container
+        -#               .tooltip-content
+        -#                 Lorem
 
-            %h4 Light Tooltips
-            %p
-              Add
-              %code .tooltip-light
-              to
-              %code .tooltip
-              to change the color scheme. This should be utilized for sentences that need to be read for more than a quick glance.
-            .section-format.mbxl.pbxl
-              .grid.grid-around.txt-c.mbn
-                .col
-                  %a.tooltip.tooltip-right.tooltip-light
-                    Tooltip Right
-                    .tooltip-container
-                      .tooltip-content
-                        Lorem
-                .col
-                  %a.tooltip.tooltip-light
-                    Tooltip Top
-                    .tooltip-container
-                      .tooltip-content
-                        Lorem
-                .col
-                  %a.tooltip.tooltip-bottom.tooltip-light
-                    Tooltip Bottom
-                    .tooltip-container
-                      .tooltip-content
-                        Lorem
-                .col
-                  %a.tooltip.tooltip-left.tooltip-light
-                    Tooltip Left
-                    .tooltip-container
-                      .tooltip-content
-                        Lorem
+            -# %h4 Tooltip Widths
+            -# %p
+            -#   The default width of the tooltip is determined by the width of the original element and the text width. Utillize modifier classes to change the fixed width of the tooltip. For example
+            -#   %code .tooltip-sm
+            -#   sets the width to 104px,
+            -#   %code .tooltip-md
+            -#   sets the width to 136px,
+            -#   %code .tooltip-lg
+            -#   sets the width to 200px.
+            -# .section-format.mbxl.pbxl
+            -#   .grid.grid-around.txt-c.mbn
+            -#     .col
+            -#       %a.tooltip.tooltip-light.tooltip-sm
+            -#         Tooltip Small
+            -#         .tooltip-container
+            -#           .tooltip-content
+            -#             Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+            -#     .col
+            -#       %a.tooltip.tooltip-light.tooltip-md
+            -#         Tooltip Medium
+            -#         .tooltip-container
+            -#           .tooltip-content
+            -#             Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod.
+            -#     .col
+            -#       %a.tooltip.tooltip-light.tooltip-lg
+            -#         Tooltip Large
+            -#         .tooltip-container
+            -#           .tooltip-content
+            -#             Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
 
-            %h4 Tooltip Widths
-            %p
-              The default width of the tooltip is determined by the width of the original element and the text width. Utillize modifier classes to change the fixed width of the tooltip. For example
-              %code .tooltip-sm
-              sets the width to 104px,
-              %code .tooltip-md
-              sets the width to 136px,
-              %code .tooltip-lg
-              sets the width to 200px.
-            .section-format.mbxl.pbxl
-              .grid.grid-around.txt-c.mbn
-                .col
-                  %a.tooltip.tooltip-light.tooltip-sm
-                    Tooltip Small
-                    .tooltip-container
-                      .tooltip-content
-                        Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                .col
-                  %a.tooltip.tooltip-light.tooltip-md
-                    Tooltip Medium
-                    .tooltip-container
-                      .tooltip-content
-                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod.
-                .col
-                  %a.tooltip.tooltip-light.tooltip-lg
-                    Tooltip Large
-                    .tooltip-container
-                      .tooltip-content
-                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-
-            %h4 Form Icon Tooltips
-            %p
-              Place the
-              %code .icon
-              into the
-              %code label
-              element next to the text and add
-              %code .svg-basline
-              to adjust the alignment.
-            .section-format.mbxl.pbl
-              %form
-                .form-group.form-inline
-                  %label
-                    Snorglebits
-                    %a.tooltip.tooltip-light.tooltip-md
-                      .icon.icon-baseline
-                        =partial 'images/svg-lib/info_outline.svg'
-                      .tooltip-container
-                        .tooltip-content
-                          Snorglebits are the most important part to the creation of every plumbus made.
-                  %input.form-control{:type => "text", :placeholder => "Snorglebits"}
-                .form-group.form-inline
-                  %label
-                    Plogglebits
-                    %a.tooltip
-                      .icon.icon-baseline
-                        =partial 'images/svg-lib/info_outline.svg'
-                      .tooltip-container
-                        .tooltip-content
-                          Careful
-                  %input.form-control{:type => "text", :placeholder => "Plogglebits"}
+            -# %h4 Form Icon Tooltips
+            -# %p
+            -#   Place the
+            -#   %code .icon
+            -#   into the
+            -#   %code label
+            -#   element next to the text and add
+            -#   %code .svg-basline
+            -#   to adjust the alignment.
+            -# .section-format.mbxl.pbl
+            -#   %form
+            -#     .form-group.form-inline
+            -#       %label
+            -#         Snorglebits
+            -#         %a.tooltip.tooltip-light.tooltip-md
+            -#           .icon.icon-baseline
+            -#             =partial 'images/svg-lib/info_outline.svg'
+            -#           .tooltip-container
+            -#             .tooltip-content
+            -#               Snorglebits are the most important part to the creation of every plumbus made.
+            -#       %input.form-control{:type => "text", :placeholder => "Snorglebits"}
+            -#     .form-group.form-inline
+            -#       %label
+            -#         Plogglebits
+            -#         %a.tooltip
+            -#           .icon.icon-baseline
+            -#             =partial 'images/svg-lib/info_outline.svg'
+            -#           .tooltip-container
+            -#             .tooltip-content
+            -#               Careful
+            -#       %input.form-control{:type => "text", :placeholder => "Plogglebits"}
 
 
-        %section#icons
-          .section-content.margin-auto.paxl.mdl-color--white
-            %h2.section-header Icons
-            %p
-              View
-              %a{:href => "http://pivotalicons.cfapps.io/", :target => "_blank"}
-                Pivotal SVG Icon Library
-            .grid.mvxl
-              .col.sg-icon-tile
-                .icon
-                  =partial 'images/svg-lib/select_chevrons.svg'
-                .sg-icon-label
-                  select_chevrons
-              .col.sg-icon-tile
-                .icon
-                  =partial 'images/svg-lib/chevron_up.svg'
-                .sg-icon-label
-                  chevron_up
-              .col.sg-icon-tile
-                .icon
-                  =partial 'images/svg-lib/chevron_down.svg'
-                .sg-icon-label
-                  chevron_down
-              .col.sg-icon-tile
-                .icon
-                  =partial 'images/svg-lib/open_in_new.svg'
-                .sg-icon-label
-                  open_in_new
-              .col.sg-icon-tile
-                .icon
-                  =partial 'images/svg-lib/add.svg'
-                .sg-icon-label
-                  add
-              .col.sg-icon-tile
-                .icon
-                  =partial 'images/svg-lib/info_outline.svg'
-                .sg-icon-label
-                  info_outline
-              .col.sg-icon-tile
-                .icon
-                  =partial 'images/svg-lib/filter_list.svg'
-                .sg-icon-label
-                  filter_list
-              .col.sg-icon-tile
-                .icon
-                  =partial 'images/svg-lib/close.svg'
-                .sg-icon-label
-                  close
-              .col.sg-icon-tile
-                .icon
-                  =partial 'images/svg-lib/check_circle.svg'
-                .sg-icon-label
-                  close
-              .col.sg-icon-tile
-                .icon
-                  %img{:src => "/images/check_circle.png"}
-                .sg-icon-label
-                  check_circle.png
-            %h4 SVGs align to text
-            %p
-              Adding
-              %code .icon-baseline
-              to to the
-              %code .icon
-              class absolute positions the icon -0.2ems from the bottom allowing it to align to text properly
-            .section-format.mbxl
-              %h2
-                My favorite icon is
-                .icon.icon-baseline
-                  =partial 'images/svg-lib/open_in_new.svg'
-                and also
-                .icon.icon-baseline
-                  =partial 'images/svg-lib/info_outline.svg'
-                because it aligns to H2
-              %h2.em-alt
-                My favorite icon is
-                .icon.icon-baseline
-                  =partial 'images/svg-lib/open_in_new.svg'
-                and also
-                .icon.icon-baseline
-                  =partial 'images/svg-lib/info_outline.svg'
-                because it aligns to H2
-              %div{:style => "font-size:18px;"}
-                My favorite icon is
-                .icon.icon-baseline
-                  =partial 'images/svg-lib/open_in_new.svg'
-                because it aligns to 18px and supports
-                .icon.icon-baseline
-                  %img{:src => "/images/check_circle.png"}
-                as a png
-              %div{:style => "font-size:16px;"}
-                My favorite icon is
-                .icon.icon-baseline
-                  =partial 'images/svg-lib/open_in_new.svg'
-                because it aligns to 16px
-              %div{:style => "font-size:14px;"}
-                Just try to
-                .icon.icon-baseline
-                  =partial 'images/svg-lib/copy.svg'
-                it to a new
-                .icon.icon-baseline
-                  =partial 'images/svg-lib/database.svg'
-              %div{:style => "font-size:12px;"}
-                My favorite icon is
-                .icon.icon-baseline
-                  =partial 'images/svg-lib/open_in_new.svg'
-                and also
-                .icon.icon-baseline
-                  =partial 'images/svg-lib/info_outline.svg'
-                and also
-                .icon.icon-baseline
-                  =partial 'images/svg-lib/cancel.svg'
-                because it aligns to 12px
-              %div.em-alt{:style => "font-size:12px;"}
-                My favorite icon is
-                .icon.icon-baseline
-                  =partial 'images/svg-lib/open_in_new.svg'
-                and also
-                .icon.icon-baseline
-                  =partial 'images/svg-lib/info_outline.svg'
-                and also
-                .icon.icon-baseline
-                  =partial 'images/svg-lib/cancel.svg'
-                because it aligns to 12px
+        -# %section#icons
+        -#   .section-content.margin-auto.paxl
+        -#     %h2.section-header Icons
+            -# %p
+            -#   View
+            -#   %a{:href => "http://pivotalicons.cfapps.io/", :target => "_blank"}
+            -#     Pivotal SVG Icon Library
+            -# .grid.mvxl
+            -#   .col.sg-icon-tile
+            -#     .icon
+            -#       =partial 'images/svg-lib/select_chevrons.svg'
+            -#     .sg-icon-label
+            -#       select_chevrons
+            -#   .col.sg-icon-tile
+            -#     .icon
+            -#       =partial 'images/svg-lib/chevron_up.svg'
+            -#     .sg-icon-label
+            -#       chevron_up
+            -#   .col.sg-icon-tile
+            -#     .icon
+            -#       =partial 'images/svg-lib/chevron_down.svg'
+            -#     .sg-icon-label
+            -#       chevron_down
+            -#   .col.sg-icon-tile
+            -#     .icon
+            -#       =partial 'images/svg-lib/open_in_new.svg'
+            -#     .sg-icon-label
+            -#       open_in_new
+            -#   .col.sg-icon-tile
+            -#     .icon
+            -#       =partial 'images/svg-lib/add.svg'
+            -#     .sg-icon-label
+            -#       add
+            -#   .col.sg-icon-tile
+            -#     .icon
+            -#       =partial 'images/svg-lib/info_outline.svg'
+            -#     .sg-icon-label
+            -#       info_outline
+            -#   .col.sg-icon-tile
+            -#     .icon
+            -#       =partial 'images/svg-lib/filter_list.svg'
+            -#     .sg-icon-label
+            -#       filter_list
+            -#   .col.sg-icon-tile
+            -#     .icon
+            -#       =partial 'images/svg-lib/close.svg'
+            -#     .sg-icon-label
+            -#       close
+            -#   .col.sg-icon-tile
+            -#     .icon
+            -#       =partial 'images/svg-lib/check_circle.svg'
+            -#     .sg-icon-label
+            -#       close
+            -#   .col.sg-icon-tile
+            -#     .icon
+            -#       %img{:src => "/images/check_circle.png"}
+            -#     .sg-icon-label
+            -#       check_circle.png
+            -# %h4 SVGs align to text
+            -# %p
+            -#   Adding
+            -#   %code .icon-baseline
+            -#   to to the
+            -#   %code .icon
+            -#   class absolute positions the icon -0.2ems from the bottom allowing it to align to text properly
+            -# .section-format.mbxl
+            -#   %h2
+            -#     My favorite icon is
+            -#     .icon.icon-baseline
+            -#       =partial 'images/svg-lib/open_in_new.svg'
+            -#     and also
+            -#     .icon.icon-baseline
+            -#       =partial 'images/svg-lib/info_outline.svg'
+            -#     because it aligns to H2
+            -#   %h2.em-alt
+            -#     My favorite icon is
+            -#     .icon.icon-baseline
+            -#       =partial 'images/svg-lib/open_in_new.svg'
+            -#     and also
+            -#     .icon.icon-baseline
+            -#       =partial 'images/svg-lib/info_outline.svg'
+            -#     because it aligns to H2
+            -#   %div{:style => "font-size:18px;"}
+            -#     My favorite icon is
+            -#     .icon.icon-baseline
+            -#       =partial 'images/svg-lib/open_in_new.svg'
+            -#     because it aligns to 18px and supports
+            -#     .icon.icon-baseline
+            -#       %img{:src => "/images/check_circle.png"}
+            -#     as a png
+            -#   %div{:style => "font-size:16px;"}
+            -#     My favorite icon is
+            -#     .icon.icon-baseline
+            -#       =partial 'images/svg-lib/open_in_new.svg'
+            -#     because it aligns to 16px
+            -#   %div{:style => "font-size:14px;"}
+            -#     Just try to
+            -#     .icon.icon-baseline
+            -#       =partial 'images/svg-lib/copy.svg'
+            -#     it to a new
+            -#     .icon.icon-baseline
+            -#       =partial 'images/svg-lib/database.svg'
+            -#   %div{:style => "font-size:12px;"}
+            -#     My favorite icon is
+            -#     .icon.icon-baseline
+            -#       =partial 'images/svg-lib/open_in_new.svg'
+            -#     and also
+            -#     .icon.icon-baseline
+            -#       =partial 'images/svg-lib/info_outline.svg'
+            -#     and also
+            -#     .icon.icon-baseline
+            -#       =partial 'images/svg-lib/cancel.svg'
+            -#     because it aligns to 12px
+            -#   %div.em-alt{:style => "font-size:12px;"}
+            -#     My favorite icon is
+            -#     .icon.icon-baseline
+            -#       =partial 'images/svg-lib/open_in_new.svg'
+            -#     and also
+            -#     .icon.icon-baseline
+            -#       =partial 'images/svg-lib/info_outline.svg'
+            -#     and also
+            -#     .icon.icon-baseline
+            -#       =partial 'images/svg-lib/cancel.svg'
+            -#     because it aligns to 12px
+
+
 
         %section#loading-spinners
           .section-content.margin-auto.paxl
