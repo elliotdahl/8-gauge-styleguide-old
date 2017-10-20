@@ -12,30 +12,38 @@
         %code .form-group
         elements and relying on their basic structure to space out the form. The bottom two fields get a little more complex. The "Add Parameters" input field has a divorced label because the key/values can all be described from a single label.
       %form
-        .form-group.has-error
-          %label
-            Instance Name
-            .icon.icon-baseline
-              =partial 'images/svg-lib/info_outline.svg'
-          %input.form-control{:type => "text", :placeholder => "Instance Name"}
-          .help-block
-            Please enter a valid instance name
-        .form-group
-          %label Add to Space
-          %select.form-control
-            %option Development
-            %option Production
-            %option Staging
-            %option Dumping-ground
-        .form-group
-          %label Bind to App
-          %select.form-control
-            %option [do not bind]
-            %option app 1
-            %option app 2
-            %option app 3
-            %option app 4
-        .grid
+        .grid.form-row-block-label
+          .col
+            .form-group.has-error
+              %label
+                Instance Name
+                .icon.icon-baseline
+                  =partial 'images/svg-lib/info_outline.svg'
+              %input.form-control{:type => "text", :placeholder => "Instance Name"}
+              .help-block
+                Please enter a valid instance name
+        .grid.form-row-block-label
+          .col
+            .form-group
+              %label Add to Space
+              %select.form-control
+                %option Development
+                %option Production
+                %option Staging
+                %option Dumping-ground
+              .help-block
+        .grid.form-row-block-label
+          .col
+            .form-group
+              %label Bind to App
+              %select.form-control
+                %option [do not bind]
+                %option app 1
+                %option app 2
+                %option app 3
+                %option app 4
+              .help-block
+        .grid.form-row-block-label
           .col
             .form-group
               %label Bind to Route
@@ -44,20 +52,26 @@
                 %option this-route.cfapps.io
                 %option kinda-route.cfapps.io
                 %option optimum-route.cfapps.io
+              .help-block
           .col.col-fixed
-            %button.btn.btn-default-alt.mtxxxl Create Route
-        .form-group.mbn
-          %label
-            Add Parameters
-            .icon.icon-baseline
-              =partial 'images/svg-lib/info_outline.svg'
+            %button.btn.btn-default-alt Create Route
+
+        .grid.form-row-block-label
+          .col
+            .form-group.mbn
+              %label
+                Add Parameters
+                .icon.icon-baseline
+                  =partial 'images/svg-lib/info_outline.svg'
         .grid
           .col
             .form-group
               %input.form-control{:type => "text", :placeholder => "Key"}
+              .help-block
           .col
             .form-group
               %input.form-control{:type => "text", :placeholder => "Value"}
+              .help-block
           .col-fixed
             %button.btn.btn-icon
               .icon
@@ -66,9 +80,11 @@
           .col
             .form-group
               %input.form-control{:type => "text", :placeholder => "Key"}
+              .help-block
           .col
             .form-group
               %input.form-control{:type => "text", :placeholder => "Value"}
+              .help-block
           .col-fixed
             %button.btn.btn-icon
               .icon
@@ -77,9 +93,11 @@
           .col
             .form-group
               %input.form-control{:type => "text", :placeholder => "Key"}
+              .help-block
           .col
             .form-group
               %input.form-control{:type => "text", :placeholder => "Value"}
+
           .col-fixed
             %button.btn.btn-icon
               .icon
@@ -96,13 +114,17 @@
         %code .form-group
         elements inside of the Flex Grid columns. It may be necessary to next another grid inside for the "Bind to Route" field example.
       %form
-        .grid
+        .grid.form-row-block-label
           .col
             .form-group.has-error
               %label
                 Instance Name
-                .icon.icon-baseline
-                  =partial 'images/svg-lib/info_outline.svg'
+                %a.tooltip.tooltip-light.tooltip-md
+                  .icon.icon-baseline
+                    =partial 'images/svg-lib/info_outline.svg'
+                  .tooltip-container
+                    .tooltip-content
+                      Snorglebits are the most important part to the creation of every plumbus made.
               %input.form-control{:type => "text", :placeholder => "Instance Name"}
               .help-block
                 Please enter a valid instance name
@@ -114,7 +136,8 @@
                 %option Production
                 %option Staging
                 %option Dumping-ground
-        .grid
+              .help-block
+        .grid.form-row-block-label
           .col
             .form-group
               %label Bind to App
@@ -124,6 +147,7 @@
                 %option app 2
                 %option app 3
                 %option app 4
+            .help-block
           .col
             .grid
               .col
@@ -134,12 +158,14 @@
                     %option this-route.cfapps.io
                     %option kinda-route.cfapps.io
                     %option optimum-route.cfapps.io
+                  .help-block
               .col.col-fixed
-                %button.btn.btn-default-alt.mtxxxl Create Route
+                %button.btn.btn-default-alt Create Route
         .grid
           .col.txt-r
-            %button.btn.btn-highlight-alt> Cancel
-            %button.btn.btn-highlight Provision
+            %div
+              %button.btn.btn-highlight-alt> Cancel
+              %button.btn.btn-highlight Provision
   %section
     .section-content.margin-auto
       %h2.mtxxxl.mbxl.txt-c Inlined Form (native widths)
@@ -174,21 +200,22 @@
       %form
 
         .grid
-          .form-group.form-inline.has-error.col
-            %label>
-              User Name
-              .icon.icon-baseline
-                =partial 'images/svg-lib/info_outline.svg'
-            %input.form-control{:type => "text", :placeholder => "User Name"}
-            .help-block
-              Please enter a valid  name
-
-          .form-group.form-inline.col
-            %label>
-              Password
-              -# .icon.icon-baseline
-              -#   =partial 'images/svg-lib/info_outline.svg'
-            %input.form-control{:type => "password", :placeholder => "Password"}
+          .col
+            .form-group.form-inline.has-error
+              %label>
+                User Name
+                .icon.icon-baseline
+                  =partial 'images/svg-lib/info_outline.svg'
+              %input.form-control{:type => "text", :placeholder => "User Name"}
+              .help-block
+                Please enter a valid  name
+          .col
+            .form-group.form-inline
+              %label>
+                Password
+                -# .icon.icon-baseline
+                -#   =partial 'images/svg-lib/info_outline.svg'
+              %input.form-control{:type => "password", :placeholder => "Password"}
           .col.col-fixed>
             .btn.btn-default> Enter
             .btn.btn-default-alt Cancel
@@ -199,39 +226,44 @@
       %p.txt-c
         Don't do this. Just checking this works.
       %form
-        .form-group
-          %label
-            Drop It Low
-            .icon.icon-baseline
-              =partial 'images/svg-lib/info_outline.svg'
-          .dropdown
-            %button.dropdown-toggle Transmission
-            .icon
-              =partial 'images/svg-lib/chevron_down.svg'
-            .dropdown-menu
-              %ul
-                %li Automatic
-                %li Manual
-                %li Other
-
-        .form-group.has-error
-          %label
-            Instance Name
-            .icon.icon-baseline
-              =partial 'images/svg-lib/info_outline.svg'
-          %input.form-control{:type => "text", :placeholder => "Instance Name"}
-          .help-block
-            Please enter a valid instance name
-
-        .form-group.has-error
-          %label Add to Space
-          %select.form-control
-            %option Development
-            %option Production
-            %option Staging
-            %option Dumping-ground
-          .help-block
-            Please enter a valid instance name
+        .grid.form-row-block-label
+          .col
+            .form-group
+              %label
+                Drop It Low
+                .icon.icon-baseline
+                  =partial 'images/svg-lib/info_outline.svg'
+              .dropdown
+                %button.dropdown-toggle Transmission
+                .icon
+                  =partial 'images/svg-lib/chevron_down.svg'
+                .dropdown-menu
+                  %ul
+                    %li Automatic
+                    %li Manual
+                    %li Other
+              .help-block
+        .grid.form-row-block-label
+          .col
+            .form-group.has-error
+              %label
+                Instance Name
+                .icon.icon-baseline
+                  =partial 'images/svg-lib/info_outline.svg'
+              %input.form-control{:type => "text", :placeholder => "Instance Name"}
+              .help-block
+                Please enter a valid instance name
+        .grid.form-row-block-label
+          .col
+            .form-group.has-error
+              %label Add to Space
+              %select.form-control
+                %option Development
+                %option Production
+                %option Staging
+                %option Dumping-ground
+              .help-block
+                Please enter a valid instance name
         .grid
           .col.txt-r
             %button.btn.btn-highlight-alt> Cancel

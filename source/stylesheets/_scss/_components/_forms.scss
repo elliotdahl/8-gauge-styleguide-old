@@ -163,11 +163,24 @@ legend {
 
 //Form Groupings
 //-------------------------------------
+form {
+  margin-bottom:16px;
+  .form-group {
+    margin-bottom: 0;
+  }
+  .form-row-block-label {
+    padding-top:32px;
+  }
+}
+
+
+
 .form-group {
     margin-bottom: ($base-unit*2);
     position: relative;
     label {
-        position: relative;
+        position: absolute;
+        top:-32px;
         display: block;
         font-size: 14px;
         font-weight: 600;
@@ -277,12 +290,19 @@ legend {
       margin-left: ($base-unit*2);
     }
     label {
+        position: relative;
+        top:0;
         margin-right: $base-unit;
         line-height: ($base-unit*4);
     }
     .help-block {
+      position: absolute;
+      top:32px;
       right:0;
     }
+}
+.col .form-inline {
+  width:100%;
 }
 
 //Accept & Error (valid/invalid)
@@ -307,11 +327,13 @@ legend {
       fill: $input-border-invalid;
   }
 }
+
 .help-block {
-    position: absolute;
-    bottom: -16px;
+    position: relative;
+    //bottom: -16px;
     font-size: 12px;
     line-height: 16px;
+    min-height: 16px;
 }
 
 
