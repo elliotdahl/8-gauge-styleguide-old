@@ -20,20 +20,20 @@
 
 //New SVG Icon
 .icon {
-    display: inline-flex;
-    align-self: center;
-    position: relative;
-    height: 1em;
-    width: 1em;
+  display: inline-flex;
+  align-self: center;
+  color:inherit;
 }
 
 .icon svg, .icon img {
-    height: 1em;
-    width: 1em;
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
 }
 
-.icon.icon-baseline {
-    top: 0.125em;
+.icon.baseline svg, .icon img {
+  top: .125em;
+  position: relative;
 }
 
 
